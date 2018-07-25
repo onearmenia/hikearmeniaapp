@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="auth_view_texts_color">#FFFFFF</color>
+    <color name="auth_view_green_button_solid">#7aa000</color>
+    <color name="auth_view_green_button_mid_transparent">#D97aa000</color>
+    <color name="auth_view_blue_button_solid">#3a5795</color>
+    <color name="auth_view_blue_button_mid_transparent">#D93a5795</color>
+    <color name="red">#FF0000</color>
+    <color name="black">#000000</color>
+    <color name="error_red">#FA3946</color>
+    <color name="white">#FFFFFF</color>
+    <color name="splash_screen">#DDDDDD</color>
+    <color name="toolbar_title_color">#7aa000</color>
+    <color name="status_bar_green_color">#9bc45e</color>
+    <color name="trail_difficulty">#ddcc28</color>
+    <color name="green_bar">#7aa000</color>
+    <color name="gray_line_color">#aaaaaa</color>
+    <color name="bottom_menu_bar_on_click">#B37aa000</color>
+    <color name="bottom_menu_bar">#7aa000</color>
+    <color name="transparent_green">#a07aa000</color>
+    <color name="green_title_color">#5e783f</color>
+    <color name="main_text_color">#636363</color>
+    <color name="dialogtext">#777777</color>
+    <color name="black_40_percent">#66000000</color>
+    <color name="option_selected_dot_color">#FFFFFFFF</color>
+    <color name="option_selected_dot_color_black">#66000000</color>
+    <color name="option_unselected_dot_color">#3fA6A6A6</color>
+    <color name="default_circle_indicator_fill_color">#FFFFFFFF</color>
+    <color name="default_circle_indicator_page_color">#00000000</color>
+    <color name="default_circle_indicator_stroke_color">#FFDDDDDD</color>
+    <color name="route_color">#427607</color>
+</resources>

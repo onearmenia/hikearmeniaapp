@@ -1,0 +1,38 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">0dp</dimen>
+    <dimen name="activity_vertical_margin">0dp</dimen>
+
+
+    <!-- Authentication first page dimensions -->
+    <dimen name="login_view_margin_logo_bottom">140dp</dimen>
+    <dimen name="login_button_margin_top">70dp</dimen>
+    <dimen name="login_view_components_margin">30dp</dimen>
+
+    <!-- Sign up page dimensions -->
+    <dimen name="sign_up_button_top_margin">100dp</dimen>
+
+    <!-- Universal dimensions -->
+    <dimen name="auth_uni_hint_text_size">28sp</dimen>
+    <dimen name="auth_buttons_height">67dp</dimen>
+    <dimen name="auth_box_width">500dp</dimen>
+    <dimen name="auth_uni_text_size_small">20sp</dimen>
+    <dimen name="auth_uni_bottom_button_height">80dp</dimen>
+    <dimen name="auth_uni_pic_width">180dp</dimen>
+    <dimen name="auth_uni_pic_height">230dp</dimen>
+    <dimen name="toolbar_height">50dp</dimen>
+    <dimen name="auth_uni_text_size_large">22sp</dimen>
+    <dimen name="trail_difficulty">16sp</dimen>
+
+    <!-- recycler item-->
+    <dimen name="trail_name">32sp</dimen>
+    <dimen name="trail_info">22sp</dimen>
+    <dimen name="heart_trails_width">40dp</dimen>
+    <dimen name="heart_trails_height">40dp</dimen>
+    <dimen name="item_footer_content_height">40dp</dimen>
+    <dimen name="reting_bar_top_margin">10dp</dimen>
+    <dimen name="trail_info_margin_bottom">50dp</dimen>
+    <dimen name="trail_name_margin_bottom">120dp</dimen>
+    <dimen name="heart_trails_margin">30dp</dimen>
+
+</resources>

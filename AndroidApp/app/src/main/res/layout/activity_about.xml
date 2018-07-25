@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/green_menu">
+
+    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/root_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            app:elevation="0dp">
+
+            <include layout="@layout/main_toolbar" />
+        </android.support.design.widget.AppBarLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/bottom_menu_bar_height"
+            android:background="@android:color/white"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/icon_info"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="25dp"
+                    android:src="@mipmap/info_icon" />
+
+                <com.hikearmenia.ui.widgets.TextView
+                    android:id="@+id/version"
+                    style="@style/light_font"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/icon_info"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/app_version"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+
+                <com.hikearmenia.ui.widgets.TextView
+                    android:id="@+id/info"
+                    style="@style/light_font"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/version"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:paddingLeft="45dp"
+                    android:paddingRight="45dp"
+                    android:text="@string/app_info"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+
+                <com.hikearmenia.ui.widgets.TextView
+                    android:id="@+id/info2"
+                    style="@style/light_font"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/info"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="45dp"
+                    android:paddingRight="45dp"
+                    android:text="@string/info2"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+
+                <com.hikearmenia.ui.widgets.TextView
+                    android:id="@+id/contact"
+                    style="@style/regular_font"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/info2"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="45dp"
+                    android:paddingRight="45dp"
+                    android:text="@string/contact_email"
+                    android:textColor="@android:color/black"
+                    android:textSize="13sp" />
+
+                <include
+                    layout="@layout/social_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/contact"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="25dp"
+                    android:layout_marginTop="15dp" />
+            </RelativeLayout>
+
+        </ScrollView>
+
+
+        <include layout="@layout/bottom_bar" />
+    </android.support.design.widget.CoordinatorLayout>
+
+    <LinearLayout
+        android:id="@+id/nav_view"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:orientation="vertical" />
+</android.support.v4.widget.DrawerLayout>

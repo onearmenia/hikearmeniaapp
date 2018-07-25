@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.hikearmenia.ui.widgets.CustomScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/bottom_menu_bar_height"
+            android:clipToPadding="false"
+            android:fitsSystemWindows="true"
+            app:layout_behavior="com.evs.demo.layout.FixedScrollingViewBehavior"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/trail_detail_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="270dp"
+                    android:transitionName="tImage">
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/image_pager"
+                        android:layout_width="match_parent"
+                        android:layout_height="270dp"
+                        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:id="@+id/colaps_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="vertical"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp">
+
+                            <RelativeLayout
+                                android:id="@+id/trail_detail_image"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom">
+
+                                <com.hikearmenia.ui.widgets.TextView
+                                    android:id="@+id/trail_name"
+                                    style="@style/regular_font"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_toStartOf="@id/weater_info"
+                                    android:ems="25"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="@dimen/trail_name_detail"
+                                    android:visibility="visible" />
+
+                                <LinearLayout
+                                    android:id="@+id/weater_info"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginRight="10dp"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/weather_image"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:layout_gravity="center_vertical"
+                                        android:src="@mipmap/cloud_trails" />
+
+                                    <com.hikearmenia.ui.widgets.TextView
+                                        android:id="@+id/weather"
+                                        style="@style/thin_font"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="top"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:text="25˚C"
+                                        android:textColor="@color/white"
+                                        android:textSize="25sp" />
+                                </LinearLayout>
+                            </RelativeLayout>
+
+                            <include
+                                layout="@layout/rating_bar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true" />
+
+                            <com.hikearmenia.ui.widgets.InfinitePageIndicator
+                                android:id="@+id/pageIndicator"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:layout_gravity="center_vertical" />
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="30dp">
+
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/item_footer_content_height"
+                            android:scrollbars="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/item_footer_content_height"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@android:color/white"
+                                android:orientation="horizontal"
+                                android:padding="5dp">
+
+                                <com.hikearmenia.ui.widgets.TextView
+                                    android:id="@+id/size"
+                                    style="@style/regular_font"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:gravity="center_vertical"
+                                    android:textColor="@color/trail_difficulty"
+                                    android:textSize="@dimen/trail_info" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:scaleType="centerCrop"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="12dp"
+                                    android:src="@mipmap/distance" />
+
+                                <com.hikearmenia.ui.widgets.TextView
+                                    android:id="@+id/trail_distance"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="6dp"
+                                    android:textColor="@color/main_text_color"
+                                    android:textSize="@dimen/trail_info" />
+
+                                <ImageView
+                                    android:layout_width="18dp"
+                                    android:layout_height="18dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="12dp"
+                                    android:src="@mipmap/w_trails" />
+
+                                <com.hikearmenia.ui.widgets.TextView
+                                    android:id="@+id/max_height"
+                                    style="@style/light_font"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="12dp"
+                                    android:textColor="@color/main_text_color"
+                                    android:textSize="@dimen/trail_info" />
+
+                                <ImageView
+                                    android:layout_width="18dp"
+                                    android:layout_height="18dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="12dp"
+                                    android:src="@mipmap/v_trails" />
+
+                                <com.hikearmenia.ui.widgets.TextView
+                                    android:id="@+id/min_height"
+                                    style="@style/light_font"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="12dp"
+                                    android:layout_marginRight="12dp"
+                                    android:textColor="@color/main_text_color"
+                                    android:textSize="@dimen/trail_info" />
+                            </LinearLayout>
+                        </HorizontalScrollView>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginBottom="12dp"
+                            android:background="@color/gray_line_color" />
+
+                        <LinearLayout
+                            android:id="@+id/offline_mood"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="horizontal">
+
+                            <com.hikearmenia.ui.widgets.TextView
+                                android:id="@+id/offline"
+                                style="@style/light_font"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:text="Store for offline use"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                                android:textColor="@color/green_title_color"
+                                android:textSize="18sp" />
+
+                            <Switch
+                                android:id="@+id/offline_trails_switch"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:checked="false"
+                                android:theme="@style/MySwitch" />
+                        </LinearLayout>
+
+
+                        <com.hikearmenia.ui.widgets.TextView
+                            android:id="@+id/things_to_do"
+                            style="@style/light_font"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="@string/things_to_see"
+                            android:textAllCaps="true"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                            android:textColor="@color/green_title_color"
+                            android:textSize="18sp" />
+
+
+                        <include
+                            android:id="@+id/desc_progress"
+                            layout="@layout/item_progress" />
+
+                        <com.hikearmenia.ui.widgets.TextView
+                            android:id="@+id/description"
+                            style="@style/light_font"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:lineSpacingExtra="1.5sp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="10dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="@color/main_text_color"
+                            android:textSize="15sp"
+                            android:visibility="gone" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="12dp"
+                            android:background="@color/gray_line_color" />
+
+                        <com.hikearmenia.ui.widgets.TextView
+                            android:id="@+id/information_title"
+                            style="@style/light_font"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="INFORMATION"
+                            android:textAllCaps="true"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                            android:textColor="@color/green_title_color"
+                            android:textSize="18sp" />
+
+                        <include
+                            android:id="@+id/info_progress"
+                            layout="@layout/item_progress" />
+
+                        <com.hikearmenia.ui.widgets.TextView
+                            android:id="@+id/info_text"
+                            style="@style/light_font"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:lineSpacingExtra="1.5sp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="10dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="@color/main_text_color"
+                            android:textSize="15sp"
+                            android:visibility="gone" />
+
+
+                        <RelativeLayout
+                            android:id="@+id/full_screen_map"
+                            android:layout_width="match_parent"
+                            android:layout_height="170dp"
+                            android:layout_marginTop="20dp">
+
+                            <ImageView
+                                android:id="@+id/map_url_image"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
+                                android:src="@mipmap/placeholder" />
+
+                            <LinearLayout
+                                android:id="@+id/offline_mode_textview"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_above="@+id/full_screen_button"
+                                android:layout_alignParentRight="true"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <com.hikearmenia.ui.widgets.TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="50dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/rounded_corner_shape_for_offline_mode"
+                                    android:text="@string/offline_popup_dialog_text"
+                                    android:textColor="#feaeadad"
+                                    android:textSize="14sp" />
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="15dp"
+                                    android:layout_gravity="right"
+                                    android:layout_marginRight="12dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/triangle_down" />
+
+                            </LinearLayout>
+
+
+                            <ImageView
+                                android:id="@+id/full_screen_button"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="3dp"
+                                android:scaleType="centerCrop"
+                                android:src="@mipmap/fullscreen_trails" />
+                        </RelativeLayout>
+
+                        <!--Guides -->
+                        <RelativeLayout
+                            android:id="@+id/local_guides_lay"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:visibility="gone">
+
+                            <com.hikearmenia.ui.widgets.TextView
+                                android:id="@+id/local_guides_title"
+                                style="@style/light_font"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginTop="20dp"
+                                android:gravity="left"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:text="@string/local_guides"
+                                android:textAllCaps="true"
+                                android:textColor="@color/green_title_color"
+                                android:textSize="18sp" />
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/local_guides_list"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_below="@+id/local_guides_title"
+                                android:clipToPadding="false"
+                                android:fadingEdge="none"
+                                android:overScrollMode="never"
+                                android:scrollbars="vertical"
+                                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+                            <com.hikearmenia.ui.widgets.TextView
+                                android:id="@+id/see_more"
+                                style="@style/light_font"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_below="@+id/local_guides_list"
+                                android:layout_marginRight="25dp"
+                                android:layout_marginTop="10dp"
+                                android:text="See more ..."
+                                android:textColor="@color/green_title_color"
+                                android:textSize="17sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/accomodation_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="12dp"
+                                android:background="@color/gray_line_color" />
+
+                            <com.hikearmenia.ui.widgets.TextView
+                                android:id="@+id/accomodation_title"
+                                style="@style/light_font"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:maxLines="1"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:paddingTop="10dp"
+                                android:text="Local Accommodation"
+                                android:textAllCaps="true"
+                                android:textColor="@color/green_title_color"
+                                android:textSize="18sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/accomodation_title"
+                                android:orientation="vertical">
+
+                                <android.support.v4.view.ViewPager
+                                    android:id="@+id/accomodation_pager"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="12dp"
+                            android:background="@color/gray_line_color" />
+
+                        <!--trail tips-->
+                        <RelativeLayout
+                            android:id="@+id/trail_tips_lay"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <com.hikearmenia.ui.widgets.TextView
+                                android:id="@+id/trail_tips"
+                                style="@style/light_font"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginTop="10dp"
+                                android:gravity="left"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:text="Trail Tips"
+                                android:textAllCaps="true"
+                                android:textColor="@color/green_title_color"
+                                android:textSize="18sp"
+                                android:visibility="visible" />
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/trail_tips_list"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_below="@+id/trail_tips"
+                                android:clipToPadding="false"
+                                android:fadingEdge="none"
+                                android:overScrollMode="never"
+                                android:scrollbars="vertical"
+                                android:visibility="gone"
+                                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+                            <com.hikearmenia.ui.widgets.TextView
+                                android:id="@+id/see_more_tips"
+                                style="@style/light_font"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_below="@+id/trail_tips_list"
+                                android:layout_marginRight="25dp"
+                                android:layout_marginTop="5dp"
+                                android:text="@string/read_more"
+                                android:textColor="@color/green_title_color"
+                                android:textSize="17sp"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/add_another_trail_tip"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:orientation="horizontal"
+                            android:paddingLeft="30dp">
+
+                            <ImageView
+                                android:id="@+id/add"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_centerVertical="true"
+                                android:src="@mipmap/add_trails" />
+
+                            <com.hikearmenia.ui.widgets.TextView
+                                android:id="@+id/add_another_trail_tip_text"
+                                style="@style/light_font"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="5dp"
+                                android:layout_toRightOf="@+id/add"
+                                android:gravity="center"
+                                android:text="@string/add_first_trail_tip"
+                                android:textAllCaps="true"
+                                android:textColor="@color/green_title_color"
+                                android:textSize="18sp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </com.hikearmenia.ui.widgets.CustomScrollView>
+
+        <ImageView
+            android:id="@+id/green_view"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:src="@drawable/transparent_green_bg"
+            android:visibility="gone" />
+
+        <include layout="@layout/detail_toolbar_view" />
+
+
+    </RelativeLayout>
+
+    <include layout="@layout/bottom_bar" />
+</android.support.design.widget.CoordinatorLayout>

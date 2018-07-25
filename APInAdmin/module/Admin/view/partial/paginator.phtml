@@ -1,0 +1,87 @@
+<?php if ($this->pageCount > 1): ?>
+    <div class="paginationControl">
+    <?php echo $this->firstItemNumber; ?> - <?php echo $this->lastItemNumber; ?>
+    of <?php echo $this->totalItemCount; ?>
+    </div>
+    <div>
+        <ul class="pagination">
+            <!-- Previous page link -->
+            <?php if (isset($this->previous)): ?>
+                <li>
+                    <?php
+                    $href = $this->url($this->route) . "?page=" . $this->previous;
+                    //keeping get parameters
+                    if (isset($this->data) && !empty($this->data)){
+                        foreach ($this->data as $key => $value){
+                            if ($value){
+                                $href .= "&{$key}=" . $value;
+                            }
+                        }
+                    }
+                    ?>
+                    <a href="<?php echo $href; ?>">
+                        <<
+                    </a>
+                </li>
+            <?php else: ?>
+                <li class="disabled">
+                    <a href="#">
+                        <<
+                    </a>
+                </li>
+            <?php endif; ?>
+
+            <!-- Numbered page links -->
+            <?php foreach ($this->pagesInRange as $page): ?>
+                <?php if ($page != $this->current): ?>
+                    <li>
+                        <?php
+                        $href = $this->url($this->route) . "?page=" . $page;
+                        //keeping get parameters
+                        if (isset($this->data) && !empty($this->data)){
+                            foreach ($this->data as $key => $value){
+                                if ($value){
+                                    $href .= "&{$key}=" . $value;
+                                }
+                            }
+                        }
+                        ?>
+                        <a href="<?php echo $href;?>">
+                            <?php echo $page; ?>
+                        </a>
+                    </li>
+                <?php else: ?>
+                    <li class="active">
+                        <a href="#"><?php echo $page; ?></a>
+                    </li>
+                <?php endif; ?>
+            <?php endforeach; ?>
+
+            <!-- Next page link -->
+            <?php if (isset($this->next)): ?>
+                <li>
+                    <?php
+                    $href = $this->url($this->route) . "?page=" . $this->next;
+                    //keeping get parameters
+                    if (isset($this->data) && !empty($this->data)){
+                        foreach ($this->data as $key => $value){
+                            if ($value){
+                                $href .= "&{$key}=" . $value;
+                            }
+                        }
+                    }
+                    ?>
+                    <a href="<?php echo $href; ?>">
+                        >>
+                    </a>
+                </li>
+            <?php else: ?>
+                <li class="disabled">
+                    <a href="#">
+                        >>
+                    </a>
+                </li>
+            <?php endif; ?>
+        </ul>
+    </div>
+<?php endif; ?>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        app:elevation="0dp">
+
+        <include layout="@layout/toolbar_save" />
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <com.hikearmenia.ui.widgets.TextView
+            android:id="@+id/trail_name_tv"
+            style="@style/light_font"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_horizontal"
+            android:text="name trail"
+            android:textColor="@color/toolbar_title_color"
+            android:textSize="19sp"
+            android:visibility="visible" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/trail_tips_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="false"
+            android:layout_below="@+id/trail_name_tv"
+            android:layout_marginBottom="@dimen/bottom_menu_bar_height"
+            android:clipToPadding="false"
+            android:fadingEdge="none"
+            android:overScrollMode="never"
+            android:scrollbars="vertical"
+            android:transitionName="tImage" />
+
+        <RelativeLayout
+            android:id="@+id/add_another_guide_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_menu_bar_height"
+            android:layout_alignParentBottom="true"
+            android:background="@color/green_bar">
+
+            <ImageView
+                android:id="@+id/add_review_icon"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="80dp"
+                android:src="@mipmap/add_icon_white" />
+
+            <com.hikearmenia.ui.widgets.TextView
+                android:id="@+id/view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toEndOf="@+id/add_review_icon"
+                android:text="@string/add_trail_tip"
+                android:textColor="@android:color/white"
+                android:textSize="17sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

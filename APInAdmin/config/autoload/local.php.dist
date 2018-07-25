@@ -1,0 +1,9 @@
+<?php
+return array(
+    'db' => array(
+        "username" => "root",
+        "password" => "",
+        'dsn'      => 'mysql:dbname=tatever;host=127.0.0.1',
+    ),
+    'site' => array("domain" => "http://tatever.loc"),
+);

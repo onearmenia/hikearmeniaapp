@@ -1,0 +1,142 @@
+<div class="row">
+    <div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
+        <h1 class="page-title txt-color-blueDark">
+            <a href="/admin">
+                <i class="fa-fw fa fa-home"></i>
+                Dashboard
+            </a>
+            <span>
+                > <a href="<?php echo $this->url("admin", array("action" => "users")); ?>">Users</a>
+                > Add User
+            </span>
+        </h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-12">
+        <form
+            action="<?php echo $this->url("admin-action", array("action" => "edit-user", "id" => $this->post->getId())); ?>"
+            method="post" class="ajaxForm">
+            <div class="jarviswidget jarviswidget-color-blueDark col-sm-12 col-md-12 col-lg-9" id="wid-id-11"
+                 data-widget-colorbutton="false"
+                 data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false"
+                 data-widget-fullscreenbutton="false" data-widget-custombutton="false" role="widget"
+                 style="position: relative; opacity: 1;">
+                <header role="heading">
+                    <h2><strong>Page Content</strong></h2>
+                    <span class="jarviswidget-loader"><i class="fa fa-refresh fa-spin"></i></span></header>
+
+                <!-- widget div-->
+
+                <div role="content">
+                    <div class="widget-body no-padding">
+                        <div class="tab-content padding-10">
+                            <div class="smart-form">
+                                <section>
+                                    <label class="label">First Name</label>
+                                    <label class="input">
+                                        <input type="text" name="user_first_name" required
+                                               value="<?php echo $this->post->getFirstName(); ?>"/>
+                                    </label>
+                                </section>
+                                <section>
+                                    <label class="label">Last Name</label>
+                                    <label class="input">
+                                        <input type="text" name="user_last_name" required
+                                               value="<?php echo $this->post->getLastName(); ?>"/>
+                                    </label>
+                                </section>
+                                <section>
+                                    <label class="label">Email</label>
+                                    <label class="input">
+                                        <input type="text" name="user_email"
+                                               value="<?php echo $this->post->getEmail(); ?>"/>
+                                    </label>
+                                </section>
+                                <section>
+                                    <label class="label">Phone</label>
+                                    <label class="input">
+                                        <input type="text" name="user_phone" required
+                                               value="<?php echo $this->post->getPhone(); ?>"/>
+                                    </label>
+                                </section>
+                                <section>
+                                    <label class="label">Password</label>
+                                    <label class="input">
+                                        <input type="password" name="user_password" required
+                                               value=""/>
+                                    </label>
+                                </section>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-3">
+                <div class="jarviswidget jarviswidget-color-blueDark">
+                    <header role="heading">
+                        <h2><strong>Page attributes</strong></h2>
+                    </header>
+                    <div role="content">
+                        <div class="widget-body">
+                            <div class="widget-body-toolbar text-center">
+                                <!--  floating button save  -->
+                                <div id="fixed_hidden_button"
+                                     class="fadeInDown animated floating_submit_wrapper hidden">
+                                    <button type="submit" class="btn btn-lg btn-success floating_submit">Save</button>
+                                    <span onclick='$("#fixed_hidden_button").hide();' class="fa fa-close"
+                                          style="position: relative; top:-44px;right:-6px"></span>
+                                </div>
+                                <p>
+                                    <button type="submit"
+                                            class="triggers_if_this_element_in_viewport btn btn-lg btn-success">Save
+                                    </button>
+                                </p>
+                            </div>
+                            <br/>
+
+                            <div class="smart-form">
+                                <section>
+                                    <label class="label">Type</label>
+                                    <label class="select">
+                                        <select name="user_type">
+                                            <option value="user"
+                                                    <?php if ($this->post->getType() == "user") { ?>selected="selected"<?php } ?>>
+                                                User
+                                            </option>
+                                            <option value="admin"
+                                                    <?php if ($this->post->getType() == "admin") { ?>selected="selected"<?php } ?>>
+                                                Admin
+                                            </option>
+                                        </select><i></i>
+                                    </label>
+                                </section>
+                            </div>
+                            <div class="smart-form">
+                                <section>
+                                    <label class="label">Status</label>
+                                    <label class="select">
+                                        <select name="user_status">
+                                            <option value="active"
+                                                    <?php if ($this->post->getStatus() == "active") { ?>selected="selected"<?php } ?>>
+                                                Active
+                                            </option>
+                                            <option value="inactive"
+                                                    <?php if ($this->post->getStatus() == "inactive") { ?>selected="selected"<?php } ?>>
+                                                Inactive
+                                            </option>
+                                        </select><i></i>
+                                    </label>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </form>
+    </div>
+</div>

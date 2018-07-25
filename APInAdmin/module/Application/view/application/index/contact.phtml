@@ -1,0 +1,84 @@
+<main id="main">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1">
+                <h2 class="page-title"><?php echo $this->translate("contact", __NAMESPACE__); ?></h2>
+                <div class="map-wrap">
+                    <div id="map"></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-8">
+                        <article class="entry">
+                            <div class="entry-content">
+
+                                <div class="contact-form">
+                                    <div id="contactSuccessMessage" class="hidden">
+                                        <div class="wrap">
+                                            <h3><?php echo $this->translate("contact_success_message", __NAMESPACE__); ?></h3>
+                                        </div>
+                                    </div>
+
+                                    <form class="contact ajaxform" id="contactForm" method="post" action="/<?php echo $this->language; ?>/action/contact">
+                                        <p>
+                                            <label for="name"><?php echo $this->translate("Your Name", __NAMESPACE__); ?> *</label>
+                                            <input type="text" id="name" name="name" required>
+                                        </p>
+
+                                        <p>
+                                            <label for="email"><?php echo $this->translate("Your Email", __NAMESPACE__); ?> *</label>
+                                            <input type="email" id="email" name="email" required>
+                                        </p>
+
+                                        <p>
+                                            <label for="subject"><?php echo $this->translate("Subject", __NAMESPACE__); ?> *</label>
+                                            <input type="text" id="subject" name="subject" required>
+                                        </p>
+
+                                        <p>
+                                            <label for="message"><?php echo $this->translate("Message", __NAMESPACE__); ?> *</label>
+                                            <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+                                        </p>
+
+                                        <input type="text" name="trap_for_robots" class="trap_for_robots" value="" style="display: none;" />
+
+                                        <p><input type="submit" value="<?php echo $this->translate("Send", __NAMESPACE__); ?>" class="button"></p>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="sidebar">
+
+                            <div class="widget widget_ci_special_offer_widget">
+                                <h3 class="widget-title"><?php echo $this->translate("Special offer", __NAMESPACE__); ?></h3>
+                                <div class="item">
+                                    <figure class="item-thumb">
+                                        <a href="/<?php echo $this->language; ?>/hotel/contact">
+                                            <img src="/images/wedding.jpg" width="750" height="930" alt="Placeholder Image">
+                                        </a>
+                                    </figure>
+
+
+                                    <div class="item-content">
+                                        <h4>Our wedding suite. 50% off. May 5th.</h4>
+                                        <a class="item-title btn" href="/<?php echo $this->language; ?>/hotel/booking"><?php echo $this->translate("book now.", __NAMESPACE__); ?></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <aside class="widget widget_ci_social_widget ci-socials group">
+                                <h3 class="widget-title">social</h3>
+                                <a href="#" class="social-icon" title="<?php echo $this->translate("Subscribe to our RSS feed.", __NAMESPACE__); ?>"><i class="fa fa-rss"></i></a>
+                                <a href="http://www.twitter.com/cssigniter" class="social-icon" title="<?php echo $this->translate("Follow us on twitter.", __NAMESPACE__); ?>"><i class="fa fa-twitter"></i></a>
+                                <a href="http://www.facebook.com/cssigniter" class="social-icon" title="<?php echo $this->translate("Like us on Facebook.", __NAMESPACE__); ?>"><i class="fa fa-facebook"></i></a>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

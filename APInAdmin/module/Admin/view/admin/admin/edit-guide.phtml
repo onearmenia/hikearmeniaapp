@@ -1,0 +1,326 @@
+<div class="row" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+    <div class=" col-sm-9 ">
+        <h1 class="page-title txt-color-blueDark">
+            <a href="/admin">
+                <i class="fa-fw fa fa-home"></i>
+                Dashboard
+            </a>
+            <span>
+                > <a href="<?php echo $this->url("admin", array("action" => "guides")); ?>">Guides</a>
+                > Edit Guide
+            </span>
+        </h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12">
+        <form
+            action="<?php echo $this->url("admin-action", array("action" => "edit-guide", "id" => $this->post->getId())); ?>"
+            method="post" class="ajaxForm">
+            <div class="jarviswidget jarviswidget-color-blueDark col-sm-12 col-md-12 col-lg-9" id="wid-id-11"
+                 data-widget-colorbutton="false"
+                 data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false"
+                 data-widget-fullscreenbutton="false" data-widget-custombutton="false" role="widget"
+                 style="position: relative; opacity: 1;">
+                <header role="heading">
+                    <h2><strong>Content</strong></h2>
+                    <span class="jarviswidget-loader"><i class="fa fa-refresh fa-spin"></i></span></header>
+
+                <!-- widget div-->
+
+                <div role="content">
+                    <div class="widget-body no-padding">
+                        <div class="tab-content padding-10">
+                            <div class="smart-form">
+                                <section>
+                                    <label class="label">First Name</label>
+                                    <label class="input">
+                                        <input type="text" name="guide_first_name"
+                                               value="<?php echo $this->post->getFirstName(); ?>"/>
+                                    </label>
+                                </section>
+                                <section>
+                                    <label class="label">Last Name</label>
+                                    <label class="input">
+                                        <input type="text" name="guide_last_name"
+                                               value="<?php echo $this->post->getLastName(); ?>"/>
+                                    </label>
+                                </section>
+                                <section>
+                                    <label class="label">Trails</label>
+                                    <label class="input">
+                                        <a class="btn btn-primary btn-sm" data-toggle="modal" data-target="#trailsModal">Trails</a>
+                                    </label>
+                                </section>
+                                <section>
+                                    <label class="label">Phone</label>
+                                    <label class="input">
+                                        <input type="text" name="guide_phone"
+                                               value="<?php echo $this->post->getPhone(); ?>"/>
+                                    </label>
+                                </section>
+                                <section>
+                                    <label class="label">Email</label>
+                                    <label class="input">
+                                        <input type="text" name="guide_email"
+                                               value="<?php echo $this->post->getEmail(); ?>"/>
+                                    </label>
+                                </section>
+                                <section>
+                                    <label class="label">Description</label>
+                                    <label class="input">
+                                        <textarea style="width: 100% ;" rows="4" type="text" name="guide_description" ><?php echo $this->post->getDescription(); ?></textarea>
+                                    </label>
+                                </section>
+                                <section>
+                                    <label class="label">Languages</label>
+                                    <label class="input">
+                                        <a class="btn btn-primary btn-sm" data-toggle="modal"
+                                           data-target="#languagesModal">Languages</a>
+                                    </label>
+                                </section>
+                                <section>
+                                    <label class="label">Cover Image (500 x 500)</label>
+
+                                    <div class="input input-file">
+                                    <span class="button">
+                                        <input type="file" id="file" name="guide_cover" class="multipleImageUploadInput"
+                                               onchange="this.parentNode.nextElementSibling.value = this.value ;console.log(1)">
+                                        Browse
+                                    </span>
+                                        <input type="text" placeholder="Select Guide Cover Image" readonly="">
+                                    </div>
+                                </section>
+                                <?php if ($post->getImage()) { ?>
+                                    <div class="imagesStack draggable smallGrid">
+
+                                        <div class="imageBox smart-form photo-grid">
+
+                                            <img src="<?php echo $post->getImage(); ?>"
+                                                 onclick="openEditImage(this)">
+                                        </div>
+                                    </div>
+                                <?php } ?>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <?php if ($this->reviews) { ?>
+                    <div class="tab-content ">
+                        <div id="guideReviwes" class="table-responsive tab-pane fade active in">
+                            <table class="table table-hover ">
+                                <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Rating</th>
+                                    <th>Review</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+
+                                <?php foreach ($this->reviews as $review) : ?>
+
+                                    <tr>
+
+                                        <td>
+                                        <span>
+                                            <?php echo $review->getUser()->getFirstName() . ' ' . $review->getUser()->getLastName(); ?>
+                                        </span>
+                                        </td>
+
+                                        <td>
+                                        <span>
+                                            <?php $a = $review->getRating();
+                                            for ($i = 1; $i <= 5; $i++) { ?>
+                                                <?php if ($a >= $i) { ?>
+                                                    <i class="fa fa-star yellow-star"></i>
+                                                <?php } else { ?>
+                                                    <i class="fa fa-star-o yellow-star"></i>
+                                                <?php } ?>
+                                            <?php } ?>
+                                        </span>
+                                        </td>
+                                        <td>
+                                        <span class="guide__review" title="<?php echo $review->getReview(); ?>">
+                                            <?php echo $review->getReview(); ?>
+                                        </span>
+                                        </td>
+
+                                    </tr>
+                                <?php endforeach; ?>
+
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+                <?php } else ?>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-3">
+                <div class="jarviswidget jarviswidget-color-blueDark">
+                    <header role="heading">
+                        <h2><strong>Page attributes</strong></h2>
+                    </header>
+                    <div role="content">
+                        <div class="widget-body">
+                            <div class="widget-body-toolbar text-center">
+                                <!--  floating button save  -->
+                                <div id="fixed_hidden_button"
+                                     class="fadeInDown animated floating_submit_wrapper hidden">
+                                    <button type="submit" class="btn btn-lg btn-success floating_submit">Save</button>
+                                    <span onclick='$("#fixed_hidden_button").hide();' class="fa fa-close"
+                                          style="position: relative; top:-44px;right:-6px"></span>
+                                </div>
+                                <p>
+                                    <button type="submit"
+                                            class="triggers_if_this_element_in_viewport btn btn-lg btn-success">Save
+                                    </button>
+                                </p>
+                            </div>
+                            <br/>
+
+                            <div class="smart-form">
+                                <section>
+                                    <label class="label">Status</label>
+                                    <label class="select">
+                                        <select name="guide_status">
+                                            <option value="active"
+                                                    <?php if ($this->post->getStatus() == "active") { ?>selected="selected"<?php } ?>>
+                                                Active
+                                            </option>
+                                            <option value="inactive"
+                                                    <?php if ($this->post->getStatus() == "inactive") { ?>selected="selected"<?php } ?>>
+                                                Inactive
+                                            </option>
+                                        </select><i></i>
+                                    </label>
+                                </section>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal fade" id="languagesModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                     aria-hidden="true"
+                     style="display: none;">
+                    <div class="modal-dialog" style="width:800px;">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                    <span class="fa fa-close"></span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel">Languages</h4>
+                            </div>
+                            <div class="modal-body">
+                                <?php $count = floor(count($this->languages) / 10); ?>
+                                <?php for ($i = 0;
+                                           $i <= $count;
+                                           $i++) { ?>
+                                    <div class="row">
+                                        <div class="col-md-12 smart-form">
+                                            <section>
+                                                <div class="guideList">
+                                                    <?php for ($j = 0; $j < 10; $j++) {
+                                                        if (isset($this->languages[$i * 10 + $j])) {
+                                                            $language = $this->languages[$i * 10 + $j];
+
+                                                            ?>
+
+                                                            <div class="row" style="width:50%; float: left;">
+                                                                <div class="row" style="margin-left:20px">
+                                                                    <label class="checkbox">
+                                                                        <input type="checkbox"
+                                                                               class="guides"
+                                                                               name="languages[]" <?php foreach ($this->post->getLanguages() as $guideLanguage) {
+                                                                            if ($language->getId() == $guideLanguage->getId()) {
+                                                                                echo "checked";
+                                                                            }
+                                                                        } ?>
+                                                                               value="<?php echo $language->getId(); ?>">
+                                                                        <i></i><?php echo $language->getName() ?>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        <?php }
+                                                    } ?>
+                                                </div>
+                                            </section>
+                                        </div>
+                                    </div>
+                                <?php } ?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="trailsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
+                     style="display: none;">
+                    <div class="modal-dialog" style="width:800px;">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                    <span class="fa fa-close"></span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel">Trails</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-md-12 smart-form">
+                                        <section>
+                                            <div class="row" style="width:50%; float: left;">
+                                                <div class="row" style="margin-left:20px">
+                                                    <label class="checkbox">
+                                                        <input type="checkbox" class="guides select-all" >
+                                                        <i></i>Select All
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </section>
+                                        </div>
+                                    </div>
+                                        <?php $count = floor(count($this->trails) / 10); ?>
+                                <?php for ($i = 0;
+                                           $i <= $count;
+                                           $i++) { ?>
+                                    <div class="row">
+                                        <div class="col-md-12 smart-form">
+                                            <section>
+                                                <div class="guideList">
+
+                                                    <?php for ($j = 0; $j < 10; $j++){
+                                                        if(isset($this->trails[$i*10+$j])) {
+                                                            $trail = $this->trails[$i * 10 + $j];
+
+                                                            ?>
+
+                                                            <div class="row" style="width:50%; float: left;">
+                                                                <div class="row" style="margin-left:20px">
+                                                                    <label class="checkbox">
+                                                                        <input type="checkbox"
+                                                                               class="trail-checkbox"
+                                                                               name="trails[]" <?php foreach ($this->post->getTrails() as $selected_trail) {
+                                                                            if ($trail->getId() == $selected_trail['rtg_trail_id']) {
+                                                                                echo "checked";
+                                                                            }
+                                                                        } ?>
+                                                                               value="<?php echo $trail->getId(); ?>">
+                                                                        <i></i><?php echo $trail->getName()  ?>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        <?php }} ?>
+                                                </div>
+                                            </section>
+                                        </div>
+                                    </div>
+                                <?php } ?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

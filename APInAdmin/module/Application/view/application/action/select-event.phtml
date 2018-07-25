@@ -1,0 +1,68 @@
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span class="fa fa-close"></span>
+</button>
+
+<div class="col-sm-8 time_checkboxes">
+    <h4 class="timeHeading animated"><?php echo $this->translate("Select preferred time", __NAMESPACE__); ?></h4>
+    <input type="hidden" name="eventTime" id="eventTime" value="<?php echo $this->selectedDate; ?>"/>
+    <ul>
+        <input type="hidden" name="orderId" value="<?php echo $this->order->getId(); ?>"/>
+        <input type="hidden" name="price" value="<?php echo $this->price; ?>"/>
+        <?php $i = 0; ?>
+        <?php foreach ($this->eventsList as $event) : ?>
+            <?php
+            $date = $event['start'];
+            $date_without_timezone = substr($date, 0, strpos($date, '+'));
+            $time = date('g:i A', strtotime($date_without_timezone));
+            ?>
+            <li>
+                <input type="radio" name="eventId"
+                       data-time="<?php echo date('Y-m-d H:i:s', strtotime($date_without_timezone)); ?>"
+                       value="<?php echo $event['eventId']; ?>"
+                       id="<?php echo $event['eventId']; ?>" <?php echo ($i++ == 0 ? 'checked' : '')?>>
+                <label for="<?php echo $event['eventId']; ?>"><i class="fa fa-check-circle hidden"></i><?php echo $time; ?></label>
+            </li>
+        <?php endforeach; ?>
+    </ul>
+</div>
+<div class="col-sm-4 ticket-face">
+    <h4><?php echo $this->translate("sample", __NAMESPACE__); ?></h4>
+    <img src="../img/ticket.jpg" alt="" class="img-responsive"/>
+</div>
+<button id="paymentButton" type="button" class="col-sm-12 btn btn-primary btn-lg btn-block" onclick="pay()">
+    <?php echo $this->translate("Continue to payment", __NAMESPACE__); ?>
+</button>
+
+<div class="col-sm-12 price">
+    <div class="box">
+        <div class='info_wrapper'>
+            <h2 id="username"><?php echo $this->username; ?></h2>
+            <span id="email"><?php echo $this->email; ?></span>
+            <div class='info row-fluid'>
+                <div class='wp col-sm-3'>
+                    <?php echo $this->translate("Tickets", __NAMESPACE__); ?>
+                    <h3 id="tickets_quantity"><?php echo $this->count; ?></h3>
+                </div>
+                <div class='wp col-sm-3'>
+                    <?php echo $this->translate("Date", __NAMESPACE__); ?>
+                    <h3 id="date"><?php echo $this->date; ?></h3>
+                </div>
+                <div class='wp col-sm-3'>
+                    <?php echo $this->translate("Time", __NAMESPACE__); ?>
+                    <h3 id="time"><?php echo $this->time; ?></h3>
+                </div>
+                <div class='wp col-sm-3'>
+                    <?php echo $this->translate("Direction", __NAMESPACE__); ?>
+                    <h3 id="direction"><?php echo $this->direction; ?></h3>
+                </div>
+            </div>
+            <div class='total_wrapper'>
+                <h3>
+                    <?php echo $this->translate("Total", __NAMESPACE__); ?>:
+                    <span class="total"><?php echo $this->price; ?></span>
+                    <?php echo $this->translate("AMD", __NAMESPACE__); ?>
+                </h3>
+            </div>
+        </div>
+    </div>
+</div>

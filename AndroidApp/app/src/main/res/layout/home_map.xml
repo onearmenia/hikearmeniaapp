@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/map_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+
+    <com.mapbox.mapboxsdk.maps.MapView
+        android:id="@+id/mapview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        mapbox:style_url="@string/style_mapbox_streets" />
+    <!--<LinearLayout-->
+    <!--android:id="@+id/maps_trail_detail"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="bottom"-->
+    <!--android:orientation="vertical"-->
+    <!--android:visibility="gone">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/location_current_trail"-->
+    <!--android:layout_width="50dp"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:layout_marginLeft="5dp"-->
+    <!--android:onClick="locationTrailClick"-->
+    <!--android:src="@drawable/location_icon" />-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="90dp"-->
+    <!--android:layout_gravity="bottom"-->
+    <!--android:background="#45000000"-->
+    <!--android:onClick="trailLayoutClick">-->
+
+    <!--<com.hikearmenia.ui.widgets.TextView-->
+    <!--android:id="@+id/trail_name"-->
+    <!--style="@style/regular_font"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentLeft="true"-->
+    <!--android:layout_alignTop="@+id/weater_info"-->
+    <!--android:layout_marginLeft="15dp"-->
+    <!--android:ellipsize="end"-->
+    <!--android:gravity="bottom"-->
+    <!--android:maxLines="1"-->
+    <!--android:textAppearance="@style/TextAppearance.AppCompat.Body1"-->
+    <!--android:textColor="@android:color/white"-->
+    <!--android:textSize="@dimen/trail_name" />-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentLeft="true"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginTop="15dp"-->
+    <!--android:background="@android:color/transparent"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:paddingBottom="15dp">-->
+
+    <!--<com.hikearmenia.ui.widgets.TextView-->
+    <!--android:id="@+id/size"-->
+    <!--style="@style/regular_font"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="15dp"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:text="medium"-->
+    <!--android:textColor="@color/trail_difficulty"-->
+    <!--android:textSize="18sp" />-->
+
+    <!--<include-->
+    <!--layout="@layout/rating_bar"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:layout_toRightOf="@+id/size"-->
+    <!--android:gravity="center_vertical" />-->
+
+    <!--</RelativeLayout>-->
+    <!--</RelativeLayout>-->
+    <!--</LinearLayout>-->
+
+
+    <RelativeLayout
+        android:id="@+id/current_location"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:onClick="getCurrentLocationClick">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="5dp"
+            android:layout_toStartOf="@+id/current_location_text"
+            android:src="@drawable/location_icon" />
+
+        <TextView
+            android:id="@+id/current_location_text"
+            style="@style/thin_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Current Location"
+            android:textColor="@color/green_title_color"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

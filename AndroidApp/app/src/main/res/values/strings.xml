@@ -1,0 +1,166 @@
+<resources>
+
+    <!-- Login page texts -->
+    <string name="login_view_app_name">HIKEArmenia</string>
+    <string name="login_view_forgot_password_text">Forgot your password?</string>
+    <string name="login_view_sign_up_suggestion_text">New to HIKEArmenia? Sign up</string>
+    <string name="login_view_facebook_button_text">Connect with Facebook</string>
+    <string name="login_view_page_content_description">HIKEArmenia</string>
+    <string name="login_button_text">LOGIN</string>
+    <string name="change_password">Change Password</string>
+    <string name="please_fill_empty_fields">Please fill empty fields</string>
+    <string name="check_password_fields">Check password fields</string>
+    <string name="change_password_failed">Change Password Failed</string>
+    <string name="change_password_failed_message">wrong passwoard</string>
+    <string name="password_successfully_changed">Password successfully changed.</string>
+    <string name="could_not_login">Could’t login, please try again later</string>
+
+    <!-- Sign up page texts -->
+    <string name="sign_up_view_title">Sign up</string>
+    <string name="sign_up_button_text">SIGN UP</string>
+
+    <!-- Edit account page texts -->
+    <string name="edit_account_view_change_photo_text">Change \n Photo</string>
+    <string name="edit_account_view_change_password_text">Change password</string>
+    <string name="edit_account_view_save_button_text">Save</string>
+
+    <!-- Profile page texts -->
+    <string name="profile_view_name_surname">Name Surname</string>
+    <string name="profile_view_edit_account">Edit \n Account</string>
+    <string name="profile_view_disconnect_with_fb_button_text">Disconnect from \n Facebook</string>
+    <string name="profile_view_logout_button_text">LOGOUT</string>
+
+    <!-- Password recovery page texts -->
+    <string name="password_rec_title">Password Recovery</string>
+    <string name="password_rec_view_suggestion">Enter your email and we will send you the link to reset the password.</string>
+    <string name="password_rec_view_rec_button_text">RECOVER</string>
+
+    <!-- Authentication universal texts -->
+    <string name="hint_name">First Name</string>
+    <string name="hint_last_name">Last Name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_phone">Phone</string>
+    <string name="hint_repeat_email">Repeat your email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_confirm_password">Confirm your Password</string>
+    <string name="hint_phone_number">Phone number</string>
+
+    <!-- Left Slide fragment texts -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="trails">trails</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="my_profile">My profile</string>
+    <string name="find_local_guides">Find local guides</string>
+    <string name="offline_trails">Offline trails</string>
+    <string name="favorite_trails">Favorite trails</string>
+    <string name="about">About</string>
+    <string name="compass">Compass</string>
+
+    <string name="description">Description</string>
+    <string name="how_to_get_there">How to get there</string>
+
+    <string name="delete_photo">Delete Photo</string>
+    <string name="change_account_photo">Change Photo</string>
+    <string name="save_btn_text_edit_account">SAVE</string>
+    <string name="trail_distance" formating="false">/ \t %s \t / </string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+
+    <!--Local guides-->
+    <string name="local_guides">Local guides</string>
+    <string name="reviews_guides" formatted="false">(%d reviews)</string>
+    <string name="one_review_guides">(%d review)</string>
+    <string name="guide_info">Guide Info</string>
+    <string name="reviews">Reviews</string>
+
+    <!--buttom bar-->
+    <string name="find_guides">Find guides</string>
+    <string name="take_a_photo">Take a Photo</string>
+    <!--Guide reViews-->
+    <string name="reviews_count">Review %s</string>
+    <string name="add_another_guide_review">Add another guide review</string>
+    <string name="add_guide_review">Add guide review</string>
+    <string name="add_tip_review">Add trail tip</string>
+    <string name="write_a_review">WRITE A REVIEW</string>
+    <string name="write_a_trail_tip">WRITE A TRAIL TIP</string>
+    <string name="submit">SUBMIT</string>
+    <string name="doesnt_have_any_reviews">This guide doesn\'t have any reviews yet</string>
+    <string name="app_info">Our goal is to promote Armenia as a premier hiking destination with world class trails, unique homestay options, various cultural and historical sites, and knowledgable, trained guides.\n\nHIKEArmenia is committed to the general promotion of Armenia as a hiking and ecotourism destination for international visitors and locals alike, to allow them to discover the undiscovered nature and treasures which remain still unknown to most. Starting with our interactive website, housed in a modern resource center in the heart of downtown Yerevan, and an expanded mobile application, we are creating physical and digital resources that connect users to people and organizations in the regions of Armenia they hope to visit.</string>
+    <string name="about_one_armenia">The development of this application was made possible through a crowdfunding campaign spearheaded by ONEArmenia. ONEArmenia is a non-profit organization aiming at building a sustainable, thriving Armenia. We believe in lasting solutions, and implement projects focusing on agriculture, tech, tourism and made-in-Armenia products.You can find us online, on Facebook, Twitter &amp; Instagram</string>
+    <string name="one_armenia_contact">Lace up your hiking boots, and come explore Armenia with us!</string>
+    <string name="info2">if you have any questions, suggestions or issues please contact us at</string>
+    <string name="contact_email"><u>info@hikearmenia.org</u></string>
+    <string name="app_version">Version %s</string>
+    <string name="max_characters" formatted="false">%s characters left</string>
+
+    <string name="all_trails">All Trails</string>
+    <string name="saved_trails">Favorite Trails</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="usd_oer_night">USD \nPER NIGHT</string>
+
+
+    <!--facebook -->
+    <string name="facebook_app_id">1754297258160393</string>
+    <string name="empty_saved_trails">You don\'t have any favorite trails yet</string>
+    <string name="empty_offline_trails">You don\'t have any offline trails yet</string>
+    <string name="empty_review_text"> doesn\'t have any reviews yet</string>
+
+    <!--trailDetail-->
+    <string name="trail_tips">TRAIL TIPS</string>
+    <string name="send">Send</string>
+    <string name="things_to_see">Things to see</string>
+    <string name="information">Information</string>
+    <string name="add_trail_tip">Add another trail tip</string>
+    <string name="add_first_trail_tip">Be the first to give a tip</string>
+    <string name="see_more">See more...</string>
+    <string name="read_more">Read more...</string>
+
+    <!--Alert Dialog Messages-->
+    <string name="error_dialog">Error</string>
+    <string name="sucses">Success</string>
+    <string name="save_trail_networking_failed">Something went wrong. Please try again</string>
+    <string name="please_check_your_network_connectivity">Please check your network connectivity</string>
+    <string name="could_not_open_mail_service_title">Something went wrong. Please try again</string>
+    <string name="could_not_open_mail_service_message">Please Check your email configurations and try again</string>
+    <string name="warning">Warning</string>
+    <string name="not_compass">Unfortunately your device doesn\'t have magnetoment sensor. Please have in mind that compass will not work</string>
+    <string name="location_message">Your location services are turned off. Please turn on and try again</string>
+    <string name="review_screen_warning_message">Please fill review</string>
+    <string name="warning_please_fill_trail_tip">Please fill Trail tip</string>
+    <string name="review_posted_message">Review posted</string>
+    <string name="trail_tips_posted_message">Trail Tips posted</string>
+    <string name="could_not_send_email_title">Couldn\'t send email</string>
+    <string name="warning_send_email_appinfo_message">Your device couldn\'t send email. Check email configurations and try again.</string>
+    <string name="fill_empty_fields">Please fill empty fields</string>
+    <string name="invalid_email_title">Invalid email</string>
+    <string name="invalid_email_message">Please, provide a valid email address</string>
+    <string name="make_sure_passwords_match">Please, make sure passwords match</string>
+    <string name="signUp_failed"> SignUp Failed</string>
+    <string name="sign_up_please_try_again">Couldn\’t sign up, please try again later</string>
+    <string name="password_is_not_valid">Password is not valid</string>
+    <string name="check_your_email">Please check your email</string>
+    <string name="wrong_password">Wrong Password</string>
+    <string name="password_recovery_railed">Password Recovery Failed</string>
+    <string name="recover_password_please_try_again_later">Couldn\’t recover password, please try again later</string>
+    <string name="account_successfully_saved">Account successfully saved</string>
+    <string name="changes_successfully_saved">Changes successfully saved</string>
+    <string name="save_account_failed">Save Account Failed</string>
+    <string name="could_not_send_email">Couldn\'t send email</string>
+    <string name="could_not_send_email_message">Your device couldn\'t send email. Check email configurations and try again.</string>
+    <string name="login_failed">Login Failed</string>
+    <string name="login_with_facebook_failed">Login with facebook failed</string>
+    <string name="please_fill_email">Please fill email</string>
+    <string name="hike_armenia_fb_link">https://www.facebook.com/hikearmenia/</string>
+    <string name="hike_armenia_in_link">https://www.instagram.com/hike_armenia/</string>
+    <string name="hike_armenia_tw_link">https://twitter.com/HikeArmenia</string>
+    <string name="one_armenia_fb_link">https://www.facebook.com/onearmenia/</string>
+    <string name="one_armenia_in_link">https://www.instagram.com/onearmenia/</string>
+    <string name="one_armenia_tw_link">https://twitter.com/onearmenia</string>
+    <string name="old_pass">Old Password</string>
+    <string name="new_pass">New Password</string>
+    <string name="confirm_pass">Confirm Password</string>
+    <string name="save">Save</string>
+    <string name="accessToken">pk.eyJ1IjoiYXJhbXNhZmFyeWFuIiwiYSI6ImNpcnZnbHdpdDAwZXVoeGt3ZTA2ZTUxdWwifQ.MyzTzTlHfCNH7Ly_Ebos5w</string>
+    <string name="offline_popup_dialog_text">Please open the map once, so that you can then use this map offline</string>
+</resources>

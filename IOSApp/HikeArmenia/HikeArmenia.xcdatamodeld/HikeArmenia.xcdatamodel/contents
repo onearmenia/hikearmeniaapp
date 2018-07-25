@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11232" systemVersion="15G1004" minimumToolsVersion="Xcode 7.3" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="AccomodationMO" representedClassName="AccomodationMO" syncable="YES">
+        <attribute name="cover" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="facilities" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="index" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="AccomodationsMO" representedClassName="AccomodationsMO" syncable="YES">
+        <attribute name="accomodationsArray" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <relationship name="trail" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TrailMO" inverseName="accomodations" inverseEntity="TrailMO" syncable="YES"/>
+    </entity>
+    <entity name="GuideMO" representedClassName="GuideMO" syncable="YES">
+        <attribute name="averageRating" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="index" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="lastname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="photo" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="reviewCount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+    </entity>
+    <entity name="GuidesMO" representedClassName="GuidesMO" syncable="YES">
+        <attribute name="guidesArray" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <relationship name="trail" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TrailMO" inverseName="guides" inverseEntity="TrailMO" syncable="YES"/>
+    </entity>
+    <entity name="LocationCoordinateMO" representedClassName="LocationCoordinateMO" syncable="YES">
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="trailEnd" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TrailMO" inverseName="endLocation" inverseEntity="TrailMO" syncable="YES"/>
+        <relationship name="trailStart" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TrailMO" inverseName="startLocation" inverseEntity="TrailMO" syncable="YES"/>
+    </entity>
+    <entity name="TrailMO" representedClassName="TrailMO" syncable="YES">
+        <attribute name="averageRating" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="cover" optional="YES" attributeType="String" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="covers" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="difficultly" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="distance" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="duraion" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="guideCount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="higherPoint" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="index" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="info" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isSaved" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="lowerPoint" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="mapImage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="reviewCount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="temperature" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="thinksToDo" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="accomodations" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AccomodationsMO" inverseName="trail" inverseEntity="AccomodationsMO" syncable="YES"/>
+        <relationship name="endLocation" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LocationCoordinateMO" inverseName="trailEnd" inverseEntity="LocationCoordinateMO" syncable="YES"/>
+        <relationship name="guides" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GuidesMO" inverseName="trail" inverseEntity="GuidesMO" syncable="YES"/>
+        <relationship name="reviews" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TrailReviewsMO" inverseName="trail" inverseEntity="TrailReviewsMO" syncable="YES"/>
+        <relationship name="route" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TrailRouteMO" inverseName="trail" inverseEntity="TrailRouteMO" syncable="YES"/>
+        <relationship name="startLocation" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LocationCoordinateMO" inverseName="trailStart" inverseEntity="LocationCoordinateMO" syncable="YES"/>
+        <relationship name="weather" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="WeatherMO" inverseName="trail" inverseEntity="WeatherMO" syncable="YES"/>
+    </entity>
+    <entity name="TrailReviewMO" representedClassName="TrailReviewMO" syncable="YES">
+        <attribute name="avatar" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="index" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="lastname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rating" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="reviewText" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+    </entity>
+    <entity name="TrailReviewsMO" representedClassName="TrailReviewsMO" syncable="YES">
+        <attribute name="reviewsArray" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <relationship name="trail" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TrailMO" inverseName="reviews" inverseEntity="TrailMO" syncable="YES"/>
+    </entity>
+    <entity name="TrailRouteMO" representedClassName="TrailRouteMO" syncable="YES">
+        <attribute name="routeArray" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <relationship name="trail" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TrailMO" inverseName="route" inverseEntity="TrailMO" syncable="YES"/>
+    </entity>
+    <entity name="UserRouteMO" representedClassName="UserRouteMO" syncable="YES">
+        <attribute name="isSaved" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="route" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="token" optional="YES" attributeType="String" defaultValueString="0" syncable="YES"/>
+        <attribute name="trailId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+    </entity>
+    <entity name="WeatherMO" representedClassName="WeatherMO" syncable="YES">
+        <attribute name="temperature" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="weatherIcon" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="trail" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TrailMO" inverseName="weather" inverseEntity="TrailMO" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="AccomodationMO" positionX="-45" positionY="126" width="128" height="180"/>
+        <element name="AccomodationsMO" positionX="-36" positionY="135" width="128" height="75"/>
+        <element name="GuideMO" positionX="-54" positionY="-9" width="128" height="150"/>
+        <element name="GuidesMO" positionX="-36" positionY="144" width="128" height="75"/>
+        <element name="LocationCoordinateMO" positionX="-18" positionY="144" width="128" height="105"/>
+        <element name="TrailMO" positionX="-63" positionY="-18" width="128" height="405"/>
+        <element name="TrailReviewMO" positionX="-27" positionY="153" width="128" height="150"/>
+        <element name="TrailReviewsMO" positionX="-18" positionY="162" width="128" height="75"/>
+        <element name="TrailRouteMO" positionX="-27" positionY="135" width="128" height="75"/>
+        <element name="UserRouteMO" positionX="-27" positionY="135" width="128" height="105"/>
+        <element name="WeatherMO" positionX="0" positionY="171" width="128" height="90"/>
+    </elements>
+</model>

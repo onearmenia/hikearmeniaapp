@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/nature_blur"
+        android:scaleType="centerCrop" />
+
+    <include layout="@layout/toolbar_view" />
+
+    <ScrollView
+        android:id="@+id/sign_up_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/custom_toolbar"
+        android:layout_gravity="center_horizontal"
+        android:fitsSystemWindows="true"
+        android:focusableInTouchMode="true">
+
+        <LinearLayout
+            android:id="@+id/sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <com.hikearmenia.ui.widgets.EditText
+                android:id="@+id/sign_up_view_user_name"
+                style="@style/thin_font"
+                android:layout_width="@dimen/auth_box_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/edittext_modified_states"
+                android:hint="@string/hint_name"
+                android:inputType="textCapSentences"
+                android:textSize="@dimen/auth_uni_hint_text_size" />
+
+            <com.hikearmenia.ui.widgets.EditText
+                android:id="@+id/sign_up_view_surname"
+                style="@style/thin_font"
+                android:layout_width="@dimen/auth_box_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/edittext_modified_states"
+                android:hint="@string/hint_last_name"
+                android:inputType="textPersonName"
+                android:textSize="@dimen/auth_uni_hint_text_size" />
+
+
+            <com.hikearmenia.ui.widgets.EditText
+                android:id="@+id/sign_up_email"
+                style="@style/thin_font"
+                android:layout_width="@dimen/auth_box_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/edittext_modified_states"
+                android:hint="@string/hint_email"
+                android:inputType="textEmailAddress"
+                android:textSize="@dimen/auth_uni_hint_text_size" />
+
+            <com.hikearmenia.ui.widgets.EditText
+                android:id="@+id/sign_up_password"
+                style="@style/thin_font"
+                android:layout_width="@dimen/auth_box_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/edittext_modified_states"
+                android:hint="@string/hint_password"
+                android:inputType="textPassword"
+                android:textSize="@dimen/auth_uni_hint_text_size" />
+
+            <com.hikearmenia.ui.widgets.EditText
+                android:id="@+id/sign_up_password_confirm"
+                style="@style/thin_font"
+                android:layout_width="@dimen/auth_box_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/edittext_modified_states"
+                android:hint="@string/hint_confirm_password"
+                android:inputType="textPassword"
+                android:textSize="@dimen/auth_uni_hint_text_size" />
+
+
+            <com.hikearmenia.ui.widgets.Button
+                android:id="@+id/sign_up_button"
+                style="@style/light_font"
+                android:layout_width="@dimen/auth_box_width"
+                android:layout_height="@dimen/auth_buttons_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/sign_up_button_top_margin"
+                android:background="@drawable/green_button"
+                android:cropToPadding="true"
+                android:text="@string/sign_up_button_text"
+                android:textSize="@dimen/auth_uni_text_size_large" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,442 @@
+.imageBox img {width: 100%;}
+.imageBox {
+    margin-bottom: 10px;
+    border: 1px solid #DDD;
+    padding: 10px;
+    border-radius: 5px;}
+
+.imageBox:hover {background-color: #EDEDED;}
+
+/*~~~~~~~~~~~~floating save button styles~~~~~~~~~~~~`*/
+.floating_submit_wrapper{
+    position: fixed;
+    top: 0;
+    z-index: 905;
+    width: 18%;
+    /* left: 0; */
+    right: 31px;
+    /* bottom: 0; */
+    text-align: left;
+}
+
+.floating_submit{
+    box-shadow: 0 0 44px -10px rgba(0, 0, 0, 0.51);
+    width: 100%;
+    }
+
+@media (max-width: 1200px){
+    .floating_submit_wrapper{
+        width: 74%;
+        right: 42px;
+    }
+}
+
+@media (max-width: 1000px){
+    .floating_submit_wrapper{
+        width: 90%;
+    }
+}
+
+@media (max-width: 800px){
+    .floating_submit_wrapper{
+        width: 94%;
+    }
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`*/
+
+.template-image{
+    max-width: 100%;
+    max-height: 500px;
+}
+
+.button_container{
+    padding: 5px 0;
+}
+
+.button_container button{
+    margin: 5px 0 0 0;
+}
+.yellow-star{
+    color:#ffc000;
+}
+
+.template-box{
+    margin-bottom: 14px;
+}
+
+.imagesStack{
+    padding-bottom: 20px;
+}
+
+.gallery-item{
+    margin: 25px 0;
+}
+
+.room_item .room_select{
+    width: 173px;
+    display: inline-block;
+}
+
+.room_item .remove_button, .room_item .add_button{
+    margin: -2px 0 0 10px;
+}
+
+#logo-group h3{
+    position: relative;
+    padding-left: 55px;
+    padding-bottom: 12px;
+    padding-top: 10px;
+    top: -20px;
+    vertical-align: middle;
+    /*background-image: url('/images/logo1.jpg');
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: contain;*/
+}
+
+.nav>li>a,
+.jarviswidget header .nav-tabs>li.active>a{
+    -webkit-transition: 300ms all ease;
+    -moz-transition: 300ms all ease;
+    transition: 300ms all ease;
+}
+
+.jarviswidget header .nav-tabs>li.active>a,
+.jarviswidget header .nav-tabs>li.active>a:focus,
+.jarviswidget header .nav-tabs>li.active>a:hover {
+    font-weight: 400;
+    box-shadow: 0 -7px 20px -10px #000;
+    border: none;
+    top: 1px;
+}
+
+.jarviswidget-color-blueDark .nav-tabs li:not(.active) a {
+    background-color: rgba(87,136,156,0.60);
+    top: 2px;
+}
+
+.nav>li>a:focus,
+.nav>li>a:hover {
+    background-color: rgba(238,238,238,0.5);
+}
+
+.jarviswidget header:first-child .nav-tabs {
+    margin-right: 2px;
+}
+
+.imagesStack.gallery .smart-form .btn{
+    display: block;
+    top: 0;
+    background: rgba(0, 0, 0, 0);
+    color: #4C4F53;
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    left: 0;
+    width: 45px;
+    box-shadow: none;
+}
+
+.imagesStack.gallery .imageBox img {
+    height: 210px;
+    width: 210px;
+    margin: 0 auto;
+    position: relative;
+    display: block;
+}
+
+.imagesStack .gallery-item {
+    width: auto;
+    margin-left: 3%;
+}
+
+.imagesStack.gallery .smart-form section {
+    position: absolute;
+    top: -29px;
+    right: -20px;
+}
+
+
+.btn-primary_gallery{
+    color: #fff;
+    background-color: #3276b1;
+    border-color: #2c699d;
+    display: inline-block;
+    margin-left: 810px;
+}
+
+.calendarFilter .smart-form section {
+    width: 280px;
+}
+
+.calendarFilter .filter-item{
+    float: left;
+}
+
+.photo-grid{
+    height: 200px;
+    width: 200px;
+    float: left;
+    margin: 5px;
+    overflow: hidden;
+}
+
+.imageBox.over {
+    border: 2px dashed #000;
+}
+
+.imageBox .description_label {
+    position: relative;
+    bottom: 90px;
+    right: -4px;
+    color: #000;
+    background-color: #A6A6A6;
+    padding: 4px 8px;
+    box-shadow: 0 -1px 15px -4px #000;
+    border-radius: 0 3px 3px 0;
+    float: right;
+    text-align: right;
+    clear: both;
+}
+
+.image_upload_thumb_section {
+    padding-bottom: 10px;
+}
+
+table.tasks tr.fail{
+    background-color: #faa;
+}
+table.dataTable{
+    margin-top: 0px !important;
+}
+.minified #left-panel #puzzlePreview{
+    display:none!important;
+}
+.imageBox img{
+    height:160px;
+}
+.imageBox {
+    margin-bottom:10px;
+}
+.guide__review{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 60px;
+    display: block;
+}
+span.notification{
+    position: absolute;
+    height: 15px;
+    background-color: #d0021b;
+    top: 5px;
+    z-index: 5;
+    left: 97px;
+    border-radius: 10px;
+    font-size: 11px;
+    padding: 4px;
+    padding-top: 0px;
+    color: white;
+}
+span.notification.trail {
+    left:127px
+}
+span.notification.guide{
+left:140px;
+}
+
+
+
+.dataTables_filter input{
+    display: inline-block;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    min-width: 200px;
+    /* width: 100%; */
+    height: 30px;
+    padding: 0 10px;
+    outline: 0;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 0;
+    border-color: #bfbfbf;
+    background: #fff;
+    color: #404040;
+    appearance: normal;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    margin-top: 10px;
+    line-height: normal;
+}
+
+.dataTables_filter input{
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.dataTables_filter {
+    padding-right: 5px;
+}
+.dataTables_info{
+    padding-left:10px;
+}
+.dataTables_paginate {
+    padding-bottom:5px;
+}
+.btn-success {
+    background-color: #284c00;
+    border: none;
+}
+
+
+.jarviswidget-color-blueDark>header{
+    border-color: #7aa000!important;
+    background: #7aa000;
+}
+aside{
+    background: linear-gradient(to right,#7aa000 93%,#7aa000 100%);
+}
+.page-footer{
+    background: #cadca8;
+    border-top:0px;
+
+}
+.txt-color-white{
+    color :#284c00!important;
+}
+.btn-info{
+    background-color: #ffa200;
+    border-color: #ffa200;
+}
+.btn-info:hover{
+    background-color: #ffa200;
+    border-color: #ffa200;
+}
+.btn-info:active{
+    background-color: #ffa200;
+    border-color: #ffa200;
+}
+.btn-info:focus{
+    background-color: #ffa200;
+    border-color: #ffa200;
+}
+.btn-danger{
+    background-color: #d0021b;
+    border-color: #d0021b;
+}
+.label-success{
+    background-color:#7aa000;
+}
+a{
+    color: #284c00;
+}
+a:focus, a:hover{
+    color: #284c00;
+}
+nav ul li a{
+    color: white;
+}
+nav ul li.active a{
+    color: #CADDA6!important;
+}
+.smart-form .button {
+    background-color: #284c00;
+
+}
+#logo img {
+    width: 40px;
+    height: auto;
+    padding-left: 3px;
+    margin-top: 3px;
+    margin-left: 4px;
+}
+.btn-primary{
+    background-color: #284c00;
+    border-color: #284c00;
+}
+.btn-primary:active{
+    background-color: #284c00;
+    border-color: #284c00;
+}
+.btn-primary:focus{
+    background-color: #284c00;
+    border-color: #284c00;
+}
+.btn-primary:hover{
+    background-color: #284c00;
+    border-color: #284c00;
+}
+
+.table-hover>tbody>tr:hover{
+    background-color: #dfdfdf;
+    cursor: pointer;
+}
+.smart-form section  label.label{
+    font-weight:bold;
+}
+.smart-form .checkbox{
+    font-size:18px;
+    margin-bottom: 20px;
+}
+.smart-form .checkbox:last-child, .smart-form .radio:last-child{
+    margin-bottom: 20px;
+}
+.smart-form .checkbox i{
+    width: 20px;
+    height: 20px;
+}
+
+.smart-form .checkbox:last-child{
+    padding-left: 35px;
+}
+.modal-header{
+    background-color: #7aa000   ;
+}
+.smart-form .checkbox input+i:after{
+    color: #7aa000;
+    font-size: 18px!important;
+    line-height: 22px!important;
+    width: 18px;
+}
+.modal-title{
+    color: white;
+}
+.smart-form .checkbox input:checked+i{
+    border-color: #7aa000;;
+}
+.smart-form .checkbox input:focus+i{
+    border-color: #cadda6;;
+}
+.smart-form .checkbox i{
+    border-color: #cadda6;
+}
+.smart-form .checkbox input:hover+i{
+    border-color: #7aa000;;
+}
+.modal-title{
+    font-size: 20px;
+}
+.modal-header .close{
+    color:white;
+}
+.close{
+    opacity:0.8;
+}
+.smart-form section {
+    margin-bottom: 15px;
+    position: static;
+}
+.truncate{
+    width: 63%;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.rating{
+    max-width:250px;
+}
+.minified .menu-item-parent span.notification {
+    line-height: 14px;
+}

@@ -1,0 +1,26 @@
+<div class="row">
+    <div class="col-md-12 smart-form">
+        <section>
+            <?php echo $this->order->getFirstName(); ?> <?php echo $this->order->getLastName(); ?>
+        </section>
+        <section>
+            <?php echo $this->order->getStartTime(true); ?> - <?php echo $this->order->getFinishTime(true); ?>
+        </section>
+        <section>
+            <label> Phone: </label>
+            <?php echo $this->order->getUserPhone(); ?>
+        </section>
+        <section>
+            <label> Email: </label>
+            <?php echo $this->order->getUserEmail(); ?>
+        </section>
+        <section>
+            <label> Status: </label>
+            <?php echo $this->order->getStatus(); ?>
+        </section>
+        <section>
+            <label> Details: </label>
+            <?php echo $this->order->getDetails(); ?>
+        </section>
+    </div>
+</div>

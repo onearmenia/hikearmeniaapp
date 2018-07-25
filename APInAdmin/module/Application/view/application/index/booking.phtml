@@ -1,0 +1,231 @@
+<main id="main">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1">
+                <h2 class="page-title">booking</h2>
+
+                <div class="row">
+                    <div class="col-sm-8">
+                        <article class="entry">
+                            <form class="booking ajaxform" id="bookingForm" method="post" action="/<?php echo $this->language; ?>/action/booking">
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input type="text" name="name" id="name" placeholder="<?php echo $this->translate("your name", __NAMESPACE__); ?> *" required>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <input type="text" name="surname" id="surname" placeholder="<?php echo $this->translate("your surname", __NAMESPACE__); ?> *" required>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input type="email" name="email" id="email" placeholder="<?php echo $this->translate("your email", __NAMESPACE__); ?> *" required>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <input type="text" name="phone" id="phone" placeholder="<?php echo $this->translate("your phone", __NAMESPACE__); ?> ">
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input type="text" name="arrive" id="arrive" class="datepicker" placeholder="<?php echo $this->translate("arrival", __NAMESPACE__); ?> *" required value="<?php echo isset($_REQUEST['arrive']) ? $_REQUEST['arrive'] : ""; ?>">
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <input type="text" name="depart" id="depart" class="datepicker" placeholder="<?php echo $this->translate("departure", __NAMESPACE__); ?> *" required value="<?php echo isset($_REQUEST['depart']) ? $_REQUEST['depart'] : ""; ?>">
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <select name="adults" id="adults" class="dk" required>
+                                            <option selected disabled value=""><?php echo $this->translate("adults", __NAMESPACE__); ?> *</option>
+                                            <option <?php echo isset($_REQUEST['adults']) && $_REQUEST['adults']==1 ? "selected" : ""; ?> value="1">1</option>
+                                            <option <?php echo isset($_REQUEST['adults']) && $_REQUEST['adults']==2 ? "selected" : ""; ?> value="2">2</option>
+                                            <option <?php echo isset($_REQUEST['adults']) && $_REQUEST['adults']==3 ? "selected" : ""; ?> value="3">3</option>
+                                            <option <?php echo isset($_REQUEST['adults']) && $_REQUEST['adults']==4 ? "selected" : ""; ?> value="4">4</option>
+                                            <option value="5+">5+</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <select name="children" id="children" class="dk">
+                                            <option selected disabled value=""><?php echo $this->translate("children", __NAMESPACE__); ?></option>
+                                            <option <?php echo isset($_REQUEST['children']) && $_REQUEST['children']==1 ? "selected" : ""; ?> value="1">1</option>
+                                            <option <?php echo isset($_REQUEST['children']) && $_REQUEST['children']==2 ? "selected" : ""; ?> value="2">2</option>
+                                            <option <?php echo isset($_REQUEST['children']) && $_REQUEST['children']==3 ? "selected" : ""; ?> value="3">3</option>
+                                            <option <?php echo isset($_REQUEST['children']) && $_REQUEST['children']==4 ? "selected" : ""; ?> value="4">4</option>
+                                            <option value="5+">5+</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <select name="room" id="room" class="dk">
+                                            <option selected disabled value="0"><?php echo $this->translate("room", __NAMESPACE__); ?></option>
+                                            <?php foreach ($this->roomTypes as $type) {?>
+                                                <option value="<?php echo $type['rt_id']; ?>" <?php echo isset($_REQUEST['room_select']) && $_REQUEST['room_select']==$type['rt_id'] ? "selected" : ""; ?>>
+                                                    <?php echo $type['rt_title']; ?>
+                                                </option>
+                                            <?php } ?>
+                                        </select>
+
+                                        <textarea name="comments" id="ci_comments" cols="30" rows="10" placeholder="<?php echo $this->translate("comments", __NAMESPACE__); ?>"></textarea>
+
+                                        <input type="text" name="trap_for_robots" class="trap_for_robots" value="" style="display: none;" />
+                                        <button type="submit"><?php echo $this->translate("submit", __NAMESPACE__); ?></button>
+                                    </div>
+                                </div>
+                            </form>
+                            <div id="bookingSuccessMessage" class="hidden">
+                                <span class="sendIcon fa fa-paper-plane-o"></span>
+                                <span class="messageText"><?php echo $this->translate("booking_success_message", __NAMESPACE__); ?></span>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="sidebar">
+
+                            <div class="widget widget_ci_special_offer_widget">
+                                <h3 class="widget-title"><?php echo $this->translate("Special offer", __NAMESPACE__); ?></h3>
+                                <div class="item">
+                                    <figure class="item-thumb">
+                                        <a href="/<?php echo $this->language; ?>/hotel/booking">
+                                            <img src="/images/wedding.jpg" width="750" height="930" alt="Placeholder Image">
+                                        </a>
+                                    </figure>
+
+                                    <div class="item-content">
+                                        <h4>Our wedding suite. 50% off. May 5th.</h4>
+                                        <a class="item-title btn" href="/<?php echo $this->language; ?>/hotel/booking"><?php echo $this->translate("book now", __NAMESPACE__); ?>.</a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <aside class="widget widget_ci_social_widget ci-socials group">
+                                <h3 class="widget-title">Social</h3>
+                                <a href="#" class="social-icon" title="Subscribe to our RSS feed.">
+                                    <i class="fa fa-rss"></i>
+                                </a>
+                                <a href="http://www.twitter.com/cssigniter" class="social-icon" title="Follow us on twitter.">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                                <a href="http://www.facebook.com/cssigniter" class="social-icon" title="Like us on Facebook.">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                                <a href="http://www.dribbble.com/tsiger" class="social-icon" title="See our Dribbble shots.">
+                                    <i class="fa fa-dribbble"></i>
+                                </a>
+                            </aside>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+
+                        <div id="comments">
+                            <?php if (!empty($this->reviews)) { ?>
+                                <div class="post-comments">
+                                    <h3>
+                                        <span><?php echo $this->translate("Customer reviews", __NAMESPACE__); ?></span>
+                                    </h3>
+
+                                    <ol id="comment-list">
+                                        <?php foreach ($this->reviews as $review) { ?>
+                                            <li class="comment ">
+                                                <div class="comment-text group">
+                                                    <div class="wrap">
+                                                        <img alt="" src="/images/user.png" class="avatar" height="50" width="50">
+                                                        <div class="comment-copy">
+                                                            <p class="comment-meta">
+                                                                <a href="" class="url"><?php echo $review->getName();?></a> <?php echo $review->getCreatedAt("d-m-Y H:i");?></a>
+                                                            </p>
+                                                            <p><?php echo $review->getDescription();?></p>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </li>
+                                        <?php } ?>
+
+
+                                        <!--<li class="comment ">
+                                            <div class="comment-text group">
+                                                <div class="wrap">
+                                                    <img alt="" src="http://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=50" class="avatar" height="50" width="50">
+                                                    <div class="comment-copy">
+                                                        <p class="comment-meta">
+                                                            <a href="" class="url">John Doe</a> October 30, 2013 3:45 am
+                                                        </p>
+                                                        <p>
+                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A corporis debitis dicta doloribus ea fuga iste labore natus neque officia perferendis perspiciatis quas quis rem sapiente, ullam velit veritatis vitae.
+                                                        </p>
+                                                        <a class="comment-reply-link" href=""><?php echo $this->translate("Reply", __NAMESPACE__); ?></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>-->
+                                        <!-- #comment-## -->
+                                    </ol>
+
+                                </div>
+                                <!-- .post-comments -->
+
+                            <?php } ?>
+
+
+                            <section id="respond">
+                                <div id="form-wrapper" class="group">
+                                    <div class="post-form">
+                                        <h3 id="reply-title" class="comments">
+                                            <span><?php echo $this->translate("Have your say", __NAMESPACE__); ?></span>
+                                        </h3>
+                                        <div class="wrap">
+                                            <form action="/<?php echo $this->language; ?>/action/review" method="post" id="commentform">
+                                                <input type="hidden" name="lang" value="<?php echo $this->language; ?>"/>
+                                                <p>
+                                                    <label for="author"><?php echo $this->translate("Name", __NAMESPACE__); ?>:
+                                                        <span class="required">*</span>
+                                                    </label>
+                                                    <input type="text" class="input-text" id="author" name="author" value="" aria-required="true" required>
+                                                </p>
+                                                <p>
+                                                    <label for="review_email"><?php echo $this->translate("Email", __NAMESPACE__); ?>:
+                                                        <span class="required">*</span>
+                                                    </label>
+                                                    <input type="email" class="input-text" id="review_email" name="email" value="" aria-required="true" required>
+                                                </p>
+                                                <p>
+                                                    <label for="url"><?php echo $this->translate("Website", __NAMESPACE__); ?>:</label>
+                                                    <input type="url" class="input-text" id="url" name="url" value="">
+                                                </p>
+                                                <p>
+                                                    <label for="comment"><?php echo $this->translate("Comment", __NAMESPACE__); ?>:</label>
+                                                    <textarea cols="5" rows="5" id="comment" name="comment" aria-required="true"></textarea>
+                                                </p>
+                                                <p>
+                                                    <input type="submit" class="button" name="submit" id="submit" value="<?php echo $this->translate("submit", __NAMESPACE__); ?>">
+                                                </p>
+                                                <input type="text" name="trap_for_robots" class="trap_for_robots" value="" style="display: none;" />
+                                            </form>
+                                            <div id="reviewSuccessMessage" class="hidden">
+                                                <span class="sendIcon fa fa-paper-plane-o"></span>
+                                                <span class="messageText"><?php echo $this->translate("review_success_message", __NAMESPACE__); ?></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- #form-wrapper -->
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

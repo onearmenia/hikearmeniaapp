@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="trail_difficulty">16sp</dimen>
+    <dimen name="activity_title">24sp</dimen>
+    <dimen name="auth_uni_hint_text_size">20sp</dimen>
+    <dimen name="auth_uni_text_size_large">20sp</dimen>
+    <dimen name="auth_uni_text_size_small">16sp</dimen>
+    <dimen name="pass_rec_text">20sp</dimen>
+    <dimen name="trail_name">26sp</dimen>
+    <dimen name="trail_info">16sp</dimen>
+    <dimen name="heart_trails_width">40dp</dimen>
+    <dimen name="heart_trails_height">40dp</dimen>
+    <dimen name="item_footer_content_height">40dp</dimen>
+    <dimen name="reting_bar_top_margin">8dp</dimen>
+    <dimen name="trail_info_margin_bottom">45dp</dimen>
+    <dimen name="trail_name_margin_bottom">80dp</dimen>
+    <dimen name="heart_trails_margin">25dp</dimen>
+
+
+</resources>

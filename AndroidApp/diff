@@ -1,0 +1,244 @@
+diff --git a/HikeArmenia/app/src/main/.DS_Store b/HikeArmenia/app/src/main/.DS_Store
+index 1870410..13c69b3 100644
+Binary files a/HikeArmenia/app/src/main/.DS_Store and b/HikeArmenia/app/src/main/.DS_Store differ
+diff --git a/HikeArmenia/app/src/main/AndroidManifest.xml b/HikeArmenia/app/src/main/AndroidManifest.xml
+index 59c9b6a..80c3c98 100644
+--- a/HikeArmenia/app/src/main/AndroidManifest.xml
++++ b/HikeArmenia/app/src/main/AndroidManifest.xml
+@@ -40,7 +40,7 @@
+             android:value="com.hikearmenia.app.HikeArmeniaApp" />
+         <meta-data
+             android:name="com.google.android.geo.API_KEY"
+-            android:value="AIzaSyCWydStJ0arHFZgs5MrtUJf8h64xGGRr6o" />
++            android:value="AIzaSyD94f_ApKnHTzw8bP6unLMcX5jjqaGu6zA" />
+         <meta-data
+             android:name="com.facebook.sdk.ApplicationId"
+             android:value="@string/facebook_app_id" />
+diff --git a/HikeArmenia/app/src/main/java/com/hikearmenia/activities/GuideReviewActivity.java b/HikeArmenia/app/src/main/java/com/hikearmenia/activities/GuideReviewActivity.java
+index af79179..530f326 100644
+--- a/HikeArmenia/app/src/main/java/com/hikearmenia/activities/GuideReviewActivity.java
++++ b/HikeArmenia/app/src/main/java/com/hikearmenia/activities/GuideReviewActivity.java
+@@ -145,8 +145,8 @@ public class GuideReviewActivity extends BaseActivity implements NetworkRequestL
+             reviewCount.setText(String.format(getString(R.string.reviews_guides), guide.getReviewCount()));
+         }
+         guideName.setText(guide.getGuideFirstname() + " " + guide.getGuideLastName());
+-//        ImageLoader loader = new ImageLoader(this, R.mipmap.profile_avatar);
+-//        loader.DisplayImage(guide.getGuideImage(),guideImage );
++        ImageLoader loader = new ImageLoader(this, R.mipmap.profile_avatar);
++        loader.DisplayImage(guide.getGuideImage(),guideImage );
+ 
+         Glide.with(this)
+                 .load(guide.getGuideImage())
+diff --git a/HikeArmenia/app/src/main/java/com/hikearmenia/activities/TrailDetailActivity.java b/HikeArmenia/app/src/main/java/com/hikearmenia/activities/TrailDetailActivity.java
+index 52db977..f9cca00 100644
+--- a/HikeArmenia/app/src/main/java/com/hikearmenia/activities/TrailDetailActivity.java
++++ b/HikeArmenia/app/src/main/java/com/hikearmenia/activities/TrailDetailActivity.java
+@@ -118,7 +118,7 @@ public class TrailDetailActivity extends BaseActivity implements
+         weaterInfo = (LinearLayout) findViewById(R.id.weater_info);
+         savedTrailsLayout = (LinearLayout) findViewById(R.id.bottom_bar_saved_trails);
+         savedTrailsLayout.setOnClickListener(this);
+-        colapsContent = (LinearLayout) findViewById(R.id.colaps_content);
++        colapsContent = (LinearLayout) findViewById(R.id.collapse_content);
+         setAccomPagerHeight();
+         trailId = getIntent().getStringExtra("trail_id");
+         LocalGuideTitle = (TextView) findViewById(R.id.local_guides_title);
+@@ -246,6 +246,7 @@ public class TrailDetailActivity extends BaseActivity implements
+                 overridePendingTransition(R.anim.slide_left_enter, R.anim.slide_right_enter);
+             }
+         });
++
+         if (mAdapter.getItemCount() > 0) {
+             guidesRecyclerView.setAdapter(mAdapter);
+             guidesRecyclerView.setLayoutManager(mLayoutManager);
+diff --git a/HikeArmenia/app/src/main/java/com/hikearmenia/adapters/GuideReviewAdapter.java b/HikeArmenia/app/src/main/java/com/hikearmenia/adapters/GuideReviewAdapter.java
+index c4b64d7..d3c56ff 100644
+--- a/HikeArmenia/app/src/main/java/com/hikearmenia/adapters/GuideReviewAdapter.java
++++ b/HikeArmenia/app/src/main/java/com/hikearmenia/adapters/GuideReviewAdapter.java
+@@ -1,5 +1,6 @@
+ package com.hikearmenia.adapters;
+ 
++import android.graphics.Bitmap;
+ import android.net.Uri;
+ import android.support.v7.widget.CardView;
+ import android.support.v7.widget.RecyclerView;
+@@ -17,6 +18,8 @@ import com.hikearmenia.imageutils.ImageLoader;
+ import com.hikearmenia.models.api.Guide;
+ import com.hikearmenia.models.api.GuideReview;
+ import com.hikearmenia.ui.widgets.TextView;
++import com.nostra13.universalimageloader.core.DisplayImageOptions;
++import com.nostra13.universalimageloader.core.assist.ImageScaleType;
+ 
+ import java.util.ArrayList;
+ import java.util.List;
+@@ -80,7 +83,19 @@ public class GuideReviewAdapter extends RecyclerView.Adapter<GuideReviewAdapter.
+         GuideReview guideReview = guideReviewList.get(position);
+         holder.guideReviewText.setText(guideReview.getGrReview());
+         holder.userName.setText(guideReview.getUserFirstName() + " " + guideReview.getUserLastName());
+-        ImageLoader loader = new ImageLoader(mBaseActivity, false);
++        ImageLoader loader = new ImageLoader(mBaseActivity, R.mipmap.profile_avatar);
++
++//        DisplayImageOptions mOptions = new DisplayImageOptions.Builder()
++//                .cacheInMemory(true)
++//                .cacheOnDisk(true)
++//                .showImageForEmptyUri(R.mipmap.profile_avatar)
++//                .showImageOnLoading(R.mipmap.profile_avatar)
++//                .showImageOnFail(R.mipmap.profile_avatar)
++//                .imageScaleType(ImageScaleType.NONE)
++//                .bitmapConfig(Bitmap.Config.RGB_565)
++//                .build();
++
++
+         loader.DisplayImage(guideReview.getUserAvatar(), holder.userImg);
+ 
+ //        Glide.with(mBaseActivity)
+diff --git a/HikeArmenia/app/src/main/java/com/hikearmenia/ui/widgets/CustomScrollView.java b/HikeArmenia/app/src/main/java/com/hikearmenia/ui/widgets/CustomScrollView.java
+index 0b5d844..ace4a7c 100644
+--- a/HikeArmenia/app/src/main/java/com/hikearmenia/ui/widgets/CustomScrollView.java
++++ b/HikeArmenia/app/src/main/java/com/hikearmenia/ui/widgets/CustomScrollView.java
+@@ -43,29 +43,30 @@ public class CustomScrollView extends NestedScrollView {
+ 
+         } else if (t > oldt) {
+             temp--;
+-            if(temp<=-10){
++            if (temp <= -10) {
+                 baseActivity.getSupportActionBar().hide();
+                 showGreenImg = false;
+-                temp=0;
++                temp = 0;
+             }
+         } else {
+             if (t <= Util.getDisplayHeight(baseActivity) / 2.4) {
+                 baseActivity.getSupportActionBar().hide();
+                 showGreenImg = false;
+-
+             } else {
+                 temp++;
+-                if(temp>=10){
+-                    showGreenImg = true;
+-                    baseActivity.getSupportActionBar().show();
+-                    temp=0;
++                if (temp >= 10) {
++                    if (temp >= 50) {
++                        showGreenImg = true;
++                        baseActivity.getSupportActionBar().show();
++                        temp = 0;
++                    }
++
+                 }
+ 
+             }
+ 
+-        }
+-
+ 
++        }
+     }
+ 
+     public boolean showGreenImg(){
+diff --git a/HikeArmenia/app/src/main/res/layout/activity_trail_detail.xml b/HikeArmenia/app/src/main/res/layout/activity_trail_detail.xml
+index b6825ff..cc1f7ee 100644
+--- a/HikeArmenia/app/src/main/res/layout/activity_trail_detail.xml
++++ b/HikeArmenia/app/src/main/res/layout/activity_trail_detail.xml
+@@ -3,22 +3,20 @@
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_width="match_parent"
+-    android:layout_height="match_parent"
+-    tools:context=".Activities.Activities.S_LandingActivity">
+-
++    android:layout_height="match_parent">
+     <RelativeLayout
+-        android:id="@+id/content"
+         android:layout_width="match_parent"
++        android:id="@+id/content"
+         android:layout_height="match_parent">
+ 
+         <com.hikearmenia.ui.widgets.CustomScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/scroll"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+-            android:layout_marginBottom="@dimen/bottom_menu_bar_height"
+             android:clipToPadding="false"
+             android:fitsSystemWindows="true"
+             app:layout_behavior="com.evs.demo.layout.FixedScrollingViewBehavior"
++            android:layout_marginBottom="@dimen/bottom_menu_bar_height"
+             app:layout_scrollFlags="scroll|exitUntilCollapsed">
+ 
+             <LinearLayout
+@@ -29,8 +27,8 @@
+                 <RelativeLayout
+                     android:id="@+id/trail_detail_layout"
+                     android:layout_width="match_parent"
+-                    android:layout_height="270dp"
+-                    android:transitionName="tImage">
++                    android:transitionName="tImage"
++                    android:layout_height="270dp">
+ 
+                     <android.support.v4.view.ViewPager
+                         android:id="@+id/image_pager"
+@@ -43,13 +41,13 @@
+                         android:layout_height="match_parent">
+ 
+                         <LinearLayout
+-                            android:id="@+id/colaps_content"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:layout_alignParentBottom="true"
+                             android:layout_marginLeft="10dp"
+                             android:orientation="vertical"
+                             android:paddingLeft="5dp"
++                            android:id="@+id/collapse_content"
+                             android:paddingRight="5dp">
+ 
+                             <RelativeLayout
+@@ -97,7 +95,7 @@
+                                         android:layout_gravity="top"
+                                         android:layout_marginLeft="10dp"
+                                         android:layout_marginTop="5dp"
+-                                        android:text="25C"
++                                        android:text="25ºC"
+                                         android:textColor="@color/white"
+                                         android:textSize="25sp" />
+                                 </LinearLayout>
+diff --git a/HikeArmenia/app/src/main/res/layout/fragment_accomodation.xml b/HikeArmenia/app/src/main/res/layout/fragment_accomodation.xml
+index 46cda6d..15c6544 100644
+--- a/HikeArmenia/app/src/main/res/layout/fragment_accomodation.xml
++++ b/HikeArmenia/app/src/main/res/layout/fragment_accomodation.xml
+@@ -8,7 +8,7 @@
+         android:layout_width="match_parent"
+         android:layout_height="250dp"
+         android:layout_marginTop="20dp"
+-        android:background="@color/green_title_color"
++        android:background="@mipmap/placeholder"
+         android:scaleType="centerCrop" />
+ 
+ 
+diff --git a/HikeArmenia/app/src/main/res/layout/recycler_saved_trails_item.xml b/HikeArmenia/app/src/main/res/layout/recycler_saved_trails_item.xml
+index 73e6224..5933e65 100644
+--- a/HikeArmenia/app/src/main/res/layout/recycler_saved_trails_item.xml
++++ b/HikeArmenia/app/src/main/res/layout/recycler_saved_trails_item.xml
+@@ -42,6 +42,9 @@
+             android:layout_alignParentBottom="true"
+             android:layout_marginBottom="@dimen/trail_name_margin_bottom"
+             android:layout_marginLeft="@dimen/heart_trails_margin"
++            android:ems="8"
++            android:singleLine="true"
++            android:ellipsize="end"
+             android:text="Dilijan-Ijevan trail"
+             android:textColor="@android:color/white"
+             android:textSize="@dimen/trail_name" />
+diff --git a/HikeArmenia/app/src/main/res/values/dimens.xml b/HikeArmenia/app/src/main/res/values/dimens.xml
+index fbba133..f5366d0 100644
+--- a/HikeArmenia/app/src/main/res/values/dimens.xml
++++ b/HikeArmenia/app/src/main/res/values/dimens.xml
+@@ -10,8 +10,8 @@
+     <dimen name="auth_uni_text_size_large">17sp</dimen>
+     <dimen name="auth_uni_text_size_small">14sp</dimen>
+     <dimen name="pass_rec_text">18sp</dimen>
+-    <dimen name="trail_name">22sp</dimen>
+-    <dimen name="trail_name_detail">25sp</dimen>
++    <dimen name="trail_name">23sp</dimen>
++    <dimen name="trail_name_detail">21sp</dimen>
+     <dimen name="trail_info">12sp</dimen>
+     <dimen name="heart_trails_width">28dp</dimen>
+     <dimen name="heart_trails_height">28dp</dimen>

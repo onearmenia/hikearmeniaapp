@@ -1,0 +1,39 @@
+<main id="main">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1">
+                <h2 class="page-title"><?php echo $this->translate("galleries", __NAMESPACE__); ?></h2>
+
+                <div class="row">
+                    <?php foreach ($this->galleries as $gallery) { ?>
+                        <div class="col-sm-4">
+
+                            <div class="item">
+                                <figure class="item-thumb">
+                                    <a href="/<?php echo $this->layout()->language; ?>/<?php echo $gallery->getSlug(); ?>">
+                                        <?php if ($gallery->getImages()) { ?>
+                                            <?php foreach ($gallery->getImages() as $image) { ?>
+                                                <?php if ($image->isMaster()) {?>
+                                                    <img src='<?php echo $image->getPath(); ?>' width='750' height='930' alt='' />
+                                                <?php } ?>
+                                            <?php } ?>
+                                        <?php } ?>
+
+                                    </a>
+                                </figure>
+
+                                <div class="item-content">
+                                    <a class="item-title btn" href="/<?php echo $this->layout()->language; ?>/<?php echo $gallery->getSlug(); ?>">
+                                        <?php echo $gallery->getTitle($this->layout()->language); ?>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    <?php } ?>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

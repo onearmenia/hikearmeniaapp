@@ -1,0 +1,6 @@
+vendor/*
+public/media
+composer.lock
+*.idea
+*.local.php
+local.php

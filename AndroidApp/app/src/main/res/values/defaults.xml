@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="default_circle_indicator_centered">true</bool>
+    <bool name="default_circle_indicator_snap">false</bool>
+    <integer name="default_circle_indicator_orientation">0</integer>
+    <!--progress items-->
+    <color name="spb_default_color">#c5c4c9</color>
+    <dimen name="spb_default_stroke_separator_length">200dp</dimen>
+    <dimen name="spb_default_stroke_width">12dp</dimen>
+    <integer name="spb_default_sections_count">1</integer>
+    <integer name="spb_default_interpolator">10</integer>
+    <item name="spb_default_speed" format="float" type="string">2</item>
+    <bool name="spb_default_reversed">false</bool>
+    <bool name="spb_default_mirror_mode">false</bool>
+    <bool name="spb_default_progressiveStart_activated">false</bool>
+</resources>

@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize"
+    android:background="@android:color/white"
+    tools:context="com.hikearmenia.fragment.WriteReviewFragment">
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1.2dp"
+        android:background="@color/black_40_percent" />
+
+    <com.hikearmenia.ui.widgets.TextView
+        android:id="@+id/guide_reviews_tv"
+        style="@style/regular_font"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textColor="@color/toolbar_title_color"
+        android:textSize="21sp"
+        android:visibility="visible" />
+
+
+    <com.hikearmenia.ui.widgets.EditText
+        android:id="@+id/reviews_edit_text"
+        style="@style/regular_font"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/guide_reviews_tv"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_text_review_bottom_border"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:lineSpacingExtra="1.5sp"
+        android:lines="5"
+        android:maxLength="300"
+        android:padding="20dp"
+        android:scrollbars="vertical"
+        android:textColor="@android:color/black" />
+
+
+    <LinearLayout
+        android:id="@+id/reting_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reviews_edit_text"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <include layout="@layout/rating_bar" />
+
+    </LinearLayout>
+
+    <com.hikearmenia.ui.widgets.TextView
+        android:id="@+id/tap_to_rate"
+        style="@style/regular_font"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reting_bar"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:text="Tap to Rate"
+        android:textColor="@color/main_text_color"
+        android:textSize="12sp"
+        android:visibility="visible" />
+
+    <com.hikearmenia.ui.widgets.TextView
+        android:id="@+id/max_character"
+        style="@style/regular_font"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/reviews_edit_text"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:text="@string/max_characters"
+        android:textColor="@color/main_text_color"
+        android:textSize="14sp" />
+
+</RelativeLayout>

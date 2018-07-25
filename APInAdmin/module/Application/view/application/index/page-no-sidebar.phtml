@@ -1,0 +1,90 @@
+<?php
+$description = trim($this->page->getBody($this->layout()->language)) ? trim($this->page->getBody($this->layout()->language)) : "";
+?>
+
+<?php if ($this->page->getTopImagePath()){ ?>
+    <style>
+        #header {
+            background-image: url("<?php echo $this->page->getTopImagePath(); ?>");
+        }
+    </style>
+<?php }  ?>
+
+<main id="main">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1 full">
+                <h2 class="page-title"><?php echo $this->page->getTitle($this->layout()->language); ?></h2>
+
+                <div class="row">
+                    <div class="col-sm-4">
+
+                        <div class="item">
+                            <figure class="item-thumb">
+                                <a href="room.html">
+                                    <img src='http://placehold.it/750x930' width='750' height='930' alt='Placeholder Image' />
+                                </a>
+                            </figure>
+
+                            <div class="item-content">
+                                <a class="item-title btn" href="room.html">item title</a>
+                                <p class="item-sub">from &dollar;99 / night</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-4">
+
+                        <div class="item">
+                            <figure class="item-thumb">
+                                <a href="room.html">
+                                    <img src='http://placehold.it/750x930' width='750' height='930' alt='Placeholder Image' />
+                                </a>
+                            </figure>
+
+                            <div class="item-content">
+                                <a class="item-title btn" href="room.html">item title</a>
+                                <p class="item-sub">from &dollar;99 / night</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-4">
+
+                        <div class="item">
+                            <figure class="item-thumb">
+                                <a href="room.html">
+                                    <img src='http://placehold.it/750x930' width='750' height='930' alt='Placeholder Image' />
+                                </a>
+                            </figure>
+
+                            <div class="item-content">
+                                <a class="item-title btn" href="room.html">item title</a>
+                                <p class="item-sub">from &dollar;99 / night</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="inset-sidebar">
+
+                    <div class="widget widget_ci_testimonial_widget">
+                        <div class="testimonial-wrap">
+                            <div class="testimonial-inner">
+                                <blockquote>
+                                    <?php echo $description; ?>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</main>
+
+

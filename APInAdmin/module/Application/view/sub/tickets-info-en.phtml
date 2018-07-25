@@ -1,0 +1,679 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css"/>
+    <style>
+
+        /*          border="0"  - > border:none;            */
+        /*          border-collapse: collapse;              */
+        /*          cellpadding="1" -> padding: 1px;        */
+        /*         cellspacing="0" -> border-spacing: 0px;  */
+
+        html, body{
+            padding: 0;
+            margin: 0;
+            background-color: #273036;
+        }
+
+
+        #tda1{
+            color:#eeeeee;
+            text-decoration:none;
+        }
+
+        #td1{
+            width:10px;
+            height:10px;
+        }
+
+        #td2{
+            text-align: center;
+            background-color: #273036;
+            font-family:Arial,Helvetica,sans-serif;
+            font-size:11px;
+            color:#465167;
+        }
+
+        #td3{
+            width:10px;
+            height:17px;
+        }
+
+        #td4{
+            /*width: 20px;*/
+            height: 565px;
+        }
+
+        #td5{
+            width: 42px;
+        }
+
+        #td6{
+            width: 10px;
+            height: 10px;
+        }
+
+        #td7{
+            width: auto;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size:18px;
+            color:#555555;
+            font-weight:bold;
+        }
+
+        #td8{
+            width: 20%;
+        }
+
+        #td9{
+            /*width: 10px;*/
+            height: 15px;
+        }
+
+        #td10{
+            /*width: 10px;*/
+            height: 25px;
+        }
+
+        #td11{
+            /*width: 10px;*/
+            height: 25px;
+        }
+
+        #td12{
+            /*width: 550px;*/
+        }
+
+        #td13{
+            width: 10px;
+            height: 12px;
+        }
+
+        #td14{
+            /*width: 33.3%;*/
+            padding-right:10px;
+            font-family:Tahoma,Geneva,sans-serif;
+            font-size:13px;
+            color:#666666;
+            font-weight:bold;
+        }
+
+        #td15{
+            width: 33.3%;
+            padding-right:10px;
+            font-family:Tahoma,Geneva, sans-serif;
+            font-size:14px;
+            color:#666666;
+            font-weight:bold;
+            text-align: center;
+        }
+
+        #td16{
+            width: 33.3%;
+            font-family:Tahoma,Geneva,sans-serif;
+            font-size:13px;
+            color:#666666;
+            font-weight:bold;
+            text-align: right
+        }
+
+        #td16{
+            /*width: 10px;*/
+            height: 12px;
+        }
+
+        #td17{
+            /*width: 10px;*/
+            height: 20px;
+        }
+
+        #td18{
+            width: 33.3%;
+            padding-right:10px;
+            font-family:Tahoma,Geneva,sans-serif;
+            font-size:14px;
+            color:#747474;
+        }
+
+        #td19{
+            width: 33.3%;
+            padding-right:10px;
+            font-family:Tahoma,Geneva,sans-serif;
+            font-size:14px;
+            color:#747474;
+            text-align: center;
+        }
+
+        #td20{
+            width: 33.3%;
+            font-family:Tahoma,Geneva,sans-serif;
+            font-size:14px;
+            color:#747474;
+            text-align:right;
+        }
+
+        #td21{
+            /*width: 10px;*/
+            height: 20px;
+            border-bottom:1px solid #sfHoverdd;
+        }
+
+        #td22{
+            /*width: 10px;*/
+            height: 20px;
+        }
+
+        #td23{
+            width: 50%;
+            font-family:Tahoma,Geneva,sans-serif;
+            font-size:15px;
+            color:#555555;
+            font-weight:bold;
+            text-align: right;
+        }
+
+        #td24{
+            width: 50%;
+            font-family:Tahoma,Geneva,sans-serif;
+            font-size:15px;
+            color:#555555;
+            font-weight:bold;
+            text-align: center;
+        }
+
+        #td25{
+            width: 10px;
+            height: 20px;
+        }
+
+        #td26{
+            width: 50%;
+            font-family:Tahoma,Geneva,sans-serif;
+            font-size:15px;
+            color:#555555;
+            font-weight:bold;
+            text-align: right;
+        }
+
+        #td27{
+            /*width: 50%;*/
+            font-family:Tahoma,Geneva, sans-serif;
+            font-size:15px;
+            color:#555555;
+            font-weight:bold;
+            text-align: center;
+        }
+
+        #td28{
+            /*width: 10px;*/
+            height: 20px;
+        }
+
+        #td29{
+            /*width: 10px;*/
+            height: 20px;
+        }
+
+        #td30{
+            width: auto;
+            height: 40px;
+            font-family:Tahoma,Geneva,sans-serif;
+            font-size:22px;
+            color:#555555;
+            font-weight:normal;
+            text-align: center;
+        }
+
+        #td30 a {
+            border: 2px dashed #AAA;
+        }
+
+        #td31{
+            width: 10px;
+            height: 20px;
+        }
+
+        #td32{
+            /*width: 20px;*/
+            height: 565px;
+        }
+
+        #td33{
+            /*width: 100%;*/
+            height: 20px;
+        }
+
+        #td34{
+            /*width: 10px;*/
+            height: 10px;
+        }
+
+        #table0,
+        #table1{
+            background-color: #282e3a;
+            width: 100%;
+            border:none;
+            border-spacing: 0px;
+            padding: 1px;
+            margin: 0 auto;
+        }
+
+        #table1 {
+            max-width: 640px;
+            text-align: center;
+        }
+
+        #table2 {
+            width: 100%;
+            border:none;
+            border-spacing: 0px;
+            padding: 0;
+        }
+
+
+        #table3{width: 100%;}
+        #table4{
+            width: 93%;
+            text-align: center;
+            margin: 0 auto;
+            margin-left: 3%;
+        }
+
+        #table5{
+            width: 10px;
+            height: 15px;
+        }
+
+        #table8{
+            width: 100%;
+            border-top:#sfHoverdd solid 1px;
+            border-bottom:#sfHoverdd solid 1px;
+        }
+
+        #table6{
+            width: 100%;
+        }
+
+        #table7{
+            width: 90%;
+        }
+
+        #table9{
+            width: 90%;
+        }
+
+        #table10{
+            width: 90%;
+        }
+
+        #table11{
+            width: 90%;
+        }
+
+        #table12{
+            width: 100%;
+        }
+
+        #table13{
+            width: 90%;
+        }
+
+        #table14{
+            width: 100%;
+        }
+
+        #table15{
+            width: 100%;
+        }
+
+        #table16{
+            width: 100%;
+        }
+
+        #table17{
+            width: 100%;
+        }
+
+        #table18{
+            width: 100%;
+        }
+
+        @media (max-width:370px){
+            #td7 {
+                font-size: 14px;
+            }
+            #td8 img{
+                height: 40px;
+            }
+
+            #td23 {
+                width: 30%;
+            }
+
+            #td26 {
+                width: 30%;
+            }
+
+            #td27 {
+                width: 50%;
+            }
+
+            #td30 a {
+                border: none;
+                border-bottom: 1px dashed #AAA;
+            }
+
+        }
+
+
+    </style>
+</head>
+<body>
+<div>
+    <div>
+        <div>
+            <div dir="ltr">
+                <div>
+                    <div>
+                        <div>
+                            <table id="table0" >
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <table id="table1">
+                                            <tbody>
+                                            <tr>
+                                                <td id="td2" ></td>
+                                            </tr>
+                                            <?php if ($this->onlineTemplate) { ?>
+                                                <tr>
+                                                    <td id="td2" align="center" >
+                                                        <a id="tda1" href="<?php echo $this->onlineTemplate?>">Web version</a>
+                                                    </td>
+                                                </tr>
+                                            <?php } ?>
+                                            <tr>
+                                                <td id="td3" ></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <table id="table2" border="0" cellspacing="0" cellpadding="0">
+                                                        <tbody>
+                                                        <tr>
+                                                            <td id="td4" valign="top" ></td>
+                                                            <td valign="top" bgcolor="#FFFFFF">
+                                                                <table id="table3" border="0" cellspacing="0" cellpadding="0">
+                                                                    <tbody>
+                                                                    <tr>
+                                                                        <td bgcolor="#f8f8f8">
+                                                                            <table id="table4" border="0" align="center" cellpadding="0" cellspacing="0">
+                                                                                <tbody>
+                                                                                <tr>
+                                                                                    <td id="table5" ></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <table id="table6" border="0" align="center" cellpadding="0" cellspacing="0">
+                                                                                            <tbody>
+                                                                                            <tr>
+                                                                                                <td id="td5"><img style="display:block" border="0" src="https://ci5.googleusercontent.com/proxy/-09rSmttiWFA-svzD-IQuUKU4A0IjLwKdTzaUJxUIMQre_oDma54rR2_KXYTrXWnhUWVJmVAkLdQdlKk24jNV8zI8Xk74xa78GiGRxMk-sbp6ookInjSS4E=s0-d-e1-ft#http://tiqueteo-static-website.s3.amazonaws.com/mails/img/carro.jpg" width="42"  alt="Carro de compra" class="CToWUd"></td>
+                                                                                                <td id="td6" ></td>
+                                                                                                <td id="td7" align="left"><strong>Confirmation Purchase</strong></td>
+                                                                                                <td id="td8" align="center"><img style="display:block" border="0" src="http://www.tatever.am/img/Tatever_logo_en.png" height="50" alt="logo tatever roadway" title="Logo tatever roadway" class="CToWUd"></td>
+                                                                                            </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td id="td9" ></td>
+                                                                                </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td bgcolor="#FFFFFF">
+                                                                            <table id="table7" border="0" align="center" cellpadding="0" cellspacing="0">
+                                                                                <tbody>
+                                                                                <tr>
+                                                                                    <td id="td10"></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td align="left" style="font-family:Tahoma,Geneva,sans-serif;font-size:14px;color:#747474">
+                                                                                        <p style="margin:1em 0"><strong>Hello <span><?php echo $this->name; ?></span>,</strong></p>
+                                                                                        <p style="margin:1em 0">This mail is your purchase confirmation. Your reservation number is: <strong><?php echo $this->orderId; ?></strong>. </p>
+                                                                                        <?php if ($this->orderDetails && isset($this->orderDetails['cardnumber'])) {?>
+                                                                                            <p style="margin:1em 0">Credit card number: <?php echo $this->orderDetails['cardnumber'];?></p>
+                                                                                        <?php } ?>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td id="td11" ></td>
+                                                                                </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <table id="td12" border="0" align="center" cellpadding="0" cellspacing="0">
+                                                                                <tbody>
+                                                                                <tr>
+                                                                                    <td align="center" style="font-family:Tahoma,Geneva,sans-serif;font-size:15px;color:#ce142b">
+                                                                                        <p style="margin:1em 0"> <strong>Purchase details</strong> </p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <table  id="table8" border="0" cellspacing="0" cellpadding="0">
+                                                                                <tbody>
+                                                                                <tr>
+                                                                                    <td bgcolor="#eeeeee">
+                                                                                        <table id="table9" border="0" align="center" cellpadding="0" cellspacing="0">
+                                                                                            <tbody>
+                                                                                            <tr>
+                                                                                                <td id="td13" ></td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td>
+                                                                                                    <table id="table10" border="0" cellspacing="0" cellpadding="0">
+                                                                                                        <tbody>
+                                                                                                        <tr>
+                                                                                                            <td id="td14" align="left" valign="top">
+                                                                                                                Quantity
+                                                                                                            </td>
+                                                                                                            <td id="td15" align="left" valign="top">
+                                                                                                                Price
+                                                                                                            </td>
+                                                                                                            <td id="td16" align="left" valign="top">
+                                                                                                                Total
+                                                                                                            </td>
+                                                                                                        </tr>
+                                                                                                        </tbody>
+                                                                                                    </table>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td id="td161" ></td>
+                                                                                            </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td bgcolor="#FFFFFF">
+                                                                                        <table id="table11" border="0" align="center" cellpadding="0" cellspacing="0">
+                                                                                            <tbody>
+                                                                                            <tr>
+                                                                                                <td>
+                                                                                                    <table id="table12" border="0" cellspacing="0" cellpadding="0">
+                                                                                                        <tbody>
+                                                                                                        <tr>
+                                                                                                            <td id="td17" ></td>
+                                                                                                        </tr>
+                                                                                                        <tr>
+                                                                                                            <td>
+                                                                                                                <table id="table13" border="0" cellspacing="0" cellpadding="0">
+                                                                                                                    <tbody>
+                                                                                                                    <tr>
+                                                                                                                        <td id="td18" align="left" valign="top"><?php echo $this->ticketsQuantity; ?></td>
+                                                                                                                        <td id="td19" align="left" valign="top"><?php echo $this->ticketPrice; ?><span> AMD</span></td>
+                                                                                                                        <td id="td20" align="left" valign="top"><?php echo $this->totalPrice; ?><span> AMD</span></td>
+                                                                                                                    </tr>
+                                                                                                                    </tbody>
+                                                                                                                </table>
+                                                                                                            </td>
+                                                                                                        </tr>
+                                                                                                        <tr>
+                                                                                                            <td id="td21" ></td>
+                                                                                                        </tr>
+                                                                                                        </tbody>
+                                                                                                    </table>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td bgcolor="#FFFFFF">
+                                                                                        <table id="table14" border="0" align="center" cellpadding="0" cellspacing="0">
+                                                                                            <tbody>
+                                                                                            <tr>
+                                                                                                <td id="td22" align="right" ></td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td align="right">
+                                                                                                    <table id="table15" border="0" cellspacing="0" cellpadding="0">
+                                                                                                        <tbody>
+                                                                                                        <tr>
+                                                                                                            <td id="td23" align="left">Reservation total: </td>
+                                                                                                            <td id="td24" align="left"><?php echo $this->totalPrice; ?><span> AMD</span></td>
+                                                                                                        </tr>
+                                                                                                        </tbody>
+                                                                                                    </table>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td id="td25" align="right"></td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td align="right">
+                                                                                                    <table id="table16" border="0" cellspacing="0" cellpadding="0">
+                                                                                                        <tbody>
+                                                                                                        <tr>
+                                                                                                            <td id="td26" align="left" style="font-family:Tahoma,Geneva,sans-serif;font-size:15px;color:#555555;font-weight:bold;text-align: right;">Date of payment: </td>
+                                                                                                            <td id="td27" align="left" style="font-family:Tahoma,Geneva,sans-serif;font-size:15px;color:#555555;font-weight:bold;text-align: center;"><?php echo $this->paymentDate?><span></span></td>
+                                                                                                        </tr>
+                                                                                                        </tbody>
+                                                                                                    </table>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td id="td28" align="right" ></td>
+                                                                                            </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td id="td29" align="right"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td  id="td30" >
+                                                                            <a href="<?php echo $this->ticketUrl; ?>" style="color:#333;text-decoration: none">
+                                                                                &nbsp;Click here to download ticket&nbsp;
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td id="td31"  align="right" ></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td bgcolor="#eee">
+                                                                            <table id="table17" border="0" align="center" cellpadding="0" cellspacing="0">
+                                                                                <tbody>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <table id="table18" border="0" align="center" cellpadding="0" cellspacing="0">
+                                                                                            <tbody>
+                                                                                            <tr>
+                                                                                                <td align="center" bgcolor="#eee" style="font-family:Arial,Helvetica,sans-serif;font-size:10px;color:#666">
+                                                                                                    <p style="margin:8px 0 5px;line-height:20px">
+                                                                                                        Privacy policy: We sent you this email from the data you provided in the purchasing process.
+                                                                                                    </p>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td align="center" bgcolor="#eee" style="font-family:Arial,Helvetica,sans-serif;font-size:10px;color:#666">
+                                                                                                    <p style="margin:5px 0 8px;line-height:20px">
+                                                                                                        For questions or technical issues, please contact with
+                                                                                                        <a href="mailto:support@tatever.am" target="_blank">support@tatever.am</a>.
+                                                                                                        <br/>
+                                                                                                        Reservation management, contact with
+                                                                                                        <a href="mailto:reservation@tatever.am" target="_blank">reservation@tatever.am</a>
+                                                                                                    </p>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td bgcolor="#ce142b"></td>
+                                                                    </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                            <td id="td32"  valign="bottom"></td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td id="td33" ></td>
+                                            </tr>
+                                            <tr>
+                                                <td id="td34" ></td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center" bgcolor="#ffffff" style="font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#465167"> </td>
+                                            </tr>
+                                            <tr> </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="yj6qo"></div>
+                    <div class="adL">
+                    </div>
+                </div>
+            </div>
+            <div class="adL">
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

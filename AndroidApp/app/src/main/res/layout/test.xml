@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/green_menu">
+
+    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/root_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/toolbar_save" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/nature_blur"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/profile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/edit_photo_layout"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="20dp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/puser_edit_prof_pic"
+                            android:layout_width="@dimen/auth_uni_pic_width"
+                            android:layout_height="@dimen/auth_uni_pic_height"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/prof_pic" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@+id/puser_edit_prof_pic">
+
+                            <com.hikearmenia.ui.widgets.TextView
+                                android:id="@+id/change_account_photo"
+                                style="@style/thin_font"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginLeft="16dp"
+                                android:text="@string/change_account_photo"
+                                android:textSize="18sp" />
+
+                            <com.hikearmenia.ui.widgets.TextView
+                                android:id="@+id/delete_photo"
+                                style="@style/thin_font"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/change_account_photo"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="10dp"
+                                android:text="@string/delete_photo"
+                                android:textSize="18sp" />
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <com.hikearmenia.ui.widgets.EditText
+                        android:id="@+id/edit_name"
+                        style="@style/thin_font"
+                        android:layout_width="@dimen/auth_box_width"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/edittext_modified_states"
+                        android:hint="@string/hint_name"
+                        android:inputType="textCapSentences"
+                        android:textSize="18sp" />
+
+                    <com.hikearmenia.ui.widgets.EditText
+                        android:id="@+id/edit_surname"
+                        style="@style/thin_font"
+                        android:layout_width="@dimen/auth_box_width"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/edittext_modified_states"
+                        android:hint="@string/hint_last_name"
+                        android:inputType="textCapSentences"
+                        android:textSize="18sp" />
+
+                    <com.hikearmenia.ui.widgets.EditText
+                        android:id="@+id/edit_email"
+                        style="@style/thin_font"
+                        android:layout_width="@dimen/auth_box_width"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/edittext_modified_states"
+                        android:hint="@string/hint_email"
+                        android:inputType="textEmailAddress"
+                        android:textSize="18sp" />
+
+                    <com.hikearmenia.ui.widgets.EditText
+                        android:id="@+id/edit_phone"
+                        style="@style/thin_font"
+                        android:layout_width="@dimen/auth_box_width"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/edittext_modified_states"
+                        android:hint="@string/hint_phone"
+                        android:inputType="phone"
+                        android:textSize="18sp" />
+
+                    <com.hikearmenia.ui.widgets.Button
+                        android:id="@+id/change_password_btn"
+                        style="@style/thin_font"
+                        android:layout_width="@dimen/auth_box_width"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@android:color/transparent"
+                        android:gravity="left|center_vertical"
+                        android:inputType="text"
+                        android:text="Change Password"
+                        android:textSize="18sp" />
+
+
+                </LinearLayout>
+            </ScrollView>
+
+            <com.hikearmenia.ui.widgets.Button
+                android:id="@+id/profile_view_logout_button"
+                style="@style/light_font"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/auth_uni_bottom_button_height"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/green_button"
+                android:text="@string/profile_view_logout_button_text"
+                android:textSize="@dimen/auth_uni_text_size_large" />
+        </RelativeLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <LinearLayout
+        android:id="@+id/nav_view"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:orientation="vertical">
+
+
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,82 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AutButtonStyle" parent="AppTheme">
+        <item name="android:background">@color/auth_view_green_button_solid</item>
+        <item name="android:textSize">@dimen/auth_uni_text_size_large</item>
+    </style>
+
+    <style name="MySwitch" parent="Theme.AppCompat.Light">
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorControlActivated">@color/green_bar</item>
+
+        <!-- inactive thumb color -->
+        <item name="colorSwitchThumbNormal">@color/dialogtext</item>
+
+        <!-- inactive track color (30% transparency) -->
+        <item name="android:colorForeground">@color/gray_line_color</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"></style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"></style>
+
+    <style name="AppTheme.Dark" parent="Theme.AppCompat.NoActionBar" />
+
+    <style name="black_font">
+        <item name="txtFont">@string/black_font</item>
+    </style>
+
+    <style name="bold_font">
+        <item name="txtFont">@string/bold_font</item>
+    </style>
+
+    <style name="heavy_font">
+        <item name="txtFont">@string/heavy_font</item>
+    </style>
+
+    <style name="light_font">
+        <item name="txtFont">@string/light_font</item>
+    </style>
+
+    <style name="medium_font">
+        <item name="txtFont">@string/medium_font</item>
+    </style>
+
+    <style name="regular_font">
+        <item name="txtFont">@string/regular_font</item>
+    </style>
+
+    <style name="semibold_font">
+        <item name="txtFont">@string/semibold_font</item>
+    </style>
+
+    <style name="thin_font">
+        <item name="txtFont">@string/thin_font</item>
+    </style>
+
+    <style name="ultralight_font">
+        <item name="txtFont">@string/ultralight_font</item>
+    </style>
+
+    <style name="TransparentStatusBarTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="dialog_animation">
+
+        <item name="android:windowEnterAnimation">@anim/popup_dialog_slide_in_center</item>
+        <item name="android:windowExitAnimation">@anim/popup_dialog_slide_in_top</item>
+
+    </style>
+
+    <style name="ProgressBar.Horizontal" parent="@android:style/Widget.Holo.ProgressBar.Horizontal"></style>
+
+</resources>

@@ -1,0 +1,108 @@
+<div class="inner_head">
+    <?php
+
+    if($this->category->getImage()->getPath()){ ?>
+        <img src="<?php echo $this->category->getImage()->getPath() ?>" class="img-responsive inner_header_pic">
+    <?php } else { ?>
+        <img src="/img/innerheadpic_1.jpg" class="img-responsive inner_header_pic">
+    <?php } ?>
+    <div class="container">
+        <?php
+        // echo $this->language
+        ?>
+        <section class="inner_head_cont">
+            <h1 class="inner_head_ttl"><?php echo $this->category->getName($this->language);?></h1>
+        </section>
+    </div>
+</div> <!-- Inner head END -->
+
+<div class="mid_content">
+    <div class="container">
+        <div class="row">
+            <div class="sightseeings_area col-xs-3 col-sm-7 col-sm-pull-1">
+                <!--<p class="intro_txt">
+                    Nulla faucibus, purus vitae pulvinar pulvinar, est est
+                    condimentum dolor, nec molestie nisl eros non nisl. Donec
+                    vel fermentum augue, a ornare massa. Sed vulputate lobortis
+                    eros eu venenatis. Donec dapibus consectetur ligula. Nunc
+                    placerat justo sed tellus fringilla dignissim. Proin eleifend
+                    nisl quis sapien dapibus, sit amet elementum urna sodales.
+                </p>-->
+
+                <?php if($this->posts) { ?>
+                    <?php foreach($this->posts as $post) { ?>
+
+                        <a href="/<?php echo $this->language?>/<?php echo $post->getSlug()?>">
+                            <h2 class="activity_ttl"><?php echo $post->getTitle($this->language);  ?></h2>
+                            <?php foreach($post->getImages() as $image){ ?>
+                                <?php if ($image->isMaster()){ ?>
+                                    <img src="<?php echo $image->getPath()?>" class="img-responsive activity_image">
+                                <?php } ?>
+                            <?php } ?>
+                        </a>
+                        <p class="activity_info">
+                            <?php echo $post->getDescription($this->language); ?>
+                        </p>
+                        <hr class="activity_divider">
+                    <?php } ?>
+                <?php } ?>
+
+                <!--<h2 class="activity_ttl">Sightseeing One</h2>
+                <img src="/img/activity_01.jpg" class="img-responsive activity_image">
+                <p class="activity_info">
+                    Nulla faucibus, purus vitae pulvinar pulvinar, est est condimentum
+                    dolor, nec molestie nisl eros non nisl. Donec vel fermentum augue,
+                    a ornare massa. Sed vulputate lobortis eros eu venenatis. Donec dapibus
+                    consectetur ligula. Nunc placerat justo sed tellus fringilla dignissim.
+                    Proin eleifend nisl quis sapien dapibus, sit amet elementum urna sodales.
+                </p>
+
+                <hr class="activity_divider">
+
+                <h2 class="activity_ttl">Sightseeing Two</h2>
+                <img src="/img/activity_02.jpg" class="img-responsive activity_image">
+                <p class="activity_info">
+                    A US citizen is taxed in the US on worldwide income, regardless of
+                    whether that person lives in or has ever even set foot in the US.
+                    So, the idea that companies based in the US get to segregate income
+                    abroad and say it has nothing to do with the US is directly contrary
+                    to how the US treats its people.
+                </p>
+
+                <hr class="activity_divider">
+
+                <h2 class="activity_ttl">Sightseeing Three</h2>
+                <img src="/img/activity_03.jpg" class="img-responsive activity_image">
+                <p class="activity_info">
+                    Considerably smaller than the massive Project 941 Akula— also known as
+                    the Typhoon — the new boats are still larger than the U.S. Navy’s Ohio-class boomers.
+                    Based on a project conceived towards the end of the Soviet-era, the Borei-class boomers
+                    are capable submarines that can carry 16 Bulava submarine-launched ballistic missiles.
+                    The boats are quiet and have efficient hydrodynamics.
+                </p>
+
+                <hr class="activity_divider">-->
+
+            </div>
+
+            <aside class="events_area col-sm-4 col-sm-offset-1">
+                <h4 class="event_ttl">Big Event</h4>
+                <section class="event_holder">
+                    <button class="btn btn-default center-block event_details">Learn More</button>
+                    <img src="/img/event_poster_01.jpg" class="eventposter">
+                </section>
+
+                <h4 class="travel_ttl">Traveller Info</h4>
+                <img src="/img/travellerinfo_pic_01.jpg" class="img-responsive">
+                <h2 class="traveller_info_ttl">Getting to Armenia</h2>
+                <p class="traveller_info_details">
+                    Duis sed ipsum dolor. Suspendisse potenti. Donec vulputate pulvinar laoreet.
+                    Suspendisse vel tincidunt velit, sit amet auctor dui. Quisque quis nulla diam.
+                    TV with satellite receiver and free internet access.
+                </p>
+
+            </aside>
+
+        </div>
+    </div>
+</div>

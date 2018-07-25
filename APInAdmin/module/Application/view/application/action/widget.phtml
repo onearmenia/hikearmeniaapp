@@ -1,0 +1,65 @@
+<?php if ($this->widget->getId() == 1) { ?>
+    <div class="widget widget_ci_special_offer_widget">
+        <h3 class="widget-title">special offer</h3>
+
+        <div class="item">
+            <figure class="item-thumb">
+                <a href="booking.html">
+                    <img src='/images/wedding.jpg' width='750' height='930' alt='Placeholder Image'/>
+                </a>
+            </figure>
+
+            <div class="item-content">
+                <h4>Our wedding suite. 50% off. May 5th.</h4>
+                <!-- TODO: fix the path to for corresponding   room-->
+                <a class="item-title btn" href="/<?php echo $this->language; ?>/hotel/booking?room_select=3">book now.</a>
+            </div>
+        </div>
+    </div>
+<?php } else if ($this->widget->getId() == 2) { ?>
+    <ul class="room-nav">
+        <!-- TODO: make "current-room" current-room relative to room attached to this sidebar -->
+        <li><a href="/<?php echo $this->language; ?>/single-room" class="current-room"><?php echo $this->translate("Single room", __NAMESPACE__); ?></a></li>
+        <li><a href="/<?php echo $this->language; ?>/double-twin"><?php echo $this->translate("Double/Twin", __NAMESPACE__); ?></a></li>
+        <li><a href="/<?php echo $this->language; ?>/triple"><?php echo $this->translate("Triple", __NAMESPACE__); ?></a></li>
+        <li><a href="/<?php echo $this->language; ?>/quadruple"><?php echo $this->translate("Quadruple", __NAMESPACE__); ?></a></li>
+        <li><a href="/<?php echo $this->language; ?>/single-suite"><?php echo $this->translate("Single Suite", __NAMESPACE__); ?></a></li>
+        <li><a href="/<?php echo $this->language; ?>/double-suite"><?php echo $this->translate("Double Suite", __NAMESPACE__); ?></a></li>
+    </ul>
+<?php } else if ($this->widget->getId() == 3) { ?>
+    <aside class="widget widget_ci_social_widget ci-socials group">
+        <h3 class="widget-title">social</h3>
+        <a href="#" class="social-icon" title="Subscribe to our RSS feed."><i class="fa fa-rss"></i></a>
+        <a href="http://www.twitter.com/cssigniter" class="social-icon" title="Follow us on twitter."><i class="fa fa-twitter"></i></a>
+        <a href="https://www.facebook.com/MirhavHotel" class="social-icon" title="Like us on Facebook."><i class="fa fa-facebook"></i></a>
+        <a href="http://www.dribbble.com/tsiger" class="social-icon" title="See our Dribbble shots."><i class="fa fa-dribbble"></i></a>
+    </aside>
+<?php } else if ($this->widget->getId() == 4) { ?>
+    <aside id="ci_book_room_widget-2" class="widget widget_ci_book_room_widget group">
+        <div class="book-widget-inner">
+            <p class="book-now-price">From 15.000 AMD day</p>
+            <p class="book-now-action">
+                <a href="/<?php echo $this->language; ?>/hotel/booking?room_select=3" class="btn">book it</a>
+            </p>
+        </div>
+    </aside>
+<?php } else if ($this->widget->getId() == 5) { ?>
+    <div class="widget widget_ci_testimonial_widget">
+        <div class="testimonial-wrap">
+            <div class="testimonial-inner">
+                <blockquote>
+
+                    <i class="fa fa-quote-left"></i>
+
+                    <p>The best experience ever. Would recommended it everyone. We got married in Santorini, and stayed at Santorini Resort, and it was a dream come true.</p>
+
+                    <cite>Peter Daniel – Travel Magazine</cite>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+<?php } else if ($this->widget->getId() == 6) { ?>
+<?php } else if ($this->widget->getId() == 7) { ?>
+<?php } else if ($this->widget->getId() == 8) { ?>
+<?php } else if ($this->widget->getId() == 9) { ?>
+<?php } ?>

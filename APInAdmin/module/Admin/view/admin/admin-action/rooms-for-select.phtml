@@ -1,0 +1,6 @@
+<option value="">Choose...</option>
+<?php foreach ($this->rooms as $room){?>
+    <option value="<?php echo $room['room_id'];?>">
+        <?php echo $room['rt_title'];?> <?php echo $room['room_number'];?>
+    </option>
+<?php } ?>

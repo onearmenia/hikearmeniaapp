@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                 xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                 android:id="@+id/root_content"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="match_parent"
+                                                 android:background="@android:color/white">
+
+    <include layout="@layout/toolbar_save"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/list_bg"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:id="@+id/guide_review_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white">
+
+            <include layout="@layout/local_guides_item"/>
+
+            <com.hikearmenia.ui.widgets.TextView
+                android:id="@+id/text_gide_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/content_item"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/main_text_color"
+                android:textSize="@dimen/auth_uni_text_size_small"/>
+
+            <View
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@+id/text_gide_desc"
+                android:background="@color/gray_line_color"/>
+
+            <com.hikearmenia.ui.widgets.TextView
+                android:id="@+id/text_review"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line1"
+                android:text="@string/reviews"
+                android:gravity="center"
+                android:textColor="@color/green_bar"
+                android:textSize="@dimen/auth_uni_text_size_small"/>
+
+            <com.hikearmenia.ui.widgets.TextView
+                android:id="@+id/does_not_have_reviews_tv"
+                style="@style/light_font"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:layout_below="@+id/text_review"
+                android:textColor="@color/gray_line_color"
+                android:textSize="@dimen/auth_uni_hint_text_size"
+                android:visibility="gone"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/reviews_guides_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_review"
+                android:layout_marginBottom="@dimen/bottom_menu_bar_height"
+                android:clipToPadding="false"
+                android:fadingEdge="none"
+                android:overScrollMode="never"
+                android:scrollbars="vertical"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/add_another_guide_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_menu_bar_height"
+            android:layout_alignParentBottom="true"
+            android:background="@color/green_bar">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/add_review_icon"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/add_icon_white"
+                    android:visibility="invisible"/>
+
+                <com.hikearmenia.ui.widgets.TextView
+                    android:id="@+id/view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toEndOf="@+id/add_review_icon"
+                    android:text="@string/add_another_guide_review"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:visibility="invisible"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

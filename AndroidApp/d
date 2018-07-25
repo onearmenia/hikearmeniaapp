@@ -1,0 +1,342 @@
+diff --git a/HikeArmenia/app/src/main/java/com/hikearmenia/activities/AuthActivity.java b/HikeArmenia/app/src/main/java/com/hikearmenia/activities/AuthActivity.java
+index 0b03d56..6b9c2be 100644
+--- a/HikeArmenia/app/src/main/java/com/hikearmenia/activities/AuthActivity.java
++++ b/HikeArmenia/app/src/main/java/com/hikearmenia/activities/AuthActivity.java
+@@ -226,7 +226,9 @@ public class AuthActivity extends TransparentStatusBarNotSlidingActivity impleme
+ 
+             @Override
+             public void onError(FacebookException error) {
+-                UIUtil.alertDialogShow(AuthActivity.this, getString(R.string.login_with_facebook_failed), null);
++                if (error != null) {
++                    UIUtil.alertDialogShow(AuthActivity.this, "Error", error.getMessage());
++                }
+             }
+         };
+         fbCallbackManager = CallbackManager.Factory.create();
+diff --git a/HikeArmenia/app/src/main/java/com/hikearmenia/activities/BaseActivity.java b/HikeArmenia/app/src/main/java/com/hikearmenia/activities/BaseActivity.java
+index 53cbc09..2c7bc09 100644
+--- a/HikeArmenia/app/src/main/java/com/hikearmenia/activities/BaseActivity.java
++++ b/HikeArmenia/app/src/main/java/com/hikearmenia/activities/BaseActivity.java
+@@ -55,7 +55,7 @@ public class BaseActivity extends AppCompatActivity implements LeftSlideMenuOnIt
+     public static int STANDART_DURETION = 100;
+     public static int LONG_DURETION = 100;
+     public final String BASE_URL = "";
+-    public final String BASE_URL1 = "http://hikearmenia.bigbek.com";
++    public final String BASE_URL1 = "http://api.hikearmenia.com";
+     public DrawerLayout drawerLayout;
+     public boolean isSavedTrails;
+     public boolean isNavBarOpened;
+diff --git a/HikeArmenia/app/src/main/java/com/hikearmenia/activities/MapsActivity.java b/HikeArmenia/app/src/main/java/com/hikearmenia/activities/MapsActivity.java
+index bf1cb6c..be83583 100644
+--- a/HikeArmenia/app/src/main/java/com/hikearmenia/activities/MapsActivity.java
++++ b/HikeArmenia/app/src/main/java/com/hikearmenia/activities/MapsActivity.java
+@@ -101,7 +101,7 @@ public class MapsActivity extends BaseActivity implements View.OnTouchListener,
+         MapboxAccountManager.start(this, getString(R.string.accessToken));
+         HikeArmeniaApplication.setCurrentActivity(MapsActivity.this);
+         setContentView(R.layout.activity_maps);
+-//        mTrail = getIntent().getParcelableExtra("trail");
++        mTrail = getIntent().getParcelableExtra("trail");
+ 
+         locationServices = LocationServices.getLocationServices(MapsActivity.this);
+         mapView = (com.mapbox.mapboxsdk.maps.MapView) findViewById(R.id.mapview);
+diff --git a/HikeArmenia/app/src/main/java/com/hikearmenia/activities/TrailDetailActivity.java b/HikeArmenia/app/src/main/java/com/hikearmenia/activities/TrailDetailActivity.java
+index 7d36765..98f7cd2 100644
+--- a/HikeArmenia/app/src/main/java/com/hikearmenia/activities/TrailDetailActivity.java
++++ b/HikeArmenia/app/src/main/java/com/hikearmenia/activities/TrailDetailActivity.java
+@@ -810,7 +810,7 @@ public class TrailDetailActivity extends SlidingActivity implements
+                     Intent map = new Intent(this, MapsActivity.class);
+                     map.putExtra("type", MapsActivity.DrawRouteType.DrawRoute.name());
+                     map.putExtra("trail_id", trailId);
+-//                    map.putExtra("trail", (Parcelable) mTrail);
++                    map.putExtra("trail", (Parcelable) mTrail);
+ //                map.putExtra("trail_object", (Parcelable) mTrail);
+                     IntentUtils.getInstance().startActivityForResult(TrailDetailActivity.this, 2, map, null, false);
+                 }
+diff --git a/HikeArmenia/app/src/main/java/com/hikearmenia/models/api/Trail.java b/HikeArmenia/app/src/main/java/com/hikearmenia/models/api/Trail.java
+index bb0e26f..9ceafb7 100644
+--- a/HikeArmenia/app/src/main/java/com/hikearmenia/models/api/Trail.java
++++ b/HikeArmenia/app/src/main/java/com/hikearmenia/models/api/Trail.java
+@@ -14,17 +14,17 @@ import java.util.List;
+  * Created by jr on 5/4/16.
+  */
+ public class Trail implements Serializable, Parcelable {
+-    public static final Creator<Trail> CREATOR = new Creator<Trail>() {
+-        @Override
+-        public Trail createFromParcel(Parcel in) {
+-            return new Trail(in);
+-        }
+-
+-        @Override
+-        public Trail[] newArray(int size) {
+-            return new Trail[size];
+-        }
+-    };
++//    public static final Creator<Trail> CREATOR = new Creator<Trail>() {
++//        @Override
++//        public Trail createFromParcel(Parcel in) {
++//            return new Trail(in);
++//        }
++//
++//        @Override
++//        public Trail[] newArray(int size) {
++//            return new Trail[size];
++//        }
++//    };
+     @Expose
+     @SerializedName("trail_id")
+     private int trailId;
+@@ -130,7 +130,49 @@ public class Trail implements Serializable, Parcelable {
+     private String mapUrl;
+ 
+ 
+-    public Trail(Parcel in) {
++//    public Trail(Parcel in) {
++//        trailId = in.readInt();
++//        trailName = in.readString();
++//        trailDifficulty = in.readString();
++//        trailThingsToDo = in.readString();
++//        trailInformation = in.readString();
++//        trailLocationStart = in.readString();
++//        trailLocationEnd = in.readString();
++//        trailDistance = in.readString();
++//        trailMaxHeight = in.readString();
++//        trailMinHeight = in.readString();
++//        trailTime = in.readString();
++//        trailCover = in.readString();
++//        trailStatus = in.readString();
++//        isSaved = in.readInt();
++//        averageRating = in.readString();
++//
++//        reviewCount = in.readString();
++//
++//        guides = new ArrayList<>();
++//        in.readList(guides, getClass().getClassLoader());
++//
++//        guideCount = in.readString();
++//        accomodations = new ArrayList<>();
++//        in.readList(accomodations, getClass().getClassLoader());
++//        trailCovers = in.readArrayList(getClass().getClassLoader());
++//        reviews = in.readArrayList(getClass().getClassLoader());
++//
++//        latitudeStart = in.readString();
++//        latitudeEnd = in.readString();
++//
++//        longitudeStart = in.readString();
++//        longitudeEnd = in.readString();
++//
++//        trailRoute = new ArrayList<>();
++//        in.readList(trailRoute, getClass().getClassLoader());
++//
++//        weather = (Weather) in.readValue(getClass().getClassLoader());
++//        mapUrl = in.readString();
++//
++//    }
++
++    protected Trail(Parcel in) {
+         trailId = in.readInt();
+         trailName = in.readString();
+         trailDifficulty = in.readString();
+@@ -147,24 +189,32 @@ public class Trail implements Serializable, Parcelable {
+         isSaved = in.readInt();
+         averageRating = in.readString();
+         reviewCount = in.readString();
++        guides = in.createTypedArrayList(Guide.CREATOR);
+         guideCount = in.readString();
+-        mapUrl = in.readString();
+-        guides = new ArrayList<>();
+-        in.readList(guides, getClass().getClassLoader());
+-        accomodations = new ArrayList<>();
+-        in.readList(accomodations, getClass().getClassLoader());
+-        trailCovers = in.readArrayList(getClass().getClassLoader());
+-        reviews = in.readArrayList(getClass().getClassLoader());
+-        weather = (Weather) in.readValue(getClass().getClassLoader());
++        accomodations = in.createTypedArrayList(Accomodation.CREATOR);
++        trailCovers = in.createStringArrayList();
++        reviews = in.createTypedArrayList(TrailReview.CREATOR);
+         latitudeStart = in.readString();
+         latitudeEnd = in.readString();
+-
+         longitudeStart = in.readString();
+         longitudeEnd = in.readString();
+         trailRoute = in.createTypedArrayList(TrailRoute.CREATOR);
+-
++        weather = in.readParcelable(Weather.class.getClassLoader());
++        mapUrl = in.readString();
+     }
+ 
++    public static final Creator<Trail> CREATOR = new Creator<Trail>() {
++        @Override
++        public Trail createFromParcel(Parcel in) {
++            return new Trail(in);
++        }
++
++        @Override
++        public Trail[] newArray(int size) {
++            return new Trail[size];
++        }
++    };
++
+     public ArrayList<String> getTrailCovers() {
+         return trailCovers;
+     }
+@@ -396,17 +446,57 @@ public class Trail implements Serializable, Parcelable {
+         dest.writeInt(isSaved);
+         dest.writeString(averageRating);
+         dest.writeString(reviewCount);
++        dest.writeTypedList(guides);
+         dest.writeString(guideCount);
+-        dest.writeString(mapUrl);
+         dest.writeTypedList(accomodations);
+-        dest.writeValue(trailCovers);
+-        dest.writeValue(reviews);
+-        dest.writeValue(weather);
+-
++        dest.writeStringList(trailCovers);
++        dest.writeTypedList(reviews);
+         dest.writeString(latitudeStart);
+         dest.writeString(latitudeEnd);
+         dest.writeString(longitudeStart);
+         dest.writeString(longitudeEnd);
+         dest.writeTypedList(trailRoute);
++        dest.writeParcelable(weather, flags);
++        dest.writeString(mapUrl);
+     }
++
++//    @Override
++//    public int describeContents() {
++//        return 0;
++//    }
++
++//    @Override
++//    public void writeToParcel(Parcel dest, int flags) {
++//        dest.writeInt(trailId);
++//        dest.writeString(trailName);
++//        dest.writeString(trailDifficulty);
++//        dest.writeString(trailThingsToDo);
++//        dest.writeString(trailInformation);
++//        dest.writeString(trailLocationStart);
++//        dest.writeString(trailLocationEnd);
++//        dest.writeString(trailDistance);
++//        dest.writeString(trailMaxHeight);
++//        dest.writeString(trailMinHeight);
++//        dest.writeString(trailTime);
++//        dest.writeString(trailCover);
++//        dest.writeString(trailStatus);
++//        dest.writeInt(isSaved);
++//        dest.writeString(averageRating);
++//        dest.writeString(reviewCount);
++//
++//
++//
++//        dest.writeString(guideCount);
++//        dest.writeString(mapUrl);
++//        dest.writeTypedList(accomodations);
++//        dest.writeValue(trailCovers);
++//        dest.writeValue(reviews);
++//        dest.writeValue(weather);
++//
++//        dest.writeString(latitudeStart);
++//        dest.writeString(latitudeEnd);
++//        dest.writeString(longitudeStart);
++//        dest.writeString(longitudeEnd);
++//        dest.writeTypedList(trailRoute);
++//    }
+ }
+diff --git a/HikeArmenia/app/src/main/java/com/hikearmenia/models/api/TrailReview.java b/HikeArmenia/app/src/main/java/com/hikearmenia/models/api/TrailReview.java
+index d2a97cc..2bf3623 100644
+--- a/HikeArmenia/app/src/main/java/com/hikearmenia/models/api/TrailReview.java
++++ b/HikeArmenia/app/src/main/java/com/hikearmenia/models/api/TrailReview.java
+@@ -13,15 +13,15 @@ import java.io.Serializable;
+  */
+ public class TrailReview implements Serializable, Parcelable {
+ 
+-    public static final Creator<GuideReview> CREATOR = new Creator<GuideReview>() {
++    public static final Creator<TrailReview> CREATOR = new Creator<TrailReview>() {
+         @Override
+-        public GuideReview createFromParcel(Parcel in) {
+-            return new GuideReview(in);
++        public TrailReview createFromParcel(Parcel in) {
++            return new TrailReview(in);
+         }
+ 
+         @Override
+-        public GuideReview[] newArray(int size) {
+-            return new GuideReview[size];
++        public TrailReview[] newArray(int size) {
++            return new TrailReview[size];
+         }
+     };
+     @Expose
+diff --git a/HikeArmenia/d b/HikeArmenia/d
+index 67c2e13..01f9428 100644
+--- a/HikeArmenia/d
++++ b/HikeArmenia/d
+@@ -1,68 +0,0 @@
+-diff --git a/HikeArmenia/app/src/main/java/com/hikearmenia/fragment/LeftSlideMenu.java b/HikeArmenia/app/src/main/java/com/hikearmenia/fragment/LeftSlideMenu.java
+-index fae213f..0e146f9 100644
+---- a/HikeArmenia/app/src/main/java/com/hikearmenia/fragment/LeftSlideMenu.java
+-+++ b/HikeArmenia/app/src/main/java/com/hikearmenia/fragment/LeftSlideMenu.java
+-@@ -99,15 +99,14 @@ public class LeftSlideMenu extends Fragment implements View.OnTouchListener, Net
+-     @Override
+-     public boolean onTouch(View v, MotionEvent event) {
+-         mBaseActivity.closeDrawer();
+--        switch (event.getAction()) {
+--            case MotionEvent.ACTION_DOWN:
+-+//        switch (event.getAction()) {
+-+//            case MotionEvent.ACTION_DOWN:
+-                 v.setAlpha(0.5f);
+--                break;
+--            case MotionEvent.ACTION_UP:
+-+//                break;
+-+//            case MotionEvent.ACTION_UP:
+-                 v.setAlpha(1f);
+-                 switch (v.getId()) {
+-                     case R.id.sign_in:
+--                        closeCurrentActivity();
+-                         if (mBaseActivity.getUserServiceManager().getUser() != null && mBaseActivity.getUserServiceManager().getUser().isGuest()) {
+-                             mLeftSlideMenuOnItemClickListener.getSelectedItem(BaseActivity.LeftSlideItems.SIGN_IN);
+-                             Intent intent = new Intent(mBaseActivity, AuthActivity.class);
+-@@ -117,6 +116,8 @@ public class LeftSlideMenu extends Fragment implements View.OnTouchListener, Net
+-                             Intent intent = new Intent(mBaseActivity, ProfileActivity.class);
+-                             startActivityForResult(intent, 2);
+-                         }
+-+                        closeCurrentActivity();
+-+
+-                         break;
+-                     case R.id.find_local_guides:
+-                         mLeftSlideMenuOnItemClickListener.getSelectedItem(BaseActivity.LeftSlideItems.FIND_LOCAL_GUIDES);
+-@@ -167,10 +168,10 @@ public class LeftSlideMenu extends Fragment implements View.OnTouchListener, Net
+-                             IntentUtils.getInstance().startActivityForResult(mBaseActivity, 2, intnet, null);
+-                         }
+-                         break;
+--                }
+--                break;
+-+//                }
+-+//                break;
+-         }
+--        return true;
+-+        return false;
+-     }
+- 
+-     private void closeCurrentActivity() {
+-diff --git a/HikeArmenia/app/src/main/java/com/hikearmenia/util/IntentUtils.java b/HikeArmenia/app/src/main/java/com/hikearmenia/util/IntentUtils.java
+-index f50cdd6..8814820 100644
+---- a/HikeArmenia/app/src/main/java/com/hikearmenia/util/IntentUtils.java
+-+++ b/HikeArmenia/app/src/main/java/com/hikearmenia/util/IntentUtils.java
+-@@ -92,7 +92,7 @@ public class IntentUtils {
+-                 v.draw(new Canvas(bitmap));
+-                 context.startActivity(intent);
+-             }
+--        }, 100);
+-+        }, 10);
+-     }
+- 
+- 
+-@@ -140,6 +140,6 @@ public class IntentUtils {
+- 
+-                 context.overridePendingTransition(firstAnime, secondAnime);
+-             }
+--        }, 100);
+-+        }, 10);
+-     }
+- }

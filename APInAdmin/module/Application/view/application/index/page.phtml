@@ -1,0 +1,155 @@
+<?php
+$description = trim($this->page->getBody($this->layout()->language)) ? trim($this->page->getBody($this->layout()->language)) : "";
+?>
+
+<?php if ($this->page->getTopImagePath()) { ?>
+    <style>
+        #header {
+            background-image: url("<?php echo $this->page->getTopImagePath(); ?>");
+        }
+    </style>
+<?php } ?>
+
+
+<main id="main">
+    <div class="container">
+
+            <div class="col-lg-10 col-lg-offset-1">
+                <h2 class="page-title"><?php echo $this->page->getTitle($this->layout()->language); ?></h2>
+
+                <div class="row">
+                    <?php if($this->page->getImages()) { ?>
+                        <div class="room-slider flexslider">
+                            <ul class="slides">
+                                <?php foreach ($this->page->getImages() as $image) { ?>
+                                    <?php if ($image->isGallery()) { ?>
+                                        <li>
+                                            <a data-rel="prettyPhoto[gal]" href="<?php echo $image->getPath()?>">
+                                                <img src='<?php echo $image->getPath()?>' width='925' height='465' alt='Placeholder Image' />
+                                            </a>
+                                        </li>
+                                    <?php } ?>
+                                <?php } ?>
+                            </ul>
+                        </div>
+
+                    <?php } ?>
+
+                    <div class="row">
+                        <?php if (!empty($this->page->getWidgets())) { ?>
+                            <div class="col-sm-8">
+                                <article class="entry">
+                                    <div class="entry-content">
+                                        <?php echo $description; ?>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <div class="sidebar">
+                                    <!--<div class="widget widget_ci_special_offer_widget">
+                                        <h3 class="widget-title">special offer</h3>
+                                        <div class="item">
+                                            <figure class="item-thumb">
+                                                <a href="booking.html">
+                                                    <img src='http://placehold.it/750x930' width='750' height='930' alt='Placeholder Image' />
+                                                </a>
+                                            </figure>
+
+                                            <div class="item-content">
+                                                <h4>Our wedding suite. 50% off. May 5th.</h4>
+                                                <a class="item-title btn" href="/<?php echo $this->layout()->language; ?>/hotel/booking">book now.</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <aside class="widget widget_ci_social_widget ci-socials group">
+                                        <h3 class="widget-title">social</h3>
+                                        <a href="#" class="social-icon" title="Subscribe to our RSS feed."><i class="fa fa-rss"></i></a>
+                                        <a href="http://www.twitter.com/cssigniter" class="social-icon" title="Follow us on twitter."><i class="fa fa-twitter"></i></a>
+                                        <a href="http://www.facebook.com/cssigniter" class="social-icon" title="Like us on Facebook."><i class="fa fa-facebook"></i></a>
+                                    </aside>-->
+                                    <script type="text/javascript">
+                                        <?php foreach ($this->page->getWidgets() as $widget) { ?>
+                                            getWidget(<?php echo $widget->getId(); ?>, <?php echo $this->page->getId(); ?>, ".sidebar");
+                                        <?php } ?>
+                                    </script>
+                                </div>
+                            </div>
+                        <?php } else { ?>
+                            <?php echo $description; ?>
+                        <?php } ?>
+                    </div>
+
+
+
+                </div>
+
+                <?php if($this->page->getImages()) { ?>
+                    <div id="page_gallery" class="row">
+                        <?php foreach ($this->page->getImages() as $image) { ?>
+                            <?php if ($this->page->getType() == "gallery" || $image->isGallery()) { ?>
+                                <div class="col-sm-4">
+                                    <div class="item">
+                                        <figure class="item-thumb">
+                                            <a href="<?php echo $image->getPath()?>" data-rel="prettyPhoto[pp_gal]">
+                                                <img src='<?php echo $image->getThumbPath()?>' width='750' height='930' alt='Placeholder Image' />
+                                                <div class="overlay"><i class="fa fa-search-plus"></i></div>
+                                            </a>
+                                        </figure>
+                                    </div>
+                                </div>
+                            <?php } ?>
+                        <?php } ?>
+                    </div>
+                <?php } ?>
+
+            </div>
+
+    </div>
+</main>
+
+
+<div class="booking-inpage" style="background: url('/images/footer.jpg') no-repeat center center">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1">
+
+                <form class="b-form group" method="get" action="/<?php echo $this->layout()->language; ?>/hotel/booking">
+                    <div class="arrival group">
+                        <input type="text" name="arrive" id="arrive" class="datepicker" placeholder="<?php echo $this->translate("arrival", __NAMESPACE__); ?>">
+                    </div>
+
+                    <div class="departure group">
+                        <input type="text" name="depart" id="depart" class="datepicker" placeholder="<?php echo $this->translate("departure", __NAMESPACE__); ?>">
+                    </div>
+
+                    <div class="adults group">
+                        <select name="adults" id="adults" class="dk">
+                            <option selected disabled><?php echo $this->translate("adults", __NAMESPACE__); ?></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+
+                    <div class="room group">
+                        <select name="room_select" id="room_select" class="dk">
+                            <option selected disabled><?php echo $this->translate("room", __NAMESPACE__); ?></option>
+                            <?php foreach ($this->roomTypes as $type) {?>
+                                <option value="<?php echo $type['rt_id']; ?>"><?php echo $type['rt_title']; ?></option>
+                            <?php } ?>
+                        </select>
+                    </div>
+
+                    <div class="bookbtn group">
+                        <button type="submit"><?php echo $this->translate("book now", __NAMESPACE__); ?></button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+

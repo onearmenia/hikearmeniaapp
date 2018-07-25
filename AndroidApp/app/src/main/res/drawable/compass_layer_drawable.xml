@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <bitmap
+            android:gravity="top"
+            android:src="@drawable/compass_img" />
+    </item>
+    <item>
+        <bitmap
+            android:gravity="top"
+            android:src="@drawable/n_compass" />
+    </item>
+
+</layer-list>

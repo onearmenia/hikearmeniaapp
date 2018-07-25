@@ -1,0 +1,145 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ZendSkeletonApplication\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-07-05 22:17-0700\n"
+"PO-Revision-Date: 2015-11-20 12:01+0400\n"
+"Last-Translator: Evan Coury <me@evancoury.com>\n"
+"Language-Team: ZF Contibutors <zf-devteam@zend.com>\n"
+"Language: am_AM\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: translate\n"
+"X-Poedit-Basepath: .\n"
+"X-Generator: Poedit 1.8.2\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+msgid "Mirhav hotel"
+msgstr "Միրհավ հյուրանոց"
+
+msgid "booking_success_message"
+msgstr "Ձեր ամրագրումն ուղարկված է: Մենք շուտով ձեզ հետ կկապվենք"
+
+msgid "review_success_message"
+msgstr "Շնորհակալություն ձեր կարծիքի համար:"
+
+msgid "Recreation"
+msgstr "Հանգիստ"
+
+msgid "Gallery"
+msgstr "Պատկերասրահ"
+
+msgid "Contact Us"
+msgstr "Կապ մեզ հետ"
+
+msgid "arrival"
+msgstr "ժամանում"
+
+msgid "departure"
+msgstr "մեկնում"
+
+msgid "adults"
+msgstr "մեծահասակներ"
+
+msgid "children"
+msgstr "երեխաներ"
+
+msgid "comments"
+msgstr "մենկաբանություններ"
+
+msgid "Comment"
+msgstr "Մենկաբանություն"
+
+msgid "submit"
+msgstr "ուղարկել"
+
+msgid "Special offer"
+msgstr "Հատուկ առաջարկ"
+
+msgid "book now"
+msgstr "Ամրագրել հիմա"
+
+msgid "Reply"
+msgstr "Պատասխանել"
+
+msgid "Have your say"
+msgstr "Արտահայտվեք"
+
+msgid "Name"
+msgstr "Անուն"
+
+msgid "Your Name"
+msgstr "Ձեր անունը"
+
+msgid "Email"
+msgstr "Էլ. հասցե"
+
+msgid "Website"
+msgstr "Վեբ-կայք"
+
+msgid "contact"
+msgstr "կապ"
+
+msgid "contact_success_message"
+msgstr "Շնորհակալություն հետաքրքրության համար: Մենք ձեզ հետ հնարավորինս շուտ կապ կհաստատենք:"
+
+msgid "Your Email"
+msgstr "Ձեր էլ. հասցեն"
+
+msgid "Subject"
+msgstr "Թեմա"
+
+msgid "Message"
+msgstr "Նամակ"
+
+msgid "Send"
+msgstr "Ուղարկել"
+
+msgid "Subscribe to our RSS feed."
+msgstr ""
+
+msgid "Follow us on twitter."
+msgstr ""
+
+msgid "Like us on Facebook."
+msgstr ""
+
+msgid "See our Dribbble shots."
+msgstr ""
+
+msgid "explore"
+msgstr "ավելին"
+
+msgid "room"
+msgstr "սենյակ"
+
+msgid "Languages"
+msgstr "Լեզու"
+
+msgid "Home"
+msgstr "Սկիզբ"
+
+msgid "Accommodation"
+msgstr "Սենյակներ"
+
+msgid "Single room"
+msgstr "Մեկտեղանի"
+
+msgid "Double/Twin"
+msgstr "Երկտեղանի"
+
+msgid "Rooms"
+msgstr "Սենյակներ"
+
+msgid "Book a room"
+msgstr "Սենյակ ամրագրել"
+
+msgid "Facilities"
+msgstr "Հագեցվածություն"
+
+msgid "Booking"
+msgstr "Ամրագրում"
+
+msgid "Galleries"
+msgstr "Պատկերասրահ"

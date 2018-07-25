@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true"
+    app:elevation="0dp">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/custom_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/white"
+        android:textAlignment="center">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/home_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp">
+
+                <ImageView
+                    android:id="@+id/home"
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/hamburger_trails" />
+            </RelativeLayout>
+
+            <com.hikearmenia.ui.widgets.EditText
+                android:id="@+id/toolbar_title"
+                style="@style/light_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@android:color/transparent"
+                android:editable="false"
+                android:ellipsize="end"
+                android:gravity="center|center_vertical"
+                android:lines="1"
+                android:maxLines="1"
+                android:paddingLeft="5sp"
+                android:paddingRight="28sp"
+                android:singleLine="true"
+                android:textColor="@color/toolbar_title_color"
+                android:textSize="@dimen/title_local_guides" />
+
+            <ImageView
+                android:id="@+id/home_screen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/stack_trail"
+                android:visibility="gone" />
+
+            <com.hikearmenia.ui.widgets.TextView
+                android:id="@+id/save"
+                style="@style/bold_font"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="10dp"
+                android:gravity="center|right"
+                android:text="@string/save"
+                android:textColor="@color/toolbar_title_color"
+                android:textSize="@dimen/title_local_guides" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+</android.support.design.widget.AppBarLayout>

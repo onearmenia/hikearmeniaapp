@@ -1,0 +1,189 @@
+<div class="row" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+    <div class=" col-sm-9 ">
+        <h1 class="page-title txt-color-blueDark">
+            <a href="/admin">
+                <i class="fa-fw fa fa-home"></i>
+                Dashboard
+            </a>
+            <span>
+                > <a href="<?php echo $this->url("admin", array("action" => "accommodations")); ?>">Accommodations</a>
+                > Edit Accommodation
+            </span>
+        </h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12">
+        <form
+            action="<?php echo $this->url("admin-action", array("action" => "edit-accommodation", "id" => $this->post->getId())); ?>"
+            method="post" class="ajaxForm">
+            <div class="jarviswidget jarviswidget-color-blueDark col-sm-12 col-md-12 col-lg-9" id="wid-id-11"
+                 data-widget-colorbutton="false"
+                 data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false"
+                 data-widget-fullscreenbutton="false" data-widget-custombutton="false" role="widget"
+                 style="position: relative; opacity: 1;">
+                <header role="heading">
+                    <h2><strong>Content</strong></h2>
+                    <span class="jarviswidget-loader"><i class="fa fa-refresh fa-spin"></i></span></header>
+
+                <!-- widget div-->
+
+                <div role="content">
+                    <div class="widget-body no-padding">
+                        <div class="tab-content padding-10">
+                            <div class="smart-form">
+                                <section>
+                                    <label class="label">Name</label>
+                                    <label class="input">
+                                        <input type="text" name="acc_name"
+                                               value="<?php echo $this->post->getName(); ?>" />
+                                    </label>
+                                </section>
+                                <section>
+                                    <label class="label">Phone</label>
+                                    <label class="input">
+                                        <input type="text" name="acc_phone"
+                                               value="<?php echo $this->post->getPhone(); ?>" />
+                                    </label>
+                                </section>
+                                <section>
+                                    <label class="label">Email</label>
+                                    <label class="input">
+                                        <input type="text" name="acc_email"
+                                               value="<?php echo $this->post->getEmail(); ?>" />
+                                    </label>
+                                </section>
+                                <section>
+                                    <label class="label">Price</label>
+                                    <label class="input">
+                                        <input type="text" name="acc_price"
+                                               value="<?php echo $this->post->getPrice(); ?>" />
+                                    </label>
+                                </section>
+                                <section>
+                                    <label class="label">Description</label>
+                                    <label class="textarea">
+                                        <textarea name="acc_description"><?php echo $this->post->getDescription(); ?></textarea>
+                                    </label>
+                                </section>
+                                <section>
+                                    <label class="label">How to get there</label>
+                                    <label class="textarea">
+                                        <textarea name="acc_facilities"><?php echo $this->post->getFacilities(); ?></textarea>
+                                    </label>
+                                </section>
+                                <section>
+                                    <label class="label">Latitude</label>
+                                    <label class="input">
+                                        <input type="text" name="acc_lat"
+                                               value="<?php echo $this->post->getLat(); ?>" />
+                                    </label>
+                                </section>
+                                <section>
+                                    <label class="label">Longitude</label>
+                                    <label class="input">
+                                        <input type="text" name="acc_long"
+                                               value="<?php echo $this->post->getLong(); ?>" />
+                                    </label>
+                                </section>
+                                <section>
+                                    <label class="label">URL</label>
+                                    <label class="input">
+                                        <input type="text" name="acc_url"
+                                               value="<?php echo $this->post->getURL(); ?>" />
+                                    </label>
+                                </section>
+                                <section>
+                                    <label class="label">Cover Image (750 x 500)</label>
+                                    <div class="input input-file">
+                                    <span class="button">
+                                        <input type="file" id="file" name="acc_cover" class="multipleImageUploadInput" onchange="this.parentNode.nextElementSibling.value = this.value ;console.log(1)">
+                                        Browse
+                                    </span>
+                                        <input type="text" placeholder="Select Accommodation Cover" readonly="">
+                                    </div>
+                                </section>
+                                <?php if($post->getCover()){ ?>
+                                <div class="imagesStack draggable smallGrid">
+
+                                            <div class="imageBox smart-form photo-grid">
+
+                                                <img src="<?php echo $post->getCover(); ?>"
+                                                     onclick="openEditImage(this)">
+                                            </div>
+                                </div>
+                                <?php }?>
+                                <section>
+                                    <label class="label" style="clear:both;">Map Image (750 x 300)</label>
+                                    <div class="input input-file" style="clear:both;">
+                                    <span class="button">
+                                        <input type="file" id="file" name="acc_map_image" class="multipleImageUploadInput" onchange="this.parentNode.nextElementSibling.value = this.value ;console.log(1)">
+                                        Browse
+                                    </span>
+                                        <input type="text" placeholder="Select Accommodation Map Image" readonly="">
+                                    </div>
+                                </section>
+                                <?php if($post->getMapImage()){ ?>
+                                    <div class="imagesStack draggable smallGrid">
+
+                                        <div class="imageBox smart-form photo-grid">
+
+                                            <img src="<?php echo $post->getMapImage(); ?>"
+                                                 onclick="openEditImage(this)">
+                                        </div>
+                                    </div>
+                                <?php }?>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-3">
+                <div class="jarviswidget jarviswidget-color-blueDark">
+                    <header role="heading">
+                        <h2><strong>Page attributes</strong></h2>
+                    </header>
+                    <div role="content">
+                        <div class="widget-body">
+                            <div class="widget-body-toolbar text-center">
+                                <!--  floating button save  -->
+                                <div id="fixed_hidden_button"
+                                     class="fadeInDown animated floating_submit_wrapper hidden">
+                                    <button type="submit" class="btn btn-lg btn-success floating_submit">Save</button>
+                                    <span onclick='$("#fixed_hidden_button").hide();' class="fa fa-close"
+                                          style="position: relative; top:-44px;right:-6px"></span>
+                                </div>
+                                <p>
+                                    <button type="submit"
+                                            class="triggers_if_this_element_in_viewport btn btn-lg btn-success">Save
+                                    </button>
+                                </p>
+                            </div>
+                            <br/>
+                            <div class="smart-form">
+                                <section>
+                                    <label class="label">Status</label>
+                                    <label class="select">
+                                        <select name="acc_status">
+                                            <option value="active"
+                                                    <?php if ($this->post->getStatus() == "active") { ?>selected="selected"<?php } ?>>
+                                                Active
+                                            </option>
+                                            <option value="draft"
+                                                    <?php if ($this->post->getStatus() == "draft") { ?>selected="selected"<?php } ?>>
+                                                Inactive
+                                            </option>
+                                        </select><i></i>
+                                    </label>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </form>
+    </div>
+</div>

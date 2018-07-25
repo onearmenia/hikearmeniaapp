@@ -1,0 +1,2714 @@
+commit 5ff52a5796ce92fa3a18af3c2ea8b6bf7b4b79e8
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Mon Sep 5 10:44:31 2016 +0400
+
+    Added new bitmap configs
+
+commit ce65b4aaa00829e0b7338b2c78a964de31f299f5
+Author: Aram Safaryan <aram03007@mail.ru>
+Date:   Sun Sep 4 23:45:11 2016 +0400
+
+    permissions
+
+commit d3bccb267cadb7960c0b8a5b04196b9ae7ca6179
+Author: Aram Safaryan <aram03007@mail.ru>
+Date:   Sun Sep 4 22:23:56 2016 +0400
+
+    fixed take photo crash in 6.0
+
+commit 044464b3d9eabcccbfe007655715fe612a68c8e9
+Author: Aram Safaryan <aram03007@mail.ru>
+Date:   Sun Sep 4 16:13:24 2016 +0400
+
+    take photo save always
+
+commit 1f91f5ff47c3147239af44a4772adf0e5ad971c6
+Author: Aram Safaryan <aram03007@mail.ru>
+Date:   Sun Sep 4 10:53:31 2016 +0400
+
+    sdk version
+
+commit f709aa88f03c2f10eca472c02986cc3aa6e24549
+Author: Aram Safaryan <aram03007@mail.ru>
+Date:   Sun Sep 4 10:50:24 2016 +0400
+
+    fixed bug
+
+commit 2002ee7db4f299f3c3dc8eb5e146ad904ceb22cb
+Author: Aram Safaryan <aram03007@mail.ru>
+Date:   Fri Sep 2 18:05:58 2016 +0400
+
+    fixed progres style
+
+commit bf750428b092ee3d27c6be57af39c8d601a63343
+Author: Aram Safaryan <aram03007@mail.ru>
+Date:   Fri Sep 2 17:44:05 2016 +0400
+
+    some changes
+
+commit 4c356309e5866b9c0976453d9da23b0069b983eb
+Author: Aram Safaryan <aram03007@mail.ru>
+Date:   Fri Sep 2 17:31:58 2016 +0400
+
+    trail save in close action
+
+commit 03656058bea002e5b128a865c039d864d0ec5950
+Author: Aram Safaryan <aram03007@mail.ru>
+Date:   Fri Sep 2 14:27:31 2016 +0400
+
+    map routing
+
+commit 6ba4b9d87a540dcc9967ee19e2b4c62b0b3a751b
+Author: Aram Safaryan <aram03007@mail.ru>
+Date:   Fri Sep 2 12:59:50 2016 +0400
+
+    fixed bug and added saved route paint action
+
+commit 463a01d7da6b11df9ffa7daf8de0156ba733c0a8
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Fri Sep 2 01:09:41 2016 +0400
+
+    fixed bug
+
+commit e6298c9b31af23e18d4eb876470d040e6d845dad
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Fri Sep 2 00:48:34 2016 +0400
+
+    fixed bug
+
+commit 8fa27efda5092c905079e492c5d3ddcec006ab01
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Thu Sep 1 23:51:57 2016 +0400
+
+    fix
+
+commit 306ff0d19dde75a0b547884bf8f67d511bc5b7ce
+Merge: 53cd0b9 2586553
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Thu Sep 1 20:53:45 2016 +0400
+
+    Merge branch 'OSM' of git.bigbek.com:one-armenia/hike-android-app into OSM
+
+commit 258655364f5d756dad5b55c7a1bcf86411679ef7
+Author: Aram Safaryan <aram03007@mail.ru>
+Date:   Thu Sep 1 20:01:56 2016 +0400
+
+    routing
+
+commit 9c95dc4a8d0653416ee14b577de13242676c72ae
+Author: Aram Safaryan <aram03007@mail.ru>
+Date:   Thu Sep 1 20:00:27 2016 +0400
+
+    map routing
+
+commit 53cd0b97fbfb20f427c77700bbdc336d2fab7fa3
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Thu Sep 1 15:01:50 2016 +0400
+
+    fix
+
+commit 549348f0cdc66174368831749764cef010c9c886
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Thu Sep 1 14:42:51 2016 +0400
+
+    fix
+
+commit ac28fb1d04741757aac8ae364fedcdc2c816ecd7
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Thu Sep 1 14:36:04 2016 +0400
+
+    fixes
+
+commit e11e3bd5896555f1a8f89c087f26909d49d716dc
+Merge: 378acea 480f131
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Thu Sep 1 12:50:53 2016 +0400
+
+    Merge branch 'OSM' of git.bigbek.com:one-armenia/hike-android-app into OSM
+
+commit 378aceacd3b1f8666f1f0651b79027e146cacd01
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Thu Sep 1 12:50:35 2016 +0400
+
+    fixes
+
+commit 480f131436fb4505f22de7336fd4ec3829a7ca51
+Author: Aram Safaryan <aram03007@mail.ru>
+Date:   Thu Sep 1 12:39:18 2016 +0400
+
+    accomodation bug
+
+commit 8c9eee3e8c817dedea452b00e6ce60d2cd244909
+Author: Aram Safaryan <aram03007@mail.ru>
+Date:   Thu Sep 1 12:38:15 2016 +0400
+
+    accomodation bug
+
+commit a6848ab0a29cd6835fe0924cdb678ec1a94a695a
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Thu Sep 1 00:37:44 2016 +0400
+
+    fixed bug
+
+commit 62763de190548d4c0559e8c0c26fc96c09f5d2eb
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Thu Sep 1 00:22:16 2016 +0400
+
+    bug fix
+
+commit 2525ea3e538afce438437ad1756448208792662f
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Thu Sep 1 00:06:19 2016 +0400
+
+    bug fixes
+
+commit 29b34b7e13e90a94f07c46c171e69e804c6f2b78
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Wed Aug 31 19:28:02 2016 +0400
+
+    some fixes
+
+commit 5b76f1f37ba226c7cc3d5e0ac5b98b34ebbb187f
+Merge: 2e122b7 b6e0cd2
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Wed Aug 31 18:00:32 2016 +0400
+
+    Merge branch 'OSM' of git.bigbek.com:one-armenia/hike-android-app into OSM
+
+commit b6e0cd21a89b0e4ec4d2a7cca09cb483f2ba94fa
+Author: Aram Safaryan <aram03007@mail.ru>
+Date:   Wed Aug 31 17:53:44 2016 +0400
+
+    fixed bug
+
+commit ec6f9b8e27ab1776fc5f753ba1dadd8173cb60fa
+Author: Aram Safaryan <aram03007@mail.ru>
+Date:   Wed Aug 31 17:47:13 2016 +0400
+
+    offline mode flag for map
+
+commit 2e122b717a23031c4245be5605f3ec6fb6302d5e
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Wed Aug 31 17:12:33 2016 +0400
+
+    fixes
+
+commit caf1fbed9daa4270fea07c91c0ea9508af3c0adf
+Merge: 1d8a4bd 7622e8e
+Author: Aram Safaryan <aram03007@mail.ru>
+Date:   Wed Aug 31 16:56:52 2016 +0400
+
+    Merge branch 'OSM' of git.bigbek.com:one-armenia/hike-android-app into OSM
+
+commit 1d8a4bdaa135c4388ba7a9ec085dc42074028b0f
+Author: Aram Safaryan <aram03007@mail.ru>
+Date:   Wed Aug 31 16:56:37 2016 +0400
+
+    added take photo view
+
+commit 7622e8e51b8ef69a1f0fb3c816d5f776fd33dba6
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Wed Aug 31 16:19:38 2016 +0400
+
+    fixes
+
+commit a70efa3004ea4ae24286051136d2f6ccfae5c5e6
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Wed Aug 31 15:43:18 2016 +0400
+
+    check network available on Guide list screen
+
+commit 03157a93b80ddf6f4d1763f6ddf866f84887e205
+Merge: 13a8bab 0315a76
+Author: Aram Safaryan <aram03007@mail.ru>
+Date:   Wed Aug 31 14:14:20 2016 +0400
+
+    Merge branch 'OSM' of git.bigbek.com:one-armenia/hike-android-app into OSM
+
+commit 13a8babcb740bb9410613e81e3e7e7f5cef37f53
+Author: Aram Safaryan <aram03007@mail.ru>
+Date:   Wed Aug 31 14:14:04 2016 +0400
+
+    take photo
+
+commit 0315a763e4d0f4bda3306866aea196f93a3b0bfc
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Wed Aug 31 12:03:01 2016 +0400
+
+    fixes
+
+commit 4900ed78eb6c2e6713b754ba308cd796404feae6
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Wed Aug 31 11:38:18 2016 +0400
+
+    fix
+
+commit 6e9798da165d9d19a6767d6691bc85aa5d1b287d
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Wed Aug 31 11:29:23 2016 +0400
+
+    some fixes
+
+commit d426b46cc2e2fd657a5e4994a50143aecfdddaa2
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Wed Aug 31 10:42:27 2016 +0400
+
+    check  network available for pull to refresh
+
+commit b81c28d56175d701eb17afdd026770b71766c1c2
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Tue Aug 30 23:13:02 2016 +0400
+
+    fixes
+
+commit 508513461be51f661961d22901cccbce154cc67c
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Tue Aug 30 22:47:23 2016 +0400
+
+    some fixes
+
+commit bd37cdc7d9f948a0824733b9b9675d9001ba60e8
+Author: Aram Safaryan <aram03007@mail.ru>
+Date:   Tue Aug 30 17:20:12 2016 +0400
+
+    fixed min max preniew bug
+
+commit 09f1eb4742ca105c16010d82985773f5431586ba
+Author: Aram Safaryan <aram03007@mail.ru>
+Date:   Tue Aug 30 16:37:29 2016 +0400
+
+    added take photo
+
+commit 3a6d4a67aa4fbbbf82df61fc725ea9428c524e8a
+Author: Aram Safaryan <aram03007@mail.ru>
+Date:   Mon Aug 29 20:39:54 2016 +0400
+
+    fixed max min height preview bug
+
+commit da67a1e4d4e666cb067da114084e69b6b292fa45
+Author: Aram Safaryan <aram03007@mail.ru>
+Date:   Mon Aug 29 17:47:42 2016 +0400
+
+    fixed please open map show hide bug
+
+commit f2795337a4776446ab32d3f42c5a8294d03de487
+Author: Aram Safaryan <aram03007@mail.ru>
+Date:   Mon Aug 29 16:15:37 2016 +0400
+
+    fixed more bugs
+
+commit b55a454c9fd019656070aa9fc3d6c995cc8de45a
+Author: Aram Safaryan <aram03007@mail.ru>
+Date:   Mon Aug 29 13:05:10 2016 +0400
+
+    fixed on guide review back crash oin offline mode
+
+commit f645f54c1e39cb6d787a3d7ce91badbecac07d5d
+Author: Aram Safaryan <aram03007@mail.ru>
+Date:   Mon Aug 29 11:09:31 2016 +0400
+
+    fiexed in map screen show only saved trails bug
+
+commit a6e36121bb5aadeeb96f40afa770901a9e8ba759
+Merge: 8836b56 cabebd0
+Author: Aram Safaryan <aram03007@mail.ru>
+Date:   Mon Aug 29 10:25:10 2016 +0400
+
+    Merge branch 'OSM' of git.bigbek.com:one-armenia/hike-android-app into OSM
+
+commit 8836b5617e1ebef560c56173a1088b804240e54c
+Author: Aram Safaryan <aram03007@mail.ru>
+Date:   Mon Aug 29 10:24:53 2016 +0400
+
+    fixed map screen title
+
+commit cabebd02899e6a83ea6d0130af85b3e10661c89a
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Mon Aug 29 09:45:43 2016 +0400
+
+    bug fixed
+
+commit aab308f58e41bde034275f7e53c17479dd1cc02a
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Mon Aug 29 01:41:42 2016 +0400
+
+    bug fixed
+
+commit 23ec596166457a615cc6a64b7a253216af05df3b
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Sun Aug 28 12:43:10 2016 +0400
+
+    fixed bug
+
+commit 3b2aa8d21fc4dd8f7800f672ae8cb13dfd081c5c
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Sun Aug 28 11:58:10 2016 +0400
+
+    Implementing Pull to Refresh
+
+commit 031d980fd7de21621a5bfc1295f4a7678b0434a5
+Merge: e7846d4 1c09efc
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Sat Aug 27 22:02:48 2016 +0400
+
+    Merge branch 'OSM' of git.bigbek.com:one-armenia/hike-android-app into OSM
+
+commit 1c09efc483fa73df9f183b21fee1af31486489f7
+Author: Aram Safaryan <aram03007@mail.ru>
+Date:   Sat Aug 27 18:53:57 2016 +0400
+
+    added marker resource for other sreens
+
+commit ec790887f31f0ced7f06037db4047e88b4a8b6f8
+Author: Aram Safaryan <aram03007@mail.ru>
+Date:   Sat Aug 27 16:21:52 2016 +0400
+
+    added local guides for offline mode
+
+commit e7846d459d66283589d389669fb383e3ac6dabdf
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Fri Aug 26 20:55:23 2016 +0400
+
+    bug fixed
+
+commit 0c1a004ebec901dfd0bc3875bb55d85a690c8668
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Fri Aug 26 19:42:54 2016 +0400
+
+    Added send email logic for Accommodations
+
+commit 780bf1b0f2f18b107d02d95f85ced2b3c1f5a0cb
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Fri Aug 26 19:28:13 2016 +0400
+
+    Fixed Accommodation screen
+
+commit 9457dbd539e6d54e97676ae31bd7683f1da7d480
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Fri Aug 26 18:55:40 2016 +0400
+
+    added map image on Accommodation screen
+
+commit 0e40ec0a9c5a172bb0189db723d75017d7cc3329
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Fri Aug 26 18:53:18 2016 +0400
+
+    added email icon on Accommodation screen
+
+commit 3c5a832158db563ba2c0d7a39dce52f81bd1903b
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Fri Aug 26 18:19:32 2016 +0400
+
+    some fixes for accomodation screen
+
+commit 110e201b311ba3f1cc4e657789da5a9eabbdec9a
+Merge: 041e21a 143121f
+Author: Aram Safaryan <aram03007@mail.ru>
+Date:   Fri Aug 26 17:42:29 2016 +0400
+
+    Merge branch 'OSM' of git.bigbek.com:one-armenia/hike-android-app into OSM
+
+commit 041e21a808fb62089c0232ff9b9c0453047e01a0
+Author: Aram Safaryan <aram03007@mail.ru>
+Date:   Fri Aug 26 17:41:48 2016 +0400
+
+    fixed bug
+
+commit 143121fea2fc014431c0bd74929e6e8d376f6041
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Fri Aug 26 17:39:45 2016 +0400
+
+    some bug fixes
+
+commit e855775c90aa39da7b97360f47f71a1236a9113b
+Author: Aram Safaryan <aram03007@mail.ru>
+Date:   Fri Aug 26 16:44:31 2016 +0400
+
+    fixes some bugs
+
+commit 93267cbcd6926f27c52154be28f827ef8dd517bf
+Merge: 534823d 936a487
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Fri Aug 26 14:45:41 2016 +0400
+
+    Merge branch 'OSM' of git.bigbek.com:one-armenia/hike-android-app into OSM
+
+commit 534823db690215e1094bb9d0e6e409ca42e687e5
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Fri Aug 26 14:29:00 2016 +0400
+
+    some fixes
+
+commit 936a487b63131518c7f420c18b9fa99c170a3aa9
+Author: Aram Safaryan <aram03007@mail.ru>
+Date:   Fri Aug 26 14:28:43 2016 +0400
+
+    test version
+
+commit 77ffbd559a26e57d5a2feb30caf605dc0dcddca0
+Author: Aram Safaryan <aram03007@mail.ru>
+Date:   Fri Aug 26 07:42:29 2016 +0400
+
+    some fixes
+
+commit 448629a71135409cbdd943cf77b0e069b2c80186
+Author: Aram Safaryan <aram03007@mail.ru>
+Date:   Thu Aug 25 23:57:05 2016 +0400
+
+    fixed bug
+
+commit 5f0cccd7c2e1f924c5f2ce50bc00743067e65d82
+Author: Aram Safaryan <aram03007@mail.ru>
+Date:   Thu Aug 25 17:53:57 2016 +0400
+
+    some chnages
+
+commit 96076a8957a6136497fd2401f5777cee8426ac12
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Thu Aug 25 14:52:06 2016 +0400
+
+    some fixes
+
+commit 47ba5f45370ceb9bcac3b7a6e31aa1ae246c64ad
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Thu Aug 25 14:51:33 2016 +0400
+
+    some fixes for take a photo
+
+commit a6c5a86b696316dd4530959cc77e9b98ed19afc3
+Author: Aram Safaryan <aram03007@mail.ru>
+Date:   Wed Aug 24 21:32:43 2016 +0400
+
+    fixed more bugs
+
+commit 4da280de059a68dc31282c9b43a4b21b0f4921d9
+Author: Aram Safaryan <aram03007@mail.ru>
+Date:   Tue Aug 23 19:39:05 2016 +0400
+
+    final version of offline mode
+
+commit 12c954658d832648ecb9f526d7cfb751877172d4
+Author: Aram Safaryan <aram03007@mail.ru>
+Date:   Mon Aug 22 21:26:20 2016 +0400
+
+    added some changes
+
+commit 750767b0c02e6451f20efe489267fff82a27fcf3
+Author: Aram Safaryan <aram03007@mail.ru>
+Date:   Mon Aug 22 18:09:07 2016 +0400
+
+    added offline mode
+
+commit b6623e973e83ce7b3658a278b69d00422ae22aa2
+Author: Aram Safaryan <aram03007@mail.ru>
+Date:   Sun Aug 21 21:31:44 2016 +0400
+
+    addec save action
+
+commit 31816f21d60cdc4fc50acf7acef7c10e188de487
+Author: Aram Safaryan <aram03007@mail.ru>
+Date:   Fri Aug 19 17:40:58 2016 +0400
+
+    added some code for offline mode
+
+commit e8a71b4c2fcf8dd41f7a4de5d48ab5cf65341abd
+Author: Aram Safaryan <aram03007@mail.ru>
+Date:   Thu Aug 18 18:18:01 2016 +0400
+
+    fixed vavbar lick handle and added save trail action
+
+commit be5ea1b0715b7cce3a78a5ed407171f0e0ea8726
+Merge: 4f390a6 e88570b
+Author: Aram Safaryan <aram03007@mail.ru>
+Date:   Wed Aug 17 13:18:47 2016 +0400
+
+    fixed merge conflict
+
+commit e88570b69b713901e91b41d4d30baac4a6950f1e
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Wed Aug 17 12:39:40 2016 +0400
+
+    some fixes
+
+commit 4f390a6eb454adf0bebf2fb28d229ffe3775bcc9
+Author: Aram Safaryan <aram03007@mail.ru>
+Date:   Wed Aug 17 12:34:13 2016 +0400
+
+    added startRouting dialog and sharedpreferences
+
+commit c6e1588dbf0432bfb5681b751b2917d0461f8354
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Wed Aug 17 00:51:59 2016 +0400
+
+    some fixes for take a photo
+
+commit 791e7243af48e84b8fed3fda2f009e079afd268f
+Author: Aram Safaryan <aram03007@mail.ru>
+Date:   Tue Aug 16 17:22:18 2016 +0400
+
+    added new resources
+
+commit 7ec41759b99a2bbfeef51a53abb40ba5c8f68b4d
+Author: Aram Safaryan <aram03007@mail.ru>
+Date:   Tue Aug 16 17:21:01 2016 +0400
+
+    added route drawing
+
+commit 1e6a3c5e2dbb2a139e2252b7758b481d302bce46
+Author: Aram Safaryan <aram03007@mail.ru>
+Date:   Mon Aug 15 18:09:20 2016 +0400
+
+    added mapbox
+
+commit ac40de4f12d2d3f8171d3a06f916a5e6c2a4380c
+Author: Aram Safaryan <aram03007@mail.ru>
+Date:   Mon Aug 15 18:06:13 2016 +0400
+
+    added mapbox
+
+commit 8c7e3df84e7f617547ea8cbf869a225472e0ce7a
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Sat Aug 13 00:21:07 2016 +0400
+
+    fix
+
+commit 54b6d215e8fee168edaab4ee94442a22c7f6630c
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Sat Aug 13 00:20:29 2016 +0400
+
+    add new resources
+
+commit 52b568696be7f17e9074bd55f7e0095cd5f67879
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Sat Aug 13 00:20:07 2016 +0400
+
+    some fixes
+
+commit abf57759fbb0769f356ab7db6f6af48e8776c202
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Fri Aug 12 23:27:08 2016 +0400
+
+    Added compass and offline trails filds on leftside
+
+commit a8a86ee06fc7d01694ddd48734ec22628c27c38f
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Fri Aug 12 23:26:07 2016 +0400
+
+    change loading images
+
+commit d550576678dfd5e0bb324bbefc028a87e58d1fbf
+Merge: 9cd7ab0 22ce01b
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Fri Aug 12 01:51:43 2016 +0400
+
+    mergeMerge branch 'dev' of git.bigbek.com:one-armenia/hike-android-app into dev
+
+commit 9e2eba795433790bf0ec66ea838701ca03784117
+Author: Aram Safaryan <aram03007@mail.ru>
+Date:   Thu Aug 11 21:45:22 2016 +0400
+
+    added trail route
+
+commit ae76db9b8ef43774d58e5a980684ba36f83a97da
+Author: Aram Safaryan <aram03007@mail.ru>
+Date:   Wed Aug 10 14:02:58 2016 +0400
+
+    added some action
+
+commit 234b7baf342f98c880703bd640a23c18b0832b90
+Author: Aram Safaryan <aram03007@mail.ru>
+Date:   Mon Aug 8 15:22:47 2016 +0400
+
+    added open street map
+
+commit 22ce01b402ebd93032dbfc327db312342e5e9e6b
+Author: Aram Safaryan <aram03007@mail.ru>
+Date:   Wed Aug 3 16:40:42 2016 +0400
+
+    fixed some bugs
+
+commit 3d4b416dfe58668f0830a370a66e3aa95f0d087a
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Tue Jul 26 17:00:50 2016 +0400
+
+    Fixed crash for Slideing Activity
+
+commit 17ace02e36ce31be1173e370188b4b8d4ea77e24
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Mon Jul 25 18:16:54 2016 +0400
+
+    Added Animation of start Activity on screen AutActivity
+
+commit 99cc6ec46e41c5eb33f91483a018cabd5329f169
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Mon Jul 25 17:54:57 2016 +0400
+
+    Fixed some bugs on edit profile screen
+
+commit 7dca3c592d6b087904652687947404490ec5fd91
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Mon Jul 25 17:24:48 2016 +0400
+
+    Added new click effect in to profie screen
+
+commit 7373d81ba396ef1c9051bb9e3eca2e4e3e7bfa92
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Mon Jul 25 17:03:12 2016 +0400
+
+    Fixed some bugs (fb login, error message from server)
+
+commit 9cd7ab0e165c60780315aee1165d9dc36e5491d4
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Fri Jul 22 14:31:07 2016 +0400
+
+    some fixes
+
+commit 1b849e3ad5f980c38d00ad2faca4844729213f6a
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Thu Jul 21 17:19:33 2016 +0400
+
+    quickstart  Home Activity
+
+commit efaa1593452a4f59685da0476d9bdd0d3c68c395
+Merge: edfa976 55a3b37
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Thu Jul 21 17:14:27 2016 +0400
+
+    Merge branch 'dev' of http://git.bigbek.com/one-armenia/hike-android-app into dev
+
+commit edfa976649982900fe68a18cdcccca670e1318fb
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Thu Jul 21 17:09:14 2016 +0400
+
+    Added new effect to animation
+
+commit 55a3b37931c1e9fe601b3c60d3ed4115694fbf13
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Thu Jul 21 16:47:11 2016 +0400
+
+    bug fixed
+
+commit ff6ff37ed11cc0bec8ff31f31e714ca66e81db7c
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Thu Jul 21 16:31:04 2016 +0400
+
+    bug fixed
+
+commit 43a21919136bdeb55fdd1f997f84c50f87a5de11
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Thu Jul 21 16:30:07 2016 +0400
+
+    Fixed share icon action
+
+commit ad775f4d5ef2f09ae4577169f3d0674a12ae5969
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Wed Jul 20 19:22:27 2016 +0400
+
+    create new Fragment for Map screen, added new animation
+
+commit 033bdda6bbad4612e0b7e6af44498a1202c1bb73
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Tue Jul 19 14:34:28 2016 +0400
+
+    Added new Animation on start Map Activity (Not Finished)
+
+commit 284e1a9c39d600a25952ca131e4ba540d2b95da4
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Mon Jul 18 19:35:28 2016 +0400
+
+    Fixed Bug at Add Guide Review
+
+commit ac2afda26ba358617e67f4fcbd964ec196a93cd3
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Mon Jul 18 19:24:01 2016 +0400
+
+    Fexed Bug at Left sliding menu
+
+commit 14779ce1b2a648beb0d7a9a33599557d1c806c75
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Mon Jul 18 19:11:09 2016 +0400
+
+    Fixed bug on click all trails at Aut Activity
+
+commit 7902683644d1425314117d71437e4c05b06d9230
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Fri Jul 15 14:12:38 2016 +0400
+
+    Added sliding effect on back from map activity
+
+commit 8a6c0ac90f6e1d5f523517b0bd571f956e661e79
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Fri Jul 15 13:08:39 2016 +0400
+
+    Changed Sliding of Left menu
+
+commit 55044d763d9c82420797745c2e8c1e5c9779f82a
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Thu Jul 14 19:00:12 2016 +0400
+
+    close Left slide menu (not finiged)
+
+commit e72ea43193fa060f0382f853c2436ae619011e7f
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Thu Jul 14 15:11:28 2016 +0400
+
+    left sliding
+
+commit d2d49e42be6917b8c009d5ab36c8477cbc2606ae
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Wed Jul 13 17:03:18 2016 +0400
+
+    Fixed crash on touch Like icon at Detail Screen
+
+commit be7b5f0f9dbcaecbc97aa24d068e94dfd7949d72
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Wed Jul 13 14:56:31 2016 +0400
+
+    Update data at home screen
+
+commit ecb355a7c5e65c1ef5a114090586054ddbaf9ec7
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Wed Jul 13 14:10:31 2016 +0400
+
+    Show text after Load data at Detail Screen
+
+commit 556a133e85bf7c0c9f644b98017c605b5fdcad3d
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Wed Jul 13 14:07:32 2016 +0400
+
+    Added loading on TrailTips Activity
+
+commit abfc41cea97b18f11eba141002fcc90b5fa6fe43
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Wed Jul 13 13:58:04 2016 +0400
+
+    Fixed some bugs at TrailDetaip Screen
+
+commit ec3e602fd248f9da65a407a2db02e34ae5271362
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Wed Jul 13 13:14:35 2016 +0400
+
+    Fixed some bugs
+
+commit f421c119b7a21af65fea1724cd2eee87a3af1421
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Wed Jul 13 13:08:31 2016 +0400
+
+    Cancel Request if presed back button on Trail Detail page
+
+commit 3f32370b3142e0edd324b5154ba2ace99900e85d
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Tue Jul 12 22:53:02 2016 +0400
+
+    show map image on Detail screen
+
+commit 04deda2c81a56c48bfc475fd1572d0cfe132433c
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Tue Jul 12 18:31:45 2016 +0400
+
+    EndLess Adapter at imageSlider (for the left sliding)
+
+commit e056af4a60e13ad743d15fa24465dce22069726c
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Tue Jul 12 17:45:38 2016 +0400
+
+    Sliding Activity on back slide
+
+commit dfeed6bc46ef1bc671fd89e7d1ec082428e3e903
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Tue Jul 12 17:39:42 2016 +0400
+
+    Blocking left sliding if touched to viewPager
+
+commit 6b08ce5f7bb00ffe2b11d735387f371344ea87f4
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Tue Jul 12 16:12:18 2016 +0400
+
+    extends TrailDetailActivity from SlidingActivity
+
+commit 4bd5709158ccfd07027b9bd118053530d9a27643
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Tue Jul 12 13:20:33 2016 +0400
+
+    Added Carusel pGaer Adapter for Accomodation Pager
+
+commit 1825c057a92470fd52b47fb06141277ab16aefc9
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Fri Jul 8 12:36:39 2016 +0400
+
+    block save trails click at the Detail page if data is not received# Please enter the commit message for your changes. Lines starting
+
+commit 1d436e0adbf666fe21a65e6b355a395ab054609a
+Merge: 4a6c591 511b614
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Fri Jul 8 12:24:06 2016 +0400
+
+    Merge branch 'dev' of http://git.bigbek.com/one-armenia/hike-android-app into dev
+
+commit 511b614dd39ca9683f6ed733e89c72ae39764d2d
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Thu Jul 7 21:17:29 2016 +0400
+
+    Fixes for left menu
+
+commit 4a6c5911cb471ad90f2616bbd4d689356c0f5eda
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Thu Jul 7 19:03:21 2016 +0400
+
+    Fixed bug "Displays a pop-up Invalid Email"
+
+commit df21d76ba9c24dee3c0d44eba4b1f58a20805459
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Thu Jul 7 18:54:28 2016 +0400
+
+    fixed bug " displays a wrong pop-up"
+    "Warning. Please fill review"# Please enter the commit message for your changes. Lines starting
+
+commit 42e378389afef70852436ddd6c3bcdd48c66ba97
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Thu Jul 7 18:32:00 2016 +0400
+
+    Show Saved trails if Selected Saved item
+
+commit 747f3e705d84772361401ec461e56820ef9d4214
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Thu Jul 7 18:09:50 2016 +0400
+
+    Changed touch area of like icon at home Screen
+
+commit 8a43856db03c7b574712453f15b2db3af9caa812
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Thu Jul 7 17:58:29 2016 +0400
+
+    Fixed bug on click  like icon at Home Screen
+
+commit fc689359731b42bdca033aa9ab05510794c201c6
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Thu Jul 7 17:31:10 2016 +0400
+
+    CenterCrop image at SavedTrails item
+
+commit 6d7703514dfd875ac570ac9d4ba8031fd92b0302
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Thu Jul 7 17:22:47 2016 +0400
+
+    Added new Parallax effect at Home Activity
+
+commit 05e56014d810e40051c41dd7136e945b040c0a70
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Thu Jul 7 16:33:40 2016 +0400
+
+    Title of Detail page is center
+
+commit 8780505ce66366ff512e77181aff0e87862c86d6
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Thu Jul 7 15:44:25 2016 +0400
+
+    If Compass Activity is started from Detail Activity need to finish Detail Activity
+
+commit 8383e78177f1410350d0799468a5d7e036d4b803
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Thu Jul 7 15:32:12 2016 +0400
+
+    fixed crash on back presed at Detail page
+
+commit 522d01a97644e2696899f5b507d64d70a8658f7f
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Thu Jul 7 14:46:04 2016 +0400
+
+    Show Accomodation image at the Accomodation Activity
+
+commit b8896a689d8a27e48a58851f5f176e94d2990af9
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Thu Jul 7 14:33:35 2016 +0400
+
+    Added click efffect at like icon in Home Screen
+
+commit be375c18ca03c39d26416478f7974f54fb32d10a
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Thu Jul 7 14:14:25 2016 +0400
+
+    Changed Toolbar of Detail page (final)
+
+commit 3c506203295c26950275c86f7a3d269df836520e
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Thu Jul 7 12:08:49 2016 +0400
+
+    Fixed accomodations indicators color on Detail screen
+
+commit 48bfe96f1e38d4e60d4eca7c3be52168e3984ecd
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Thu Jul 7 09:09:24 2016 +0400
+
+    Fixed links in AboutOneARmeniaFragment
+
+commit d86b5df69a6100975131b3a84a233a7246e22bd9
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Wed Jul 6 16:28:40 2016 +0400
+
+    Changed Guide item width
+
+commit 3718423639b9c3adf915e59b7dc0e38b52704694
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Wed Jul 6 16:08:15 2016 +0400
+
+    Chnged Animation of Detail Page
+
+commit 463a91b5fd1089841409971cf08abbd369670cfb
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Wed Jul 6 15:56:09 2016 +0400
+
+    some fixes for  CompasActivity
+
+commit 645297959c7a27ef4eaaca7c633b4cb166cbc621
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Wed Jul 6 15:32:53 2016 +0400
+
+    Fixed back item click on Detail screen
+
+commit f9d98cafe02e29137f38b7253817d71d397cb2a6
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Wed Jul 6 14:21:00 2016 +0400
+
+    Fixed map image click on Detail screen
+
+commit 4065bfdf9a31a1fd7e01e0ef8cd94363cd3d3931
+Merge: 94245fc 7d7e26b
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Wed Jul 6 13:56:52 2016 +0400
+
+    Merge branch 'dev' of git.bigbek.com:one-armenia/hike-android-app into dev
+
+commit 94245fcde07e1e5a31b9157f65c865948673c8be
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Wed Jul 6 13:56:28 2016 +0400
+
+    some fixes
+
+commit 7d7e26bdda3fbf8d4fc5b4acb8068438b384d216
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Tue Jul 5 18:33:34 2016 +0400
+
+    changed toolbar title of Detail screen
+
+commit 6888698e594cdd2a8ce76d51073b9664cae17aea
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Tue Jul 5 16:03:13 2016 +0400
+
+    Fixed some bugs for android 4.*
+
+commit f065188fbef154b678653436f0376797130fcc0e
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Tue Jul 5 13:36:14 2016 +0400
+
+    fixed bug at Guide screen ontouch call image
+
+commit 21119ebd77516c5d5d2b8986423dfd251ed62a4a
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Mon Jul 4 18:09:28 2016 +0400
+
+    changed toolbar of Detail screen
+
+commit 2150db5128028fd90ec7bd4528d7dd0325653a64
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Mon Jul 4 17:03:54 2016 +0400
+
+    Added dependencie for parallax
+
+commit 5016883ddc37e4f2296522edfc1f4ae413c391e9
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Mon Jul 4 16:43:04 2016 +0400
+
+    Added validation for phone numbers and web urls
+
+commit 7d8f4a7f47bb4b1623b80055e0f8bf56df6f3e24
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Mon Jul 4 15:25:44 2016 +0400
+
+    Parallax effect at Home screen in RecyclerView# Please enter the commit message for your changes. Lines starting
+
+commit 68b80d2a175b66a7f312e3103a8a7a5c85b90abd
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Mon Jul 4 15:17:54 2016 +0400
+
+    Added parallax effect at Home screen in RecyclerView
+
+commit 8bcf3dfcb5ab6423f9f25c219cddb2c719dabcc5
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Fri Jul 1 17:07:29 2016 +0400
+
+    fixed some bugs
+
+commit 98605772086f6cc88458e098863a19c292ae3335
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Fri Jul 1 16:32:04 2016 +0400
+
+    set title at mapActivity
+
+commit e2a5b79f319686f946a5e48f81c75b11c1cd3640
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Fri Jul 1 15:27:07 2016 +0400
+
+    Show save yrails from Map Activity
+
+commit c1768dfe9ea758ace2459c8486579ea871f88cf2
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Fri Jul 1 14:49:33 2016 +0400
+
+    Added view Pager at About Activity
+
+commit 6dc14cef45f258c13ab7ff77dc522dd0b4cbba58
+Merge: badd31d d1a6d06
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Fri Jul 1 12:20:21 2016 +0400
+
+    Merge branch 'dev' of git.bigbek.com:one-armenia/hike-android-app into dev
+
+commit badd31dfc451387322fb42142b0ca39cc841a114
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Fri Jul 1 12:19:54 2016 +0400
+
+    some fixes foe About screen
+
+commit d1a6d064d048ccad8d414563db6952f43b5d933d
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Fri Jul 1 11:48:06 2016 +0400
+
+    Fixed ViewPager bug, added tpuch event on views
+
+commit 49810db753ecd059b201931436f4e319d7c6fee0
+Merge: 9510448 0dca92e
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Fri Jul 1 00:16:13 2016 +0400
+
+    some fixes
+
+commit 95104480af90d2b9c2f75112d744ff2127a179e7
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Thu Jun 30 23:27:14 2016 +0400
+
+    Added flip animation
+
+commit 0dca92efa93aa760b646c9c5a7576f833ebb235c
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Thu Jun 30 20:15:26 2016 +0400
+
+    Touch effect on toolbar
+
+commit 2783283ec91b92fa4ca3f3d6693e24a6006241fa
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Thu Jun 30 19:10:51 2016 +0400
+
+    Click effect at all views (not finished)
+
+commit 838b56bf99e092a0545b04f2de6e5d1d637de42d
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Thu Jun 30 16:14:25 2016 +0400
+
+    bug fixed
+
+commit 761e4abadb3ee06e8b4fb21c2a2a1f0e5e076a7c
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Thu Jun 30 15:24:10 2016 +0400
+
+    some fixes
+
+commit 0fe1fcdccdbd0d422519a780700917de1a8697cb
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Thu Jun 30 15:19:57 2016 +0400
+
+    some fixes for empaty accommodation
+
+commit 7e65797d679e8053eb6506f7b77055d7eb2c9958
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Thu Jun 30 14:39:03 2016 +0400
+
+    Added progress bar for Detail screen
+
+commit cf64923c7336c5135e28eef63b7291364d4a487b
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Wed Jun 29 19:04:42 2016 +0400
+
+    some fixes for lib
+
+commit e0cb8388157b8d998be69f057fc1cd9d8a2f88d4
+Merge: a22819d 5ce60bc
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Wed Jun 29 17:22:02 2016 +0400
+
+    Merge branch 'dev' of git.bigbek.com:one-armenia/hike-android-app into dev
+
+commit 5ce60bce06c2252278443d9846b5bc73b179f227
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Wed Jun 29 17:13:23 2016 +0400
+
+    Update dta after return to Home Screen
+
+commit a22819d42f6824d22476cbb16bb55223a4382c6b
+Merge: 080b23d 436ecc6
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Wed Jun 29 16:51:13 2016 +0400
+
+    Merge branch 'dev' of git.bigbek.com:one-armenia/hike-android-app into dev
+
+commit 436ecc6306d4bcaac259b415df782b8bcff193f0
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Wed Jun 29 16:48:33 2016 +0400
+
+    Added new click effect at bottom menu mar
+
+commit a9c92a13dd9c771ab0c23c52510176cb9cd7ce22
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Wed Jun 29 16:48:03 2016 +0400
+
+    Added click effect
+
+commit e8caaa446b6e53397bca1c44cfdf1428fee94ec7
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Wed Jun 29 16:46:46 2016 +0400
+
+    Added Click effect for bottom bar
+
+commit 080b23d1392a42fedee85ca02f8eaed717f60e5c
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Wed Jun 29 15:47:33 2016 +0400
+
+    added some resources
+
+commit 9669164d25e25aad25ce1303103bc07ac0417d00
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Wed Jun 29 15:18:33 2016 +0400
+
+    some fixes
+
+commit 39e954f8f1af44c2ab0e14c32574a7ddf6102e69
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Wed Jun 29 14:51:59 2016 +0400
+
+    some fixes for map screen
+
+commit 5d983aa00a1d963de56d4eaa1fee70941436b85a
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Wed Jun 29 01:56:23 2016 +0400
+
+    bug fixed
+
+commit d29511599bea44cbc2cad78a282a4efba2b80cbe
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Wed Jun 29 01:38:18 2016 +0400
+
+    some fixes
+
+commit 811f6256a6a56f3b18dbddba169f63709ff91c04
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Wed Jun 29 01:37:07 2016 +0400
+
+    remove swipeback library
+
+commit 1dbf0b9afc8373a4405ee3c09bbb619aff5d1c1d
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Wed Jun 29 01:32:46 2016 +0400
+
+    Added phone & email buttons inactive state
+
+commit 0d1126e9a8c0258f7f82396664dc3208ac17e5f6
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Wed Jun 29 00:30:54 2016 +0400
+
+    Fixed trails rows ui issue on home screen
+
+commit 6da3a422315d0b38bfca446b66b63b3741496c53
+Merge: 3faabfd c6fbd3e
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Tue Jun 28 16:35:13 2016 +0400
+
+    Merge branch 'dev' of git.bigbek.com:one-armenia/hike-android-app into dev
+
+commit 3faabfd13972cbf75a33902f0a958efdaa0ce530
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Tue Jun 28 16:21:01 2016 +0400
+
+    Added mesasge for compass
+
+commit da7fd43c9c2c2ae87b95e27f5f228249d829fff3
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Tue Jun 28 15:19:38 2016 +0400
+
+    some fiexes
+
+commit c6fbd3e4957832678a9129d1e3cae2690a12bb6b
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Tue Jun 28 14:36:45 2016 +0400
+
+    Transition for start  more gude screen
+
+commit 81a2fa463a973fe46d402d6f628882750ec5ef2b
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Tue Jun 28 14:28:06 2016 +0400
+
+    Added transition for start GuideReview Activity
+
+commit 57d10498200a4647e4036e3bb3c29850d27e0d78
+Merge: 203ab89 f933d25
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Tue Jun 28 14:18:07 2016 +0400
+
+    bug fix
+
+commit 203ab89fcff03a1a01bb3ae92c04636489b1a6f5
+Merge: 3415217 b9e3685
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Tue Jun 28 14:15:56 2016 +0400
+
+    some fixes
+
+commit f933d2503c38cda56d2cc6154e0c3132bda0ef6c
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Tue Jun 28 12:22:53 2016 +0400
+
+    changed code structure at Accommodation activity
+
+commit 34152176d0739dddef0cf974679763b9569060b8
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Mon Jun 27 22:45:45 2016 +0400
+
+    fixed back swipe
+
+commit b9e36852de91c574d6a8cb6bbfc89471e3c6b322
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Mon Jun 27 19:55:36 2016 +0400
+
+    delete user photo functionality
+
+commit 345bd6d765dbf05d1d11dca1975a98ac379166cf
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Mon Jun 27 19:20:34 2016 +0400
+
+    Do not load Trail data After back to Home Activity
+
+commit c8d6329c687f24fcfd9e071588375222e15cb8dd
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Mon Jun 27 18:58:31 2016 +0400
+
+    changed size of Accomodation image at AccomodationActivity screen
+
+commit d18fc66db15a30c39420f8a91f547996785b98f0
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Mon Jun 27 18:15:20 2016 +0400
+
+    Sliding animation for start activity at Detail Page
+
+commit 746ef36333294815f9bd5eda2183eea06d0affd7
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Mon Jun 27 17:14:52 2016 +0400
+
+    "startActivityForResult" for SlidingActivity
+
+commit 5cb531d620939fc1057ea6b7c7e4401b270a7ad6
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Mon Jun 27 15:53:22 2016 +0400
+
+    some fixes
+
+commit 0b5b3f72202613e969f723853a9d3fad3b179270
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Mon Jun 27 15:03:44 2016 +0400
+
+    Added navigation swipe for TrailTipActivity
+
+commit e17c00cef096c80d50b4c17cd40ab85167197cb3
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Mon Jun 27 01:18:36 2016 +0400
+
+    Fixed accomoodation fragment creation
+
+commit 547d798622274c1de8eaec5325f57f94846b25da
+Author: Astghik Hayrapetyan <astghik.hayrapetyan@bigbek.com>
+Date:   Sun Jun 26 23:59:59 2016 +0400
+
+    fixes for navigation swipe
+
+commit 9c24319529926c63d707a55e98764367d42a3924
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Sun Jun 26 18:25:25 2016 +0400
+
+    changed position of CirclePageIndicator
+
+commit d52a403b25b5dfde6595b796ee4e9e862fb05658
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Sun Jun 26 18:08:42 2016 +0400
+
+    Changed toolbar at Find Local Guides Activity
+
+commit 0dc5b418b30d3674c848a58adff9b816ccfb767b
+Author: Hovsep <hovsep.arakelyan@bigbek.com>
+Date:   Sun Jun 26 16:38:55 2016 +0400
+
+    Show Alert dialog if Network is't Available
+
+commit 30daf415261d10e9a816f3c663875098196b33bf
+Author: Apple <apple@Apples-MacBook-Pro.local>
+Date:   Sat Jun 25 15:27:28 2016 +0400
+
+    some fixes
+
+commit 07e88e0b50b4c613d63cbab1fb935c64195c01fa
+Author: Apple <apple@Apples-MacBook-Pro.local>
+Date:   Fri Jun 24 19:53:03 2016 +0400
+
+    bug fixed
+
+commit 4d8eae205547b46bed42fd8bec94094e61782486
+Merge: 68dc8ce 68a604b
+Author: Apple <apple@Apples-MacBook-Pro.local>
+Date:   Fri Jun 24 19:45:11 2016 +0400
+
+    Merge branch 'dev' of git.bigbek.com:one-armenia/hike-android-app into dev
+    merge
+
+commit 68dc8ce94634707412c229536e0b1a2b3020b95f
+Author: Apple <apple@Apples-MacBook-Pro.local>
+Date:   Fri Jun 24 19:33:37 2016 +0400
+
+    some fixes
+
+commit d8584887dc03c4ad1501a02d6bdaf8ea9eebce3e
+Author: Apple <apple@Apples-MacBook-Pro.local>
+Date:   Fri Jun 24 19:22:41 2016 +0400
+
+    Some fixes
+
+commit 68a604b97cda8bc0d3d5e38478f3dc69d0336eb4
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Fri Jun 24 19:13:55 2016 +0400
+
+    Work of InfiniteViewPager  is  fine
+
+commit b85f07b47ab8cd43bca558822cce137a56548054
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Fri Jun 24 19:12:42 2016 +0400
+
+    Work of infinite ViewPager  is  fine
+
+commit 3e2a494129c494985a89e92cfbf2604d28bc387b
+Author: Apple <apple@Apples-MacBook-Pro.local>
+Date:   Fri Jun 24 17:50:05 2016 +0400
+
+    some fixes
+
+commit addad5cec3f94b5a9716e193214b24f00f176bcf
+Author: Apple <apple@Apples-MacBook-Pro.local>
+Date:   Fri Jun 24 00:38:05 2016 +0400
+
+    Added action bar on MapActivity
+
+commit 67daf62c3aa09e864478d9afdcdd0f45a895e86c
+Author: Apple <apple@Apples-MacBook-Pro.local>
+Date:   Thu Jun 23 19:08:44 2016 +0400
+
+    Added trails maps image on TrailDetail screen
+
+commit 4a64610a5e86fcab2b1e24dc86052495bb73af7e
+Author: Apple <apple@Apples-MacBook-Pro.local>
+Date:   Thu Jun 23 17:20:52 2016 +0400
+
+    fixed show route on map
+
+commit c36395240ab9394fd89c6fba76761c7331ce89f0
+Author: Apple <apple@Apples-MacBook-Pro.local>
+Date:   Thu Jun 23 16:39:37 2016 +0400
+
+    some fixes
+
+commit 3577fad9567577466997cded5d5b4e5f255bd59c
+Author: Apple <apple@Apples-MacBook-Pro.local>
+Date:   Thu Jun 23 16:08:57 2016 +0400
+
+    Fixed facebook login
+
+commit 3b6ae36a494a9a272a14c561c1055f64411cf5c3
+Author: Apple <apple@Apples-MacBook-Pro.local>
+Date:   Thu Jun 23 12:06:35 2016 +0400
+
+    some fixes
+
+commit f1ebc4f55d4e63cdea07e5d13e4e66f5b0db8ed0
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Thu Jun 23 01:23:44 2016 +0400
+
+    some fixes for navigation swipe
+
+commit 84b6925cc34abf849fbe262c669072e7615b55ef
+Merge: 4b5cd57 e006682
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Wed Jun 22 19:39:57 2016 +0400
+
+    Merge branch 'dev' of git.bigbek.com:one-armenia/hike-android-app into dev
+
+commit 4b5cd57504c3f826797133eda1c5c25bb08eb9c6
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Wed Jun 22 19:39:31 2016 +0400
+
+    some fixes
+
+commit e0066824c626b100d80dc3ac02026b0e53ad2017
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Wed Jun 22 18:59:25 2016 +0400
+
+    Change position of back button at thh Detail Activity
+
+commit aa14706ca7bddcd4c1538b06c72a4aa658c1ae74
+Merge: 26df29d 7210bf8
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Wed Jun 22 18:50:28 2016 +0400
+
+    some fixes
+
+commit 26df29d0f5cd5bbfe69123011cb09d45d2169b9a
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Wed Jun 22 18:16:13 2016 +0400
+
+    fixed commpas screen
+
+commit 7210bf8a6e8a41dd64ab233e72b3c71b35ddc005
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Wed Jun 22 18:09:20 2016 +0400
+
+    Toolbar title in center (Write a Trail Tip screen)
+
+commit a774b9571ec93377b43f1dfcc9ae44aa43ced5e6
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Wed Jun 22 15:41:53 2016 +0400
+
+    some fixes for CompassActivity
+
+commit 431efd6953fc0f81dd7869b4653cce080ffe676a
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Wed Jun 22 13:14:53 2016 +0400
+
+    Changed Alert dialog messages at the signUp Activty
+
+commit 152994b496a2f946392d8fc8699780b2666505c6
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Wed Jun 22 12:36:17 2016 +0400
+
+    Password recovery is worked
+
+commit 8bb5de73cd20506309c8e83cf27604da28e78fb2
+Merge: a3ef304 fb5d6f7
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Tue Jun 21 23:12:35 2016 +0400
+
+    Merge branch 'dev' of git.bigbek.com:one-armenia/hike-android-app into dev
+
+commit a3ef304c7f5cc0e38abe6a9fa4f55dc3156c6acd
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Tue Jun 21 23:12:08 2016 +0400
+
+    Some fixes
+
+commit fb5d6f7c1ae8c2fd421a2b80419dbe821d7dafc2
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Tue Jun 21 22:36:19 2016 +0400
+
+    wrong title at the  alert dialog in Login screen
+
+commit f41ccbb6534e6c5ca1a17537b995209d491af7f4
+Merge: 6ac5287 26edb16
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Tue Jun 21 17:01:36 2016 +0400
+
+    Merge branch 'dev' of git.bigbek.com:one-armenia/hike-android-app into dev
+
+commit 6ac528726f8ac0d63879a4a629090372db6c6424
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Tue Jun 21 16:57:51 2016 +0400
+
+    Added weather icon, some fixes for compass
+
+commit 26edb1613f968154a87910442568a270dafa319b
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Tue Jun 21 16:52:25 2016 +0400
+
+    Optimized the toolbar of Change Password Activity
+
+commit 46c43130ed8aacfb98c900950f0a1842fdf04890
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Tue Jun 21 15:47:59 2016 +0400
+
+    Added Change Password Activity
+
+commit de8b80016f21d23bac2abc80b059b6f38aac1413
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Tue Jun 21 13:07:17 2016 +0400
+
+    some fixes
+
+commit 737b1b53b7f79340d470998c5335091b764f272d
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Mon Jun 20 19:06:12 2016 +0400
+
+    Added logic for compass button click
+
+commit f4ef314825f2eea8a8e420fe2c23a4e7943202ff
+Merge: 6e11423 35d9e4f
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Mon Jun 20 18:37:38 2016 +0400
+
+    Merge branch 'dev' of git.bigbek.com:one-armenia/hike-android-app into dev
+
+commit 6e114236722d1c240a47e93f349d693e62a260b2
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Mon Jun 20 18:34:06 2016 +0400
+
+    Added some resources for CompassActivity
+
+commit 9ebdb81911b1a690ec14814094d7d10517b789b7
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Mon Jun 20 18:30:43 2016 +0400
+
+    some fixes
+
+commit 35d9e4f631ac7c66460b4117306dfba8db980743
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Mon Jun 20 18:27:36 2016 +0400
+
+    Edit profil without Phone nummber
+
+commit a151e2d31f8a69e2ef1d64146966380c7914e767
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Mon Jun 20 18:18:39 2016 +0400
+
+    Added Loadin dialog at Guides screen
+
+commit 2851a3d6b97608605b2a980abbfdce6009d8e577
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Mon Jun 20 18:08:23 2016 +0400
+
+    Added title  at the alert dialog in Login screen
+
+commit 848a24b4135f585c99db5926da092d1cc7a7acda
+Merge: 449f455 06f06bd
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Mon Jun 20 17:18:35 2016 +0400
+
+    Merge branch 'dev' of http://git.bigbek.com/one-armenia/hike-android-app into dev
+
+commit 449f4551f791d6ec62b72e0fc4b52a563b18e2dc
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Mon Jun 20 17:16:30 2016 +0400
+
+    Fixed some crashes on Accommodation Screen
+
+commit 06f06bd3d87c6f90d622cae13804eaa49d074645
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Mon Jun 20 16:06:13 2016 +0400
+
+    Fixed screen orientation
+
+commit 5c382896d996da470f0f5367fe558ac1ef0ab72b
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Mon Jun 20 13:15:50 2016 +0400
+
+    Added toolbar for MapActivity
+
+commit e16f2b27af0cf09358aee8304b2ec64898c4a478
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Mon Jun 20 12:49:11 2016 +0400
+
+    Fixed ui issue on AccomodationActivity
+
+commit bb021bbbc4cfa2ff3442369038bdfde341a9b296
+Merge: e83618d a913b96
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Mon Jun 20 12:20:43 2016 +0400
+
+    Merge branch 'dev' of git.bigbek.com:one-armenia/hike-android-app into dev
+
+commit e83618d98ef6d5e0ae83c7e60d276d4776af1ece
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Mon Jun 20 12:19:58 2016 +0400
+
+    fixed bug
+
+commit a913b967cd94539a12721ebfc334d1a613888ef0
+Merge: b5a23f5 69278f5
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Mon Jun 20 12:12:09 2016 +0400
+
+    Merge branch 'dev' of http://git.bigbek.com/one-armenia/hike-android-app into dev
+
+commit b5a23f577b9b9b9567a4a36c61b4cc0c3fabcf4c
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Mon Jun 20 12:10:53 2016 +0400
+
+    Added TW link of HikeArmenia
+
+commit 69278f56b63deb5b9cef4a9676efa64bab47d95a
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Fri Jun 17 19:16:06 2016 +0400
+
+    Some fixes for trails tip
+
+commit 255bdabfa722bbe5aecd77abb064e5cb033ea281
+Merge: 89af239 a92b0d5
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Fri Jun 17 18:30:43 2016 +0400
+
+    Merge branch 'dev' of git.bigbek.com:one-armenia/hike-android-app into dev
+
+commit 89af239084b0e8b9cd8af79141aade356c067ff7
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Fri Jun 17 18:29:46 2016 +0400
+
+    Added shoe current location logic
+
+commit a92b0d5f6e233b1b823d16ec93770be42f33363f
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Fri Jun 17 18:12:40 2016 +0400
+
+    Fast opening Detail Activity, Updating Trial list after Login or sign out, show progress Dialog at the Detail Activity on load data...
+
+commit 1bd648968846e0f7b8f5ef3d01678730fd3040b3
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Fri Jun 17 16:46:19 2016 +0400
+
+    fix
+
+commit 70be5c17bc79e28e5b75060c01bd99c2912058ec
+Merge: 7a6ed49 c0680a3
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Fri Jun 17 15:46:30 2016 +0400
+
+    Merge branch 'dev' of http://git.bigbek.com/one-armenia/hike-android-app into dev
+
+commit 7a6ed4991a58fd4ddf68db73fe087e2b8550a857
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Fri Jun 17 15:44:30 2016 +0400
+
+     Fixed bugs at the save trails functionaliti
+
+commit c0680a3eef3688c6caca6a725f7fda73dc882480
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Fri Jun 17 15:41:41 2016 +0400
+
+    some fixes on Trail tip activity
+
+commit ac1310b9509f4ff8c6567024ecc18650c55e5e2d
+Merge: 153da4b 3f14a8f
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Fri Jun 17 14:09:49 2016 +0400
+
+    Merge branch 'dev' of git.bigbek.com:one-armenia/hike-android-app into dev
+
+commit 153da4b6343fc5e56819b56515de0faaae0292b5
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Fri Jun 17 14:08:46 2016 +0400
+
+    Added check internet connection logic
+
+commit 3f14a8ff9ba1bc10614ea5783b1b50b6fbd89cec
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Fri Jun 17 13:11:47 2016 +0400
+
+    Update Saved trails info after back on home screen
+
+commit 094ba1f35e610012ff687380b5976c9c0f8bbbdc
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Fri Jun 17 12:38:36 2016 +0400
+
+    some fixes
+
+commit d54bdce7869783648c38dc81485fe62207c00d57
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Fri Jun 17 12:26:01 2016 +0400
+
+    fix
+
+commit 29c49400eff8293c1cf425ad167fea5952629c05
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Fri Jun 17 12:06:38 2016 +0400
+
+    some fixes for MapActivity
+
+commit 1e8f0eecdc4e3e24a9b473452557f5389e01c61e
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Thu Jun 16 18:29:07 2016 +0400
+
+    Removed map image from Accomodation screen
+
+commit 7010128c67204b242b7f747c698259b5971cb98d
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Thu Jun 16 18:15:30 2016 +0400
+
+    Added image resources
+
+commit b954ee11f90393ba5e81381f01515fd55bef8e91
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Thu Jun 16 17:50:32 2016 +0400
+
+    some fixes
+
+commit d4cdc06df56c80ebba1aa7ee6423ac36692eaf7a
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Thu Jun 16 14:30:15 2016 +0400
+
+    some fixes
+
+commit 710fad3dcc885ee71776c14fc904051ef505f935
+Merge: 9338ee6 216092c
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Thu Jun 16 14:11:39 2016 +0400
+
+    Merge branch 'dev' of git.bigbek.com:one-armenia/hike-android-app into dev
+
+commit 9338ee6d70eaae9738785358c13b24073e3a1076
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Thu Jun 16 14:08:26 2016 +0400
+
+    Added weather logic
+
+commit 216092caa1ead0918023de974f9126202a6f3dc5
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Thu Jun 16 13:43:37 2016 +0400
+
+    Fixed some bugs
+
+commit 5cbba2ea49d54104cbdd2439694dddf57ef19cec
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Thu Jun 16 13:39:30 2016 +0400
+
+    Weather info
+
+commit a80cc0663286b00a180d7f76d8b595ed1fd96673
+Merge: 7a56deb ea5468e
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Thu Jun 16 13:32:55 2016 +0400
+
+    Merge branch 'dev' of git.bigbek.com:one-armenia/hike-android-app into dev
+
+commit 7a56deb99455458bcf988e52944c32cd05114ab1
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Thu Jun 16 13:31:09 2016 +0400
+
+    some fixes on TrailDetailScreen
+
+commit ea5468eb1c45ae3e074f8dda412841b6eae20f5b
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Wed Jun 15 19:11:39 2016 +0400
+
+    Added functionality "removed From Saved Trails".Updating List Data on click tralis at Home Screen
+
+commit 910b7671b77a6824527010a92b3197753cd31dad
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Wed Jun 15 18:04:38 2016 +0400
+
+    Fixed text for add another trail tip
+
+commit 78f93c1e8d4268bf0cd8ce899f4bf42cd27090df
+Merge: 013f10c 8ddc08e
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Wed Jun 15 17:51:50 2016 +0400
+
+    Merge branch 'dev' of git.bigbek.com:one-armenia/hike-android-app into dev
+
+commit 013f10cb06626fd1fe37f56d36f3bddea203c7e7
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Wed Jun 15 17:48:52 2016 +0400
+
+    some fixes for mapActivity
+
+commit 8ddc08e3f317cd46596d907e98f9d0499428d706
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Wed Jun 15 16:39:09 2016 +0400
+
+    Set toolbar title width
+
+commit e5f01900b93922373cbbc74b7e2f712e544a6193
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Wed Jun 15 16:14:00 2016 +0400
+
+    some fixes
+
+commit 5d9520b1b6a5c8c62de5e31d06972e304473f61b
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Wed Jun 15 14:51:59 2016 +0400
+
+    some fixes
+
+commit 2ededeea0bc1c5387d09a3dadc77fecbc8e0a612
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Wed Jun 15 14:39:57 2016 +0400
+
+    fixed compuss button click
+
+commit a0a87811e776d6b37ec3a0676c97741099f818a1
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Wed Jun 15 14:28:15 2016 +0400
+
+    fixed back button tap area
+
+commit 1ec215c8da8a7e946f028e82bd5c7d1408b43851
+Merge: bd1fe0f dc23821
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Wed Jun 15 12:35:53 2016 +0400
+
+    Merge branch 'dev' of git.bigbek.com:one-armenia/hike-android-app into dev
+
+commit bd1fe0f9659a741a97829f91a5b96adec5e381c7
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Wed Jun 15 12:34:26 2016 +0400
+
+    some fixes
+
+commit dc238211578e5c2ed532b1dc9eec41463db62e00
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Tue Jun 14 23:22:13 2016 +0400
+
+    Added custom ScrollView, changes the toolbar at Detail screen
+
+commit dd41d46674d5752ee5fdbc4c79328c6039ad337b
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Tue Jun 14 14:22:01 2016 +0400
+
+    some fixes on leftSide
+
+commit 7b2d1f97ab02f85fee2b90e7b8cad64daebcebd5
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Tue Jun 14 13:59:57 2016 +0400
+
+    added image resource
+
+commit a4063af4ea5ef24a801e65477f642f918db801f6
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Tue Jun 14 13:25:55 2016 +0400
+
+    fiex bottom bar
+
+commit 57c3330134380e2cd562e3f906fb9e57f0405716
+Merge: 4b03c4f 408e217
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Mon Jun 13 23:41:49 2016 +0400
+
+    Merge branch 'dev' of git.bigbek.com:one-armenia/hike-android-app into dev
+
+commit 4b03c4f823f2ba3595ce9f70626fc494019027bf
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Mon Jun 13 23:39:32 2016 +0400
+
+    Added  pagination circles on the accommodations
+
+commit 408e2172525c113236a0f62b95510a2217ebc6ce
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Mon Jun 13 19:35:36 2016 +0400
+
+    Blur efect at TrailDetailActivity
+
+commit 6d7949fc15785b8b012ef047b9b1c0a09c901075
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Mon Jun 13 19:06:58 2016 +0400
+
+    some fixes
+
+commit f2cc6d56d7cc39980b886836bd2f32fca0f33e52
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Mon Jun 13 16:26:58 2016 +0400
+
+    Added circle page inticator in TrailsDetail screen
+
+commit 7a54b22fd6ae989d634d7ff7da5a680aa28b4058
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Mon Jun 13 13:49:39 2016 +0400
+
+    circlePageIndecator
+
+commit e3754e3db710e6e8f37ec662b9d577fa011a15bb
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Fri Jun 10 19:50:40 2016 +0400
+
+    changes according to new design
+
+commit ab538c167eda225826b3a36be089aa907ee14041
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Fri Jun 10 17:37:38 2016 +0400
+
+    some fixes
+
+commit ecbc3a6fe309e5be1ced743849f11ad4634a1645
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Fri Jun 10 16:28:34 2016 +0400
+
+    some fixes
+
+commit bb49bdd283dbcb8df9d03d4b184dec5e958bf6aa
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Fri Jun 10 16:09:32 2016 +0400
+
+    Added logic to show trail name in guide screen
+
+commit df587af46942f06c8506897b3efe12e0bf0aae4b
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Fri Jun 10 15:31:25 2016 +0400
+
+    Changed map view
+
+commit 42203cdb6d8afe088374866387f32fb2b95ab61e
+Merge: 09edf7c 5120841
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Fri Jun 10 12:37:12 2016 +0400
+
+    Merge branch 'dev' of git.bigbek.com:one-armenia/hike-android-app into dev
+
+commit 09edf7cb4bbf9fdd4f44082df4568d1c801ec206
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Fri Jun 10 12:36:24 2016 +0400
+
+    some fixes
+
+commit 51208410248ef5ad36d6c9eb2656dbc41622da06
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Fri Jun 10 11:59:24 2016 +0400
+
+    Accomodation detail screen - home button - navigates to detail screen - bug is fixed
+
+commit a9c91d1bc93497b5168b44abb274421f7b769b50
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Fri Jun 10 11:49:42 2016 +0400
+
+    Fixed some bugs at Left slide menu
+
+commit db1ae2031f38e461c22b21600f291c053fc2a648
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Fri Jun 10 11:14:10 2016 +0400
+
+    Fixed bugs at screens About One Armenia and AppInfo
+
+commit 6fa8b784394a4fff6a1844bb89cf5c63bb534531
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Fri Jun 10 01:58:27 2016 +0400
+
+    New fixes for HikeArmenia
+
+commit 4231ef88f29c0ae94351d9b54dfda03b7143df13
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Thu Jun 9 18:42:33 2016 +0400
+
+    Added click in "Find Guides" and "Saved Trailes" on activities Appinfo and AboutOneArmenia
+
+commit 5c82f35e426282d2d672753d34bede658fbff30b
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Thu Jun 9 17:33:53 2016 +0400
+
+    Added links of "fb", "tw" and "In" at activities AppInfo and AboutOneArmenia
+
+commit 0b72fcdbdd172044640f6162485e48dc193ab8c2
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Thu Jun 9 17:16:23 2016 +0400
+
+    some fixes
+
+commit 5ef41ac87510dc630414d3951545c2ab7117e559
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Thu Jun 9 16:33:03 2016 +0400
+
+    Correct Accommodation viewPager
+
+commit 9c3e38bb6a750c53b5a6f49dac8838e3508a4e80
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Thu Jun 9 15:51:43 2016 +0400
+
+    some fixes
+
+commit a7bc6afc2c99119812eed997c3e81ec74c3bf53d
+Merge: d8aeda2 211e36b
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Thu Jun 9 14:32:33 2016 +0400
+
+    Merge branch 'dev' of git.bigbek.com:one-armenia/hike-android-app into dev
+
+commit d8aeda2e8f3fa88b8f262eb5e645d6afe44f1bc5
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Thu Jun 9 14:30:45 2016 +0400
+
+    some fixes
+
+commit 17b6adb1b605c620130b9409625d4837dd46979d
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Thu Jun 9 14:24:40 2016 +0400
+
+    some fixes
+
+commit 211e36bb079e898814b831e1842888eed6e54123
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Thu Jun 9 13:52:28 2016 +0400
+
+    Added background image in Review, Home and LocalGuides Activitis
+
+commit 46ee9f05b1c7b72a6f0d50df2bdf72192b1818c9
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Thu Jun 9 13:51:01 2016 +0400
+
+    some fixes
+
+commit bde29e025396fe97447c467945fd2369569b1354
+Merge: bf55c09 5209b59
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Thu Jun 9 13:33:30 2016 +0400
+
+    Merge branch 'dev' of git.bigbek.com:one-armenia/hike-android-app into dev
+
+commit 5209b59765e0670207bc0d9acceaab1cb2e176ad
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Thu Jun 9 13:29:52 2016 +0400
+
+    configured bacground image
+
+commit dbf6cb682ca009b2cdfe20010c55ed21dd739695
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Thu Jun 9 13:23:16 2016 +0400
+
+    Changed size  background image of empty list
+
+commit bf55c09223796037d9bf0e926f0f012cdc3b683c
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Wed Jun 8 23:42:43 2016 +0400
+
+    some fixes
+
+commit 441ffce67c478bcf8818468c0fdd1cb649bbba6a
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Wed Jun 8 22:13:32 2016 +0400
+
+    Some fixes
+
+commit 1acba5c511cccf19d4f70e5d18f5f51dc7088e57
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Wed Jun 8 20:00:27 2016 +0400
+
+    SHow text when saved trails list is empty
+
+commit 3718092de55bc1402ea3ae1331057071ca254fd0
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Wed Jun 8 19:44:25 2016 +0400
+
+    Added new background for empty options
+
+commit 341cd50e0d81fa71998521afe692a0bfe6f24d89
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Wed Jun 8 19:25:20 2016 +0400
+
+    some fixes
+
+commit fb3072d8fc345240ca54ead1f3e6b38d891a7a6d
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Wed Jun 8 18:49:20 2016 +0400
+
+    fixed AboutHIkeArmenia, About OneArmenia screens
+
+commit d6486167bd00b844e5dc49642b17e86efb3d6c8a
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Wed Jun 8 17:06:11 2016 +0400
+
+    Added new Request for get Guides By trail id, Fixed Bug at Home Activity
+
+commit 73ca7428e319cdeab1e4dce956811bf263f6cb8b
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Wed Jun 8 16:07:16 2016 +0400
+
+    Change  text of green button to "Add Guide review"  if Guide do not have any reviews
+
+commit 7f5addb3d54823ea67a10c481357914d481bcc82
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Wed Jun 8 15:39:00 2016 +0400
+
+    Hide Guide item on load
+
+commit 76d855eee596c164a2dc455e911211fe74491651
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Wed Jun 8 15:04:11 2016 +0400
+
+    Fixed Bug at Home Activity
+
+commit 522e465853b4a7fcdf19e165276f48f6068939b5
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Wed Jun 8 13:54:24 2016 +0400
+
+    some fixes
+
+commit 210d22b0bf8286b111b661b20476840774ff0c69
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Wed Jun 8 01:24:39 2016 +0400
+
+    some fixes
+
+commit 78168eed7d069ef9a15ecdecd07fcda31fc49577
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Tue Jun 7 19:25:42 2016 +0400
+
+    Implements Alert dialog at the app
+
+commit b6ed88b6ea3ab2fee95b56333c8405ef41834f91
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Tue Jun 7 19:10:44 2016 +0400
+
+    some fixes
+
+commit a2e99e30fc1aa22d4d23c10f57f79d7bc1039d02
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Tue Jun 7 18:02:07 2016 +0400
+
+    fixed bug
+
+commit cb8682bd9f2d6175d9ee17040d147329742ea73d
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Tue Jun 7 12:11:27 2016 +0400
+
+    Fixed reviews length
+
+commit f9c089a907cea836d8e592dc207eeb6ac7b40e37
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Tue Jun 7 11:00:46 2016 +0400
+
+    Added map file
+
+commit 7ec01e29d11d3fe398c73b82e66e883ae9879624
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Mon Jun 6 23:46:28 2016 +0400
+
+    Changed distance icon
+
+commit 4f38d6d56cd12f122d51d3190c8221cba2be6c11
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Mon Jun 6 19:06:18 2016 +0400
+
+    Some fixes
+
+commit 504ddae11567c3e255c0dfdab921d766c4be8205
+Merge: ac467ab 1df0935
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Mon Jun 6 11:31:40 2016 +0400
+
+    Merge branch 'dev' of git.bigbek.com:one-armenia/hike-android-app into dev
+
+commit ac467ab308b3998e2ba08d0013e2cded1a0f42cb
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Mon Jun 6 11:29:02 2016 +0400
+
+    Added new resources
+
+commit 1df0935a06f995e57890dd4c8c603ad49964966a
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Sun Jun 5 18:29:37 2016 +0400
+
+    Fixed text
+
+commit 1c29fa726bcc752e7307c4a82ef01290dff75645
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Sun Jun 5 17:56:50 2016 +0400
+
+    Fixed "see more..." button show
+
+commit 3d9cc5f8d2ff983a122a437610962c5a498e3495
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Sun Jun 5 13:56:00 2016 +0400
+
+    Removed "Store for offline use"  label and button
+
+commit 6da709efb9e3e3a5bf2bed43eab32ace71a2c45e
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Sun Jun 5 03:27:45 2016 +0400
+
+    Fixed some texts issiue# Please enter the commit message for your changes. Lines starting
+
+commit 537744655f36c918d4ddb068fca1ad789047dee9
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Sun Jun 5 02:13:02 2016 +0400
+
+    Fixed some texts issue
+
+commit 9ed77de45a9ffeb6cc13c9aca8e9443050a03646
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Sun Jun 5 00:23:20 2016 +0400
+
+    test
+
+commit a846bdcca922da74aeecde25f3d52187b52c197a
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Sat Jun 4 17:42:09 2016 +0400
+
+    Added animations for onBack pressed
+
+commit d4698ab1cc90c9e17f6cd5125aecaeb11e82ea84
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Sat Jun 4 15:48:47 2016 +0400
+
+    Fixed bug at Guide Reviews screen on click back icon
+
+commit 980941872009c4742ded45df144560b3ebdd7d74
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Sat Jun 4 14:27:57 2016 +0400
+
+    Added Animation to Custom dialog
+
+commit e19986c912a6408feff7a2f1f4303831b462c764
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Fri Jun 3 20:57:41 2016 +0400
+
+    Custom Dialog resizing
+
+commit 3f56fc975dfb95021011bce22a485a329052dcc9
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Fri Jun 3 18:48:25 2016 +0400
+
+    Fixed left slide ui design
+
+commit ee0fb19399e3edc32125acc6e830be1755a1f19f
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Fri Jun 3 18:25:02 2016 +0400
+
+    Added share button in TrailDetailActivity
+
+commit b43d148134c4ca7c724bf2ca6da7a4087672a50a
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Fri Jun 3 18:20:19 2016 +0400
+
+    Added Custom Alert Dialog
+
+commit cf8aa0f8ee8590817d429297c386771eb9c84b3c
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Fri Jun 3 14:03:25 2016 +0400
+
+    Hide image with text when is active all trails
+
+commit 24ff5cc4cbd6b1626a159890e56276402e134dc5
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Fri Jun 3 13:57:49 2016 +0400
+
+    Enabled "Saved Trails" click at TrailDetailActivity
+
+commit a4b5a4a4b68274bc775e2216040ef88fc60ce4a9
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Fri Jun 3 13:49:32 2016 +0400
+
+    Show image with text when user doesn't have saved trails
+
+commit e49b9e34b947f364f6de4df2ac8ae444182c50d8
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Fri Jun 3 13:28:02 2016 +0400
+
+    Added new functionality (device languages)
+
+commit 8ac8c823208daab9cb6147892a18cde45c0fe77a
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Fri Jun 3 12:26:33 2016 +0400
+
+    Added guides languages glag in guides list
+
+commit 3aa6364dc0f0f074b108ed96fb9717585c938cf3
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Thu Jun 2 19:13:34 2016 +0400
+
+    Done All TRAILS and SAVED TRAILS Items Click Logic at  Left Slide Menu
+
+commit 8c04e48b10f272a39767e8441c019eb25e81e29e
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Wed Jun 1 20:11:59 2016 +0400
+
+    Configured styles for Android 4.*
+
+commit 69c2c3ff8a3175e612a051b82b577ca408f68505
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Tue May 31 20:10:04 2016 +0400
+
+    Get user photo from camera (not finished)
+
+commit cc9201a715fced41a0c020c35fad78373b95944c
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Tue May 31 19:29:21 2016 +0400
+
+    Added animation resourses
+
+commit 5a6e1aa45a23d8c6ca21c6b86e7ac6a04ffad92e
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Tue May 31 19:25:31 2016 +0400
+
+    Added rotate animation on map fragment
+
+commit 620ab5291257d81968de5a815d1add72ee584eef
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Tue May 31 18:55:07 2016 +0400
+
+    Edit user avatar
+
+commit 3e93565743f7760e5258c098020e2eaae19ad758
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Tue May 31 16:41:04 2016 +0400
+
+    fixed untracked files
+
+commit c39e5a915cce4f1aba137e0ddea28406c7a732f9
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Tue May 31 16:33:06 2016 +0400
+
+    Added new resources
+
+commit 772739934f88d871ff2551f697b278830f8526c8
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Tue May 31 16:20:23 2016 +0400
+
+    Added new updates
+
+commit bbe8c6ff37f9a4a11b182e48bf9735922a1848ba
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Tue May 31 16:14:10 2016 +0400
+
+    Removed unneccesary files
+
+commit 566f4c5f178d09e0f7c63650cac8419a8b7000fc
+Merge: 8c03602 cd516bb
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Tue May 31 16:11:59 2016 +0400
+
+    Merge branch 'dev' of git.bigbek.com:one-armenia/hike-android-app into dev
+
+commit 8c03602f8ab216013d1a55471ec99ba4f611f987
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Tue May 31 16:11:26 2016 +0400
+
+    untracked files
+
+commit cd516bbdded8f074d47ec9ed7f63ee0917a9b59e
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Tue May 31 14:57:34 2016 +0400
+
+    Fixed bugs on  click  at the items in  left menu
+
+commit 90ff04fe4ebdf7c3c1aeeefac03ebeb8863f4ed3
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Tue May 31 14:20:39 2016 +0400
+
+    Added rating bar
+
+commit 4837044501fab760f297bd7fb50a035a1aae6092
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Tue May 31 14:19:08 2016 +0400
+
+    Added rating bar functionality
+
+commit bfd7ff9fae9f0984c4af792f4ae7e3d7eaf8ad0d
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Mon May 30 16:53:26 2016 +0400
+
+    Added missing resource
+
+commit 2a33095a8274083e4b8a2ee1eb4878886dd4cf25
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Mon May 30 16:50:52 2016 +0400
+
+    Added new changes
+
+commit ee6fe4e6939868c483400f952805cc816b266f47
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Mon May 30 16:30:37 2016 +0400
+
+    Finishing each activity after start another Activity
+
+commit bfb39d3b49c4f8182510165e5c46c3f9908b6b7c
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Mon May 30 15:33:29 2016 +0400
+
+    Added functionalities to the "Accomodation" Activity "Call', 'Email', 'Web'. Changed items click logic at the left slide menu.
+
+commit 1e1c57b6e16c92631c7974a11088c127247c74e0
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Fri May 27 19:06:01 2016 +0400
+
+    Configured action at  icons in toolbar
+
+commit fe1826209147b08dc709859fd5462b6e5c5fae61
+Merge: bf8ab81 2a6507a
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Fri May 27 12:44:07 2016 +0400
+
+    Merge branch 'dev' of git.bigbek.com:one-armenia/hike-android-app into dev
+
+commit bf8ab81767bcc0e2d1ed8e38de3fc43a59e165b2
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Fri May 27 12:42:44 2016 +0400
+
+    Addeed new func
+
+commit 2a6507a2f142d397ef0e96d4af462dc696d996c9
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Fri May 27 12:26:31 2016 +0400
+
+    Integreated Facebook SDK
+
+commit fe26c20db91fd0c875f42cb22eac641f1eb392bb
+Merge: d466dfc d306bf7
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Fri May 27 12:05:22 2016 +0400
+
+    Merge branch 'dev' of git.bigbek.com:one-armenia/hike-android-app into dev
+
+commit d466dfc46cb23ebaf76463ff12869e183e61cebd
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Fri May 27 11:07:13 2016 +0400
+
+    worked on saved trailes
+
+commit d306bf74813e312d39a0ec1b3aa773e272148c8e
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Thu May 26 02:01:09 2016 +0400
+
+    show profile toolbar
+
+commit 8c6b429329a9c1001a5f01dadd6dcb34fe58f6cc
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Wed May 25 18:08:11 2016 +0400
+
+    Added Accomodation screen, "Trail tips reviews" at TrailDetailActivity and Trail Tips screen
+
+commit 602f7efec1f6f604d8ecf92f22480fe1faa5c281
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Wed May 25 11:57:08 2016 +0400
+
+    Added flag icon
+
+commit 5128721462055bf4e6d89fee750eb1ac53ec5d50
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Wed May 25 11:44:41 2016 +0400
+
+    Added map screen
+
+commit 32d8729525f6a9bb75c359622691c1e0fcc1dfc2
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Tue May 24 19:41:32 2016 +0400
+
+    Made TrailTipes screen, added Trail Tips list at TrailDetailActivity
+
+commit 43ae0bac21f4ead9bcffeccea9cdbda1c724f444
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Tue May 24 12:28:39 2016 +0400
+
+    Added new changes
+
+commit 945958ba6a4c89857d4c70bf9c94207c42e38bb1
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Tue May 24 16:03:20 2016 -0400
+
+    New changes
+
+commit f78fe3cde8e836c68e0a1ac5bfe766b0b93e9900
+Author: “Robert <“robert.levonyan@bigbek.com”>
+Date:   Tue May 24 10:51:05 2016 +0400
+
+    Pick image from camera or gallery
+
+commit abeadb6def0f47bc369a66a1a671f56f6da9b196
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Mon May 23 16:35:33 2016 +0400
+
+    Added new layout file
+
+commit e01ca27734e8172de85c1c3dc1cdf5078333c0d2
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Mon May 23 16:25:17 2016 +0400
+
+    Added new changes
+
+commit 8ca52de315813629afbd4a1494c8a0e999d3a945
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Sun May 22 14:45:09 2016 +0400
+
+    New save trils adapter
+
+commit 50c801f3ad8e5e6d261de3af27078a3eb79a381f
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Thu May 19 18:50:13 2016 +0400
+
+    Added "App Info", "About ONEArmenia" screens,
+    Made guide review request
+
+commit be9dde945da83c1d38c03165b566d56ca013b794
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Wed May 18 19:44:11 2016 +0400
+
+    Added "App Info" screen
+
+commit f08707bcbf1477646e8e2000866e0f59d5caab7b
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Wed May 18 12:36:41 2016 +0400
+
+    Added new fixes
+
+commit 86ae8ba30f98b8af696fd9b15aeb8ffd71308a08
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Tue May 17 19:44:33 2016 +0400
+
+    Made "Wrie Review" screen
+
+commit 1f3e0bf4323ff1140217e427bae5233143a7c05f
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Tue May 17 16:52:01 2016 +0400
+
+    Made GuideReviews Activity
+
+commit d725ab36974ed9fe8ce0788466a0b0e3987a2d95
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Mon May 16 15:43:33 2016 +0400
+
+    New fixes
+
+commit 86ad232682042d6cd0f106a6ed07d8309580e626
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Mon May 16 02:53:23 2016 +0400
+
+    Added new fixes/updates for Hike Armenia
+
+commit a3fbb769230e17d0d0e12011779d8913e37d32bd
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Fri May 13 21:05:48 2016 +0400
+
+    added ontouch effects, fixed bug on save user object
+
+commit 913d037455439bf7be652fc7cc2c14053a62343a
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Fri May 13 12:39:18 2016 +0400
+
+    Added new fixes
+
+commit 234e075c6c6a58faa8b097348cad0b3db3498801
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Thu May 12 17:04:17 2016 +0400
+
+    fixed bug "update left slide menu after login or sign up"
+
+commit 669a24eaf673b5a9296622d1489f2c403acec461
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Thu May 12 16:29:38 2016 +0400
+
+    Made  generic "left slide menu" for all activities
+
+commit 74303e27a024715fd27ea3989c4708483190dec7
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Thu May 12 15:28:13 2016 +0400
+
+    Added call and send email functionality,
+    Made logic for the show guides Rating# Please enter the commit message for your changes. Lines starting
+
+commit 71c058d1c125e207921adba22288f5d1cb4b66cc
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Thu May 12 13:29:41 2016 +0400
+
+    New fixes for HikeArmenia
+
+commit cfd846fe558ece4de2f519b4c6b52525043af98c
+Merge: 8b5b831 dd3968c
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Thu May 12 12:32:52 2016 +0400
+
+    Merge branch 'dev' of git.bigbek.com:one-armenia/hike-android-app into dev
+
+commit 8b5b831cbfa3f063c7e390e629a36b110c1911f6
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Thu May 12 03:07:38 2016 +0400
+
+    Made "Local guides" screen, Guids model.
+    Added bottom menu layout at Home Activity# Please enter the commit message for your changes. Lines starting
+
+commit dd3968c28b172f1df490e655fe748e9933a31c2a
+Author: “Robert <“robert.levonyan@bigbek.com”>
+Date:   Wed May 11 17:10:28 2016 +0400
+
+    Fixed Signup and profile(part)
+
+commit 69c4b30ff49085c83beeebc512dede25ac5f8351
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Fri May 6 21:41:33 2016 +0400
+
+    Added generic Response class for api requests. Made Trail model.# Please enter the commit message for your changes. Lines starting
+    Changed size of recyclerView item # with '#' will be ignored, and an empty message aborts the commit.
+
+commit 3826e627ad391cd65b69474bb242e0eb1a19fd84
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Sat Apr 30 00:09:04 2016 +0400
+
+    Made "edit profile" screen(not finish)
+
+commit 4b58c9587ffc19f53497b6ab9699c1baf3b10300
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Wed Apr 27 23:45:33 2016 +0400
+
+    Added recyclerview in HomeActivity,Added Profile fragment,Made cache for user
+
+commit 5613becec4fdaef6806b03e800941f2471374ce8
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Sun Apr 24 21:37:37 2016 +0400
+
+    Changed size of the "back icon" in toolbar.
+    Made "transparent status bar" # Please enter the commit message for your changes. Lines starting
+
+commit a53106c448a61096a7327534921908d5122240b6
+Author: Hovsep Arakelyan <hovsep.arakelyan@bigbek.com>
+Date:   Sat Apr 23 01:20:27 2016 +0400
+
+    Added fonts, Made custom Views, changed settings at the aut screens
+
+commit 5d09c84efe6693cef6a72ac08bc0b7febe6bf45e
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Thu Apr 21 01:19:29 2016 +0400
+
+    Fixes HikeArmenia
+
+commit a45dfd2530528d736c3955a7e76bf168aa6b5565
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Wed Apr 13 15:26:33 2016 +0400
+
+    Added new fixes for the network request
+
+commit b843ef5fc7b9d8031c95676cb3e7d4fc38138e8b
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Wed Apr 13 02:21:16 2016 +0400
+
+    Fixed the issues with fragments
+
+commit 44df79f0595338bad765b031173540cb0b4f2321
+Author: ginosian <marta.ginosian@gmail.com>
+Date:   Tue Apr 12 20:29:11 2016 +0400
+
+    Converts SignUpFragment from FragmentActivity to just Fragment.
+    Instatntiates SignUpFragment in AuthActivity.
+    Tryes to transact SignUpFragment but fails on Transaction instance call. Requires android.support.v4.app but finds android.app, though FragmentTransaction is imported from android.support.v4.app, and BaseActivity too imported from android.support.v4.app.
+
+commit e29c6f723f1edf9d0aacb37bd98a60ffc67cf1fc
+Author: ginosian <marta.ginosian@gmail.com>
+Date:   Tue Apr 12 16:23:42 2016 +0400
+
+    Implements circle view of profile images.
+    Fixes crop bag.
+    Inserts and implements Retrofit framework, not tested yet.
+    Does some minor changes.
+
+commit 73a836ed7fba48abebffef672e0c81c219a7de66
+Author: ginosian <marta.ginosian@gmail.com>
+Date:   Mon Apr 11 09:42:29 2016 +0400
+
+    Add all auth view designs.
+    Defines Sign in request Model.
+    Implements sign in input check.
+    Implements picture browsing from external storage and cropping.
+
+commit 375db9687df13a74ed71acfa51e3de7ab0b1df14
+Author: ginosian <marta.ginosian@gmail.com>
+Date:   Thu Apr 7 20:22:59 2016 +0400
+
+    Design Authentication first view.
+    Sets relative sizes for Authentication firs view on small and xlarge devices.
+    Manages keyboard appearance and dissapearance which though doesn't seem to work.
+
+commit d2c3ca49ae386265f931e412117d9b34c9080cb9
+Author: Ani Karapetyan <ani@bigbek.com>
+Date:   Thu Apr 7 16:15:29 2016 +0400
+
+    Created project

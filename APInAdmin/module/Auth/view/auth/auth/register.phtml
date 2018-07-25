@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="row">
+        <div class="span3">
+        </div>
+        <div class="span9">
+            <div class="page-header">
+                <h1>Register</h1>
+            </div>
+            <form method="POST" class="form-horizontal ajaxForm" action="<?php echo $this->url("auth-action", array("language" => $this->layout()->language, "action" => "signUp")); ?>">
+                <div class="control-group">
+                    <label class="control-label" for="user_email">Email</label>
+                    <div class="controls">
+                        <input type="text" id="user_email" name="user_email">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="user_password">Password</label>
+                    <div class="controls">
+                        <input type="password" id="user_password" name="user_password">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="controls">
+                        <button type="submit" class="btn btn-info">Sign in</button>
+                    </div>
+                    <div class="alert alert-danger"></div>
+                    <div class="alert alert-success"></div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

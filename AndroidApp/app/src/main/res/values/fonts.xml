@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="black_font">fonts/SFUIDisplay-Black.otf</string>
+    <string name="bold_font">fonts/SFUIDisplay-Bold.otf</string>
+    <string name="heavy_font">fonts/SFUIDisplay-Heavy.otf</string>
+    <string name="light_font">fonts/SFUIDisplay-Light.otf</string>
+    <string name="medium_font">fonts/SFUIDisplay-Medium.otf</string>
+    <string name="regular_font">fonts/SFUIDisplay-Regular.otf</string>
+    <string name="semibold_font">fonts/SFUIDisplay-Semibold.otf</string>
+    <string name="thin_font">fonts/SFUIDisplay-Thin.otf</string>
+    <string name="ultralight_font">fonts/SFUIDisplay-Ultralight.otf</string>
+</resources>

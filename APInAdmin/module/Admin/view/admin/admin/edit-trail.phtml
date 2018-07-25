@@ -1,0 +1,499 @@
+<div class="row" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+    <div class=" col-sm-9 ">
+        <h1 class="page-title txt-color-blueDark">
+            <a href="/admin">
+                <i class="fa-fw fa fa-home"></i>
+                Dashboard
+            </a>
+            <span>
+                > <a href="<?php echo $this->url("admin", array("action" => "trails")); ?>">Trails</a>
+                > Edit Trail
+            </span>
+        </h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12">
+        <form
+            action="<?php echo $this->url("admin-action", array("action" => "edit-trail", "id" => $this->post['trail_id'])); ?>"
+            method="post" class="ajaxForm">
+            <div class="jarviswidget jarviswidget-color-blueDark col-sm-12 col-md-12 col-lg-9" id="wid-id-11"
+                 data-widget-colorbutton="false"
+                 data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false"
+                 data-widget-fullscreenbutton="false" data-widget-custombutton="false" role="widget"
+                 style="position: relative; opacity: 1;">
+                <header role="heading">
+                    <h2><strong>Content</strong></h2>
+                    <span class="jarviswidget-loader"><i class="fa fa-refresh fa-spin"></i></span></header>
+
+                <!-- widget div-->
+
+                <div role="content">
+                    <div class="widget-body no-padding">
+                        <div class="tab-content padding-10">
+                            <div class="smart-form">
+                                <section>
+                                    <label class="label">Name </label>
+                                    <label class="input">
+                                        <input type="text" name="trail_name"
+                                               value="<?php echo $this->post['trail_name']; ?>"/>
+                                    </label>
+                                </section>
+                                <section>
+                                    <label class="label">Distance</label>
+                                    <label class="input">
+                                        <input type="text" name="trail_distance"
+                                               value="<?php echo $this->post['trail_distance']; ?>"/>
+                                    </label>
+                                </section>
+                                <section>
+                                    <label class="label">Guides</label>
+                                    <label class="input">
+                                        <a class="btn btn-primary btn-sm" data-toggle="modal"
+                                           data-target="#guidesModal">Guides</a>
+                                    </label>
+                                </section>
+                                <section>
+                                    <label class="label">Accommodations</label>
+                                    <label class="input">
+                                        <a class="btn btn-primary btn-sm" data-toggle="modal"
+                                           data-target="#accommodationsModal">Accommodations</a>
+                                    </label>
+                                </section>
+                                <section style="width: 45%; float: left;">
+                                    <label class="label">Max height</label>
+                                    <label class="input">
+                                        <input type="text" name="trail_max_height"
+                                               value="<?php echo $this->post['trail_max_height']; ?>"/>
+                                    </label>
+                                </section>
+                                <section style="width: 45%; float: right;">
+                                    <label class="label">Min height</label>
+                                    <label class="input">
+                                        <input type="text" name="trail_min_height"
+                                               value="<?php echo $this->post['trail_min_height']; ?>"/>
+                                    </label>
+                                </section>
+                                <div class="clearfix"></div>
+                                <section>
+                                    <label class="label">Things to do </label>
+                                    <label class="input">
+                                        <input type="text" name="trail_things_to_do"
+                                               value="<?php echo $this->post['trail_things_to_do']; ?>"/>
+                                    </label>
+                                </section>
+                                <section>
+                                    <label class="label">Duration</label>
+                                    <label class="input">
+                                        <input type="text" name="trail_time"
+                                               value="<?php echo $this->post['trail_time']; ?>"/>
+                                    </label>
+                                </section>
+
+                                <section style="width: 45%; float: left;">
+                                    <label class="label">Trail Latitude Start</label>
+                                    <label class="input">
+                                        <input type="text" name="trail_lat_start"
+                                               value="<?php echo $this->post['trail_lat_start']; ?>"/>
+                                    </label>
+                                </section>
+                                <section style="width: 45%; float: right;">
+                                    <label class="label">Trail Longitude Start</label>
+                                    <label class="input">
+                                        <input type="text" name="trail_long_start"
+                                               value="<?php echo $this->post['trail_long_start']; ?>"/>
+                                    </label>
+                                </section>
+                                <div class="clearfix"></div>
+                                <section style="width: 45%; float: left;">
+                                    <label class="label">Trail Latitude End</label>
+                                    <label class="input">
+                                        <input type="text" name="trail_lat_end"
+                                               value="<?php echo $this->post['trail_lat_end']; ?>"/>
+                                    </label>
+                                </section>
+                                <section style="width: 45%; float: right;">
+                                    <label class="label">Trail Long End</label>
+                                    <label class="input">
+                                        <input type="text" name="trail_long_end"
+                                               value="<?php echo $this->post['trail_long_end']; ?>"/>
+                                    </label>
+                                </section>
+                                <div class="clearfix"></div>
+                                <section>
+                                    <label class="label">Region</label>
+                                    <label class="input">
+                                        <input type="text" name="trail_region"
+                                               value="<?php echo $this->post['trail_region']; ?>"/>
+                                    </label>
+                                </section>
+                                <section>
+                                    <label class="label">Information</label>
+                                    <label class="textarea">
+                                        <textarea rows="6"
+                                                  name="trail_information"><?php echo $this->post['trail_information']; ?></textarea>
+                                    </label>
+                                </section>
+                                <section>
+
+                                    <label class="label">KML file</label>
+
+
+                                    <div class="input input-file">
+                                    <span
+                                        class="button"<?php if ($this->post['trail_kml_file']) { ?> style="right:93px"<?php } ?>>
+
+                                        <input type="file" id="file" name="trail_kml_file"
+                                               class="multipleImageUploadInput"
+                                               onchange="this.parentNode.nextElementSibling.value = this.value ;console.log(1)">
+                                        Browse
+                                    </span>
+                                        <?php if($this->post['trail_kml_file']){ ?>
+                                        <a class="button" href="<?php echo $this->post['trail_kml_file']?>">
+                                            Download
+                                        </a>
+                                        <?php } ?>
+                                        <input type="text" placeholder="Select KML file" readonly="">
+                                    </div>
+                                </section>
+                                <div class="clearfix"></div>
+                                <section>
+                                    <label class="label">Map Image(750 X 300px)</label>
+
+                                    <div class="input input-file" >
+                                    <span class="button">
+                                        <input type="file" id="file" name="trail_map_image"
+                                               class="multipleImageUploadInput"
+                                               onchange="this.parentNode.nextElementSibling.value = this.value ;console.log(1)">
+                                        Browse
+                                    </span>
+                                        <input type="text" placeholder="Select Map Image" readonly="">
+                                    </div>
+                                </section>
+                                <?php if ($this->post['trail_map_image']) { ?>
+                                    <label class="label">Map Image</label>
+                                    <div class="imagesStack draggable smallGrid">
+                                        <div class="imageBox smart-form photo-grid">
+
+                                            <img src="<?php echo $this->post['trail_map_image']; ?>"
+                                                 onclick="openEditImage(this)">
+                                        </div>
+                                    </div>
+
+                                <?php } ?>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-3">
+                <div class="jarviswidget jarviswidget-color-blueDark">
+                    <header role="heading">
+                        <h2><strong>Page attributes</strong></h2>
+                    </header>
+                    <div role="content">
+                        <div class="widget-body">
+                            <div class="widget-body-toolbar text-center">
+                                <!--  floating button save  -->
+                                <div id="fixed_hidden_button"
+                                     class="fadeInDown animated floating_submit_wrapper hidden">
+                                    <button type="submit" class="btn btn-lg btn-success floating_submit">Save</button>
+                                    <span onclick='$("#fixed_hidden_button").hide();' class="fa fa-close"
+                                          style="position: relative; top:-44px;right:-6px"></span>
+                                </div>
+                                <p>
+                                    <button type="submit"
+                                            class="triggers_if_this_element_in_viewport btn btn-lg btn-success">Save
+                                    </button>
+                                </p>
+                            </div>
+                            <br/>
+
+                            <div class="smart-form">
+                                <section>
+                                    <label class="label">Status</label>
+                                    <label class="select">
+                                        <select name="trail_status">
+                                            <option value="active"
+                                                    <?php if ($this->post['trail_status'] == "active") { ?>selected="selected"<?php } ?>>
+                                                Active
+                                            </option>
+                                            <option value="inactive"
+                                                    <?php if ($this->post['trail_status'] == "inactive") { ?>selected="selected"<?php } ?>>
+                                                Inactive
+                                            </option>
+                                        </select><i></i>
+                                    </label>
+                                </section>
+                                <section>
+                                    <label class="label">Difficulty</label>
+                                    <label class="select">
+                                        <select name="trail_difficulty">
+                                            <option value="easy"
+                                                    <?php if ($this->post['trail_difficulty'] == "easy") { ?>selected="selected"<?php } ?>>
+                                                Easy
+                                            </option>
+                                            <option value="medium"
+                                                    <?php if ($this->post['trail_difficulty'] == "medium") { ?>selected="selected"<?php } ?>>
+                                                Medium
+                                            </option>
+                                            <option value="hard"
+                                                    <?php if ($this->post['trail_difficulty'] == "hard") { ?>selected="selected"<?php } ?>>
+                                                Hard
+                                            </option>
+                                        </select><i></i>
+                                    </label>
+                                </section>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal fade" id="guidesModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                 aria-hidden="true"
+                 style="display: none;">
+                <div class="modal-dialog" style="width:800px;">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                <span class="fa fa-close"></span>
+                            </button>
+                            <h4 class="modal-title" id="myModalLabel">Guides</h4>
+                        </div>
+                        <div class="modal-body">
+                            <?php $count = floor(count($this->guides) / 10); ?>
+                            <?php for ($i = 0;
+                                       $i <= $count;
+                                       $i++) { ?>
+                                <div class="row">
+                                    <div class="col-md-12 smart-form">
+                                        <section>
+                                            <div class="guideList">
+                                                <?php for ($j = 0; $j < 10; $j++) {
+                                                    if (isset($this->guides[$i * 10 + $j])) {
+                                                        $guide = $this->guides[$i * 10 + $j];
+
+                                                        ?>
+
+                                                        <div class="row" style="width:50%; float: left;">
+                                                            <div class="row" style="margin-left:20px">
+                                                                <label class="checkbox">
+                                                                    <input type="checkbox"
+                                                                           class="guides"
+                                                                           name="guides[]" <?php foreach ($this->post['guides'] as $selected_guide) {
+                                                                        if ($guide->getId() == $selected_guide['guide_id']) {
+                                                                            echo "checked";
+                                                                        }
+                                                                    } ?>
+                                                                           value="<?php echo $guide->getId(); ?>">
+                                                                    <i></i><?php echo $guide->getFirstName() . ' ' . $guide->getLastName(); ?>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    <?php }
+                                                } ?>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+                            <?php } ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="accommodationsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                 aria-hidden="true"
+                 style="display: none;">
+                <div class="modal-dialog" style="width:800px;">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                <span class="fa fa-close"></span>
+                            </button>
+                            <h4 class="modal-title" id="myModalLabel">Accommodations</h4>
+                        </div>
+                        <div class="modal-body">
+                            <?php $count = floor(count($this->accommodations) / 10); ?>
+                            <?php for ($i = 0;
+                                       $i <= $count;
+                                       $i++) { ?>
+                                <div class="row">
+                                    <div class="col-md-12 smart-form">
+                                        <section>
+                                            <div class="guideList">
+                                                <?php for ($j = 0; $j < 10; $j++) {
+                                                    if (isset($this->accommodations[$i * 10 + $j])) {
+                                                        $accommodation = $this->accommodations[$i * 10 + $j];
+
+                                                        ?>
+
+                                                        <div class="row" style="width:50%; float: left;">
+                                                            <div class="row" style="margin-left:20px">
+                                                                <label class="checkbox">
+                                                                    <input type="checkbox"
+                                                                           class="accommodations"
+                                                                           name="accommodations[]" <?php foreach ($this->post['accommodations'] as $selected_accommodation) {
+                                                                        if ($accommodation->getId() == $selected_accommodation['acc_id']) {
+                                                                            echo "checked";
+                                                                        }
+                                                                    } ?>
+                                                                           value="<?php echo $accommodation->getId(); ?>">
+                                                                    <i></i><?php echo $accommodation->getName(); ?>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    <?php }
+                                                } ?>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+                            <?php } ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-9">
+        <div class="jarviswidget jarviswidget-color-blueDark" role="widget">
+            <header role="heading">
+                <h2><strong>Images</strong></h2>
+            </header>
+            <div class="smart-form col-sm-6">
+                <section>
+                    <button class="btn btn-primary btn-lg" type="button" data-toggle="modal"
+                            data-target="#imageUploaderModal">
+                        Upload Images
+                    </button>
+                    <h5 style="margin-top:10px;">(750 x 500)</h5>
+                </section>
+
+            </div>
+            <div style="clear: both ;display:none"></div>
+            <div id="imagesStack" class="imagesStack draggable smallGrid">
+                <?php $imagesCdaount = count($this->post['trail_covers']); ?>
+                <?php if ($this->post['trail_covers']) : ?>
+                    <?php $count = 0; ?>
+                    <?php foreach ($this->post['trail_covers'] as $image) : ?>
+                        <div class="imageBox smart-form photo-grid" data-number="<?php echo $count++; ?>"
+                             data-id="<?php echo $image['tc_id']; ?>">
+                            <img src="<?php echo $image['tc_cover']; ?>"
+                                 data-id="<?php echo $image['tc_id']; ?>"
+                                 data-is_featured="<?php echo $image['tc_is_featured'] ? 'on' : 'off'; ?>"
+                                 onclick="openEditImage(this)">
+
+                            <div class="edit_button">
+                                <button class="btn-primary btn-xs edit-image" type="button"
+                                        onclick="openEditImage($(this).parent().siblings('img'))">
+                                    Edit
+                                </button>
+                            </div>
+
+                        </div>
+                    <?php endforeach; ?>
+                <?php endif; ?>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="editImageModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true" style="display: none;">
+    <div class="modal-dialog">
+        <form action="<?php echo $this->url("admin-action", array("action" => "edit-image")); ?>" method="post"
+              class="ajaxForm">
+            <input type="hidden" name="image_id"/>
+            <input type="hidden" name="post_id" value="<?php echo $this->post['trail_id']; ?>"/>
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        <span class="fa fa-close"></span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">Edit Image</h4>
+                </div>
+
+                <div class="modal-body">
+                    <div class="row smart-form imageBox">
+                        <section>
+                            <button type="submit" class="btn btn-default btn-sm btn-success"
+                                    onclick="$('#editImageModal').modal('hide')">Save
+                            </button>
+                            <a class="btn btn-danger btn-sm" href="javascript:void(0)" onclick="removeImage(this)"
+                               style="margin-left: 5px;">
+                                <i class="fa fa-times-circle"></i>
+                                Remove
+                            </a>
+
+                        </section>
+
+                        <label class="toggle">
+                            <input type="checkbox" name="is_featured" data-type="preview" onclick="uncheck(this)"/>
+                            <i data-swchon-text="YES" data-swchoff-text="NO"></i>Main Image
+                        </label>
+                        <img src="" data-id=""/>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-sm btn-success" onclick="$('#editImageModal').modal('hide')">
+                        Save
+                    </button>
+                    <a class="btn btn-danger btn-sm" href="javascript:void(0)" onclick="removeImage(this)">
+                        <i class="fa fa-times-circle"></i>
+                        Remove
+                    </a>
+                    <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+
+<div class="modal fade" id="imageUploaderModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true" style="display: none;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    <span class="fa fa-close"></span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">Image Upload</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12 smart-form">
+                        <form action="<?php echo $this->url("admin-action", array("action" => "multiple-image")); ?>"
+                              method="post" class="imageUploadForm">
+                            <input type="hidden" name="trail_id" value="<?php echo $this->post['trail_id']; ?>"/>
+                            <section>
+                                <div class="input input-file">
+                                    <span class="button">
+                                        <input type="file" id="file" name="file[]" class="multipleImageUploadInput"
+                                               multiple onchange="this.parentNode.nextSibling.value = this.value">
+                                        Browse
+                                    </span>
+                                    <input type="text" placeholder="Include some files" readonly="">
+                                </div>
+                            </section>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close
+                </button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>

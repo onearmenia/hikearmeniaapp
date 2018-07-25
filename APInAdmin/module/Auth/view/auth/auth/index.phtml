@@ -1,0 +1,99 @@
+<div class="container">
+    <div class="row">
+        <div class="span12">
+            <div class="page-header">
+                <h1>User Module</h1>
+            </div>
+            <a href="#signinModal" role="button" class="btn btn-info" data-toggle="modal">Sign in</a>
+            <a href="#signupModal" role="button" class="btn btn-info" data-toggle="modal">Sign up</a>
+        </div>
+    </div>
+</div>
+<div id="signinModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="myModalLabel">Sign in</h3>
+    </div>
+    <div class="modal-body">
+        <p>
+            <form method="POST" class="form-horizontal ajaxForm showAlert" action="/auth-action/sign-in">
+                <div class="control-group">
+                    <label class="control-label" for="user_email">Email</label>
+                    <div class="controls">
+                        <input type="text" id="user_email" name="user_email">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="user_password">Password</label>
+                    <div class="controls">
+                        <input type="password" id="user_password" name="user_password">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="controls">
+                        <button type="submit" class="btn btn-info">Sign in</button>
+                    </div>
+                    <div class="alert alert-danger"></div>
+                    <div class="alert alert-success"></div>
+                </div>
+            </form>
+        </p>
+    </div>
+    <div class="modal-footer">
+        <a href="#signupModal" role="button" class="btn-link" data-toggle="modal" data-dismiss="modal" aria-hidden="true">Sign up</a>
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+    </div>
+</div>
+<div id="signupModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="myModalLabel">Sign up</h3>
+    </div>
+    <div class="modal-body">
+        <p>
+        <form method="POST" class="form-horizontal ajaxForm showAlert" action="/auth-action/sign-up">
+            <div class="control-group">
+                <label class="control-label" for="user_fname">First Name</label>
+                <div class="controls">
+                    <input type="text" id="user_fname" name="user_fname">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="user_lname">Last Name</label>
+                <div class="controls">
+                    <input type="text" id="user_lname" name="user_lname">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="user_email">Email</label>
+                <div class="controls">
+                    <input type="text" id="user_email" name="user_email">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="user_password">Password</label>
+                <div class="controls">
+                    <input type="password" id="user_password" name="user_password">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="confirm_password">Re-Password</label>
+                <div class="controls">
+                    <input type="password" id="confirm_password" name="confirm_password">
+                </div>
+            </div>
+            <div class="control-group">
+                <div class="controls">
+                    <button type="submit" class="btn btn-info">Sign up</button>
+                </div>
+                <div class="alert alert-danger"></div>
+                <div class="alert alert-success"></div>
+            </div>
+        </form>
+        </p>
+    </div>
+    <div class="modal-footer">
+        <a href="#signinModal" role="button" class="btn-link" data-toggle="modal" data-dismiss="modal" aria-hidden="true">Sign in</a>
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+    </div>
+</div>

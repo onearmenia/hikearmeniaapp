@@ -1,0 +1,118 @@
+<div class="row" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+    <div class=" col-sm-9 ">
+        <h1 class="page-title txt-color-blueDark">
+            <a href="/admin">
+                <i class="fa-fw fa fa-home"></i>
+                Dashboard
+            </a>
+            <span>
+                > <a href="<?php echo $this->url("admin", array("action" => "trail-reviews")); ?>">Trail Reviews</a>
+                > Edit Trail Review
+            </span>
+        </h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12">
+        <form
+            action="<?php echo $this->url("admin-action", array("action" => "edit-trail-review", "id" => $this->post->getId())); ?>"
+            method="post" class="ajaxForm">
+            <div class="jarviswidget jarviswidget-color-blueDark col-sm-12 col-md-12 col-lg-9" id="wid-id-11"
+                 data-widget-colorbutton="false"
+                 data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false"
+                 data-widget-fullscreenbutton="false" data-widget-custombutton="false" role="widget"
+                 style="position: relative; opacity: 1;">
+                <header role="heading">
+                    <h2><strong>Content</strong></h2>
+                    <span class="jarviswidget-loader"><i class="fa fa-refresh fa-spin"></i></span></header>
+
+                <!-- widget div-->
+
+                <div role="content">
+                    <div class="widget-body no-padding">
+                        <div class="tab-content padding-10">
+                            <div class="smart-form">
+                                <section>
+                                    <label class="label">Trail Name</label>
+                                    <label class="input">
+                                        <span><?php echo $this->trail->getName() ; ?></span>
+                                    </label>
+                                </section>
+
+                                <section>
+                                    <label class="label">User Name</label>
+                                    <label class="input">
+                                        <span><?php echo $this->user->getFirstName() . ' ' . $this->user->getLastName(); ?></span>
+                                    </label>
+                                </section>
+                                <section>
+                                    <label class="label">Rating</label>
+                                    <label class="input">
+                                        <span>
+                                             <?php $a = $post->getRating();
+                                             for ($i = 1; $i <= 5; $i++) { ?>
+                                                 <?php if ($a >= $i) { ?>
+                                                     <i class="fa fa-star yellow-star"></i>
+                                                 <?php } else { ?>
+                                                     <i class="fa fa-star-o yellow-star"></i>
+                                                 <?php } ?>
+                                             <?php } ?>
+                                        </span>
+                                    </label>
+                                </section>
+
+                                <section>
+                                    <label class="label">Review</label>
+                                    <label class="textarea">
+                                        <textarea rows="5" type="text"
+                                                  name="tr_review"><?php echo $this->post->getReview(); ?></textarea>
+                                    </label>
+                                </section>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-3">
+                <div class="jarviswidget jarviswidget-color-blueDark">
+                    <header role="heading">
+                        <h2><strong>Page attributes</strong></h2>
+                    </header>
+                    <div role="content">
+                        <div class="widget-body">
+                            <div class="widget-body-toolbar text-center">
+                                <!--  floating button save  -->
+                                <div id="fixed_hidden_button"
+                                     class="fadeInDown animated floating_submit_wrapper hidden">
+                                    <button type="submit" class="btn btn-lg btn-success floating_submit">Save</button>
+                                    <span onclick='$("#fixed_hidden_button").hide();' class="fa fa-close"
+                                          style="position: relative; top:-44px;right:-6px"></span>
+                                </div>
+                                <p>
+                                    <input type="hidden" name="tr_status" id="tr_status">
+                                    <button type="submit" onclick="$('#tr_status').val('active')"
+                                            class="triggers_if_this_element_in_viewport btn btn-lg btn-info">Approve
+                                    </button>
+                                    <button type="submit" onclick="$('#tr_status').val('inactive')"
+                                            class="triggers_if_this_element_in_viewport btn btn-lg btn-danger">Reject
+                                    </button>
+                                    <button type="" onclick="removeTrailReview( <?php echo $this->post->getId(); ?>)"
+                                            class="triggers_if_this_element_in_viewport btn btn-lg btn-danger">Remove
+                                    </button>
+                                </p>
+                            </div>
+                            <br/>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </form>
+    </div>
+</div>

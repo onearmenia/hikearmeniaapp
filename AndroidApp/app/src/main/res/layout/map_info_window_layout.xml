@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/map_info_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/map_info_window"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <TextView
+        android:id="@+id/map_trail_name"
+        style="@style/bold_font"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:gravity="left"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left">
+
+        <TextView
+            android:id="@+id/map_trail_difficulty"
+            style="@style/regular_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="medium"
+            android:textColor="@color/white"
+            android:textSize="@dimen/trail_info" />
+
+        <TextView
+            android:id="@+id/map_trail_distance"
+            style="@style/regular_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/trail_difficulty"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toEndOf="@+id/map_trail_difficulty"
+            android:text="@string/trail_distance"
+            android:textColor="@color/white"
+            android:textSize="@dimen/trail_info" />
+
+        <TextView
+            android:id="@+id/map_hours_tv"
+            style="@style/regular_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/map_trail_difficulty"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/map_trail_distance"
+            android:gravity="center"
+            android:text="4-6 hours"
+            android:textColor="@color/white"
+            android:textSize="@dimen/trail_info" />
+    </RelativeLayout>
+</LinearLayout>
